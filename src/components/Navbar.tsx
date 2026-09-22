@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { PageId } from '../types';
 import { COMPANY_INFO } from '../data/company';
 import { Menu, X, Phone, ArrowRight, Shield } from 'lucide-react';
-const logo = new URL('../assets/CompanyLogo.png', import.meta.url).href;
-
+// @ts-ignore
+import logo from '../assets/Companylogo.png';
 interface NavbarProps {
   currentPage: PageId;
   onNavigate: (page: PageId) => void;
