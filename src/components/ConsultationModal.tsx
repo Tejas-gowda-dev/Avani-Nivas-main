@@ -76,7 +76,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
             <X className="w-5 h-5" />
           </button>
           <span className="text-[11px] uppercase tracking-widest text-[#E5A96A] font-bold">
-            Avani Nivasa by Gowdru Realcom
+            Avani Nivas by Gowdru Realcom
           </span>
           <h2 id="consultation-modal-title" className="text-2xl font-normal font-serif mt-1">
             Book an Architectural Consultation

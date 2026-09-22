@@ -14,7 +14,7 @@ A modern, high-performance, and conversion-focused business website designed and
 - **Primary Regional Hubs**: Bengaluru (Mallathahalli & Rajarajeshwari Nagar), Tumkur, Mysuru, Hassan
 - **Corporate Office**: Avani Nivas, 10th Main Road, 1st Cross, Adarsha Layout, Mallathahalli, Bengaluru 560056
 - **Contact Numbers**: +91 9916337333 / +91 9916339333
-- **Official Emails**: `info@gowdrurealcom.com` / `info@avaninivasa.com`
+- **Official Emails**: `info@gowdrurealcom.com` / `info@avaninivas.com`
 
 ---
 

@@ -2,6 +2,8 @@ import React from 'react';
 import { PageId } from '../types';
 import { COMPANY_INFO } from '../data/company';
 import { MapPin, Phone, Mail, Clock, ArrowUpRight, ShieldCheck, FileText } from 'lucide-react';
+const logo = new URL('../assets/CompanyLogo.png', import.meta.url).href;
+
 
 interface FooterProps {
   onNavigate: (page: PageId) => void;
@@ -29,17 +31,17 @@ export const Footer: React.FC<FooterProps> = ({
           {/* Brand Col */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-[#1D3360] text-white flex items-center justify-center font-bold text-lg border border-[#E5A96A]/80 shadow-xs">
-                GR
-              </div>
-              <div>
-                <span className="text-xl font-bold text-white tracking-tight font-serif">Gowdru Realcom</span>
-                <p className="text-xs uppercase tracking-widest text-[#E5A96A] font-semibold">Avani Nivasa</p>
-              </div>
+              {/* <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg  flex items-center justify-center border border-[#E5A96A]/80 shadow-sm p-1.5">
+                <img
+                  src={logo}
+                  alt={`${COMPANY_INFO.brandName} Logo`}
+                  className="w-full h-full object-contain"
+                />
+              </div> */}
             </div>
 
             <p className="text-sm text-[#CBD5E1] leading-relaxed max-w-sm">
-              Over 15 years of industry excellence, crafting bespoke private residences, turnkey architectural duplexes, and premium interior transformations across Karnataka, Orissa, and Chhattisgarh.
+              Over 15 years of industry excellence, crafting bespoke private residences, turnkey architectural duplexes, and premium interior transformations across Karnataka.
             </p>
 
             <div className="flex flex-wrap gap-2 pt-2">
@@ -188,7 +190,7 @@ export const Footer: React.FC<FooterProps> = ({
           </p>
 
           <div className="flex items-center gap-4 flex-wrap">
-            <span className="text-[#CBD5E1]">Active Hubs: Bengaluru • Tumkur • Mysuru • Hassan • Balangir</span>
+            <span className="text-[#CBD5E1]">Active Hubs: Bengaluru • Tumkur • Mysuru • Hassan </span>
             <button
               id="wp-migration-guide-btn"
               onClick={onOpenMigrationGuide}

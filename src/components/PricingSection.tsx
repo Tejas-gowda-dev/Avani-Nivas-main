@@ -204,7 +204,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
       : enquiryData.estimatedCost;
 
     const lines = [
-      `*Avani Nivasa by Gowdru Realcom – Customer Requirement Enquiry*`,
+      `*Avani Nivas by Gowdru Realcom – Customer Requirement Enquiry*`,
       `Ref: ${enquiryData.referenceId}`,
       `━━━━━━━━━━━━━━━━━━━━━━━━━━`,
       `👤 *Customer Name:* ${enquiryData.customerName}`,
@@ -215,7 +215,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
       `📍 *Location:* ${enquiryData.location}`,
       enquiryData.additionalRequirements ? `📝 *Additional Requirements:* ${enquiryData.additionalRequirements}` : `📝 *Additional Requirements:* Looking for blueprint review, tailored BOQ & site consultation.`,
       `━━━━━━━━━━━━━━━━━━━━━━━━━━`,
-      `Hello Avani Nivasa team, I have viewed your pricing and submitted my requirement. Please share the detailed breakdown and schedule a site consultation.`
+      `Hello Avani Nivas team, I have viewed your pricing and submitted my requirement. Please share the detailed breakdown and schedule a site consultation.`
     ];
     return lines.join('\n');
   };
@@ -292,30 +292,17 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
   };
 
   return (
-    <section id="pricing" className={`${standalone ? 'py-12 sm:py-20' : 'py-20 bg-[#FAF9F6] border-t border-[#EAE4DC]'}`}>
+    <section id="pricing" className={`${standalone ? 'py-12 sm:py-14' : 'py-20 bg-[#FAF9F6] border-t border-[#EAE4DC]'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Section Header */}
-        <ScrollReveal className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F2ECE4] text-[#8D4B20] text-xs font-bold uppercase tracking-wider mb-4 border border-[#E2D8CC]">
-            <Calculator className="w-3.5 h-3.5 text-[#C27848]" />
-            <span>Transparent Rate Cards & Fast Enquiry</span>
-          </div>
-          <h2 className="block font-serif text-3xl sm:text-4xl lg:text-[46px] leading-tight text-[#313030] tracking-tight">
-            Transparent Pricing with No Hidden Surprises
-          </h2>
-          <p className="mt-4 text-base text-[#5C564E] leading-relaxed">
-            {showStep2 
-              ? 'Choose your architectural package, calculate your estimated investment, and connect directly with our founders on WhatsApp for itemized milestone budgeting.'
-              : 'Select from our standard turnkey packages or our 100% bespoke client-customized package. Click any plan to calculate your exact project estimate.'}
-          </p>
-        </ScrollReveal>
+      
+  
 
         {/* Customer Journey Roadmap Bar - Rendered only when showStep2 is true */}
         {showStep2 && (
           <ScrollReveal delay={0.1} className="mb-14">
             <div className="bg-[#FAF8F5] border border-[#E0D8CC] rounded-2xl p-4 sm:p-6 shadow-xs">
-              <div className="text-xs font-bold uppercase tracking-widest text-[#8D4B20] mb-3 text-center sm:text-left">
+              <div className="text-xs font-bold uppercase tracking-widest text-[#0B2545] mb-3 text-center sm:text-left">
                 Seamless Customer Journey
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5 sm:gap-2">
@@ -325,12 +312,12 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                   onClick={() => setActiveStep('view')}
                   className={`flex items-center gap-2 p-2.5 rounded-xl cursor-pointer transition-all ${
                     activeStep === 'view' 
-                      ? 'bg-[#14244A] text-white shadow-xs' 
+                      ? 'bg-[#0B2545] text-white shadow-xs' 
                       : 'bg-[#F2ECE4] text-[#4A453E] hover:bg-[#EAE2D7]'
                   }`}
                 >
                   <div className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0 ${
-                    activeStep === 'view' ? 'bg-[#C27848] text-white' : 'bg-[#E0D7CB] text-[#313030]'
+                    activeStep === 'view' ? 'bg-white text-[#0B2545]' : 'bg-[#E0D7CB] text-[#252525]'
                   }`}>
                     1
                   </div>
@@ -345,12 +332,12 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                   onClick={() => setActiveStep('select')}
                   className={`flex items-center gap-2 p-2.5 rounded-xl cursor-pointer transition-all ${
                     activeStep === 'select' 
-                      ? 'bg-[#14244A] text-white shadow-xs' 
+                      ? 'bg-[#0B2545] text-white shadow-xs' 
                       : 'bg-[#F2ECE4] text-[#4A453E] hover:bg-[#EAE2D7]'
                   }`}
                 >
                   <div className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0 ${
-                    activeStep === 'select' ? 'bg-[#C27848] text-white' : 'bg-[#E0D7CB] text-[#313030]'
+                    activeStep === 'select' ? 'bg-white text-[#0B2545]' : 'bg-[#E0D7CB] text-[#252525]'
                   }`}>
                     2
                   </div>
@@ -367,12 +354,12 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                   }}
                   className={`flex items-center gap-2 p-2.5 rounded-xl cursor-pointer transition-all ${
                     activeStep === 'details' 
-                      ? 'bg-[#14244A] text-white shadow-xs' 
+                      ? 'bg-[#0B2545] text-white shadow-xs' 
                       : 'bg-[#F2ECE4] text-[#4A453E] hover:bg-[#EAE2D7]'
                   }`}
                 >
                   <div className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0 ${
-                    activeStep === 'details' ? 'bg-[#C27848] text-white' : 'bg-[#E0D7CB] text-[#313030]'
+                    activeStep === 'details' ? 'bg-white text-[#0B2545]' : 'bg-[#E0D7CB] text-[#252525]'
                   }`}>
                     3
                   </div>
@@ -386,12 +373,12 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                 <div 
                   className={`flex items-center gap-2 p-2.5 rounded-xl transition-all ${
                     activeStep === 'submitted' 
-                      ? 'bg-[#14244A] text-white shadow-xs' 
+                      ? 'bg-[#0B2545] text-white shadow-xs' 
                       : 'bg-[#F2ECE4] text-[#4A453E]'
                   }`}
                 >
                   <div className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0 ${
-                    activeStep === 'submitted' ? 'bg-[#C27848] text-white' : 'bg-[#E0D7CB] text-[#313030]'
+                    activeStep === 'submitted' ? 'bg-white text-[#0B2545]' : 'bg-[#E0D7CB] text-[#252525]'
                   }`}>
                     4
                   </div>
@@ -427,10 +414,10 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
         <div className="mb-14">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8">
             <div>
-              <span className="text-xs font-bold text-[#C27848] uppercase tracking-wider">
+              <span className="text-xs font-bold text-[#0B2545] uppercase tracking-wider">
                 {showStep2 ? 'Step 1' : 'Pricing Plans & Packages'}
               </span>
-              <h3 className="text-2xl font-serif text-[#313030]">Explore Architectural & Construction Packages</h3>
+              <h3 className="text-2xl font-serif text-[#252525]">Explore Architectural & Construction Packages</h3>
             </div>
             <span className="text-xs text-[#7C7469]">All rates include architectural blueprint guidance & GST compliance</span>
           </div>
@@ -445,13 +432,9 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                   key={tier.id}
                   delay={idx * 0.05}
                   className={`rounded-2xl border transition-all duration-300 flex flex-col justify-between relative overflow-hidden group ${
-                    tier.popular
-                      ? 'bg-gradient-to-b from-[#FFFDF9] to-[#FAF5EE] border-[#C27848] shadow-md ring-1 ring-[#C27848]/30'
-                      : tier.isCustom
-                      ? 'bg-gradient-to-b from-[#FAF7F2] to-[#F3EDE3] border-[#8D4B20] shadow-md'
-                      : isSelected && showStep2
-                      ? 'bg-white border-[#313030] shadow-md ring-1 ring-[#313030]'
-                      : 'bg-white border-[#E5DFD5] hover:border-[#C27848]/60 hover:shadow-sm'
+                    isSelected && showStep2
+                      ? 'bg-white border-[#0B2545] shadow-md ring-2 ring-[#0B2545]'
+                      : 'bg-white border-[#E5DFD5] hover:border-[#0B2545]/60 hover:shadow-sm'
                   }`}
                 >
                   {/* Top Image Banner with Image Upload & View actions */}
@@ -467,13 +450,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                     {/* Top Badge */}
                     {tier.badge && (
                       <div className="absolute top-3 right-3 z-10">
-                        <span className={`inline-block text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm ${
-                          tier.popular
-                            ? 'bg-[#C27848] text-white'
-                            : tier.isCustom
-                            ? 'bg-[#8D4B20] text-[#FFF6EE] ring-1 ring-white/30'
-                            : 'bg-white/90 text-[#313030] backdrop-blur-xs'
-                        }`}>
+                        <span className="inline-block text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm bg-white/90 text-[#252525] backdrop-blur-xs">
                           {tier.badge}
                         </span>
                       </div>
@@ -499,7 +476,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
 
                       <label
                         title="Upload Custom Image for this Package"
-                        className="p-1.5 bg-black/60 hover:bg-[#C27848] text-white rounded-lg backdrop-blur-xs transition-colors cursor-pointer"
+                        className="p-1.5 bg-black/60 hover:bg-[#0B2545] text-white rounded-lg backdrop-blur-xs transition-colors cursor-pointer"
                         onClick={(e) => e.stopPropagation()}
                       >
                         <Camera className="w-3.5 h-3.5" />
@@ -507,7 +484,9 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                           type="file"
                           accept="image/*"
                           className="hidden"
-                          ref={(el) => (fileInputRefs.current[tier.id] = el)}
+                          ref={(el) => {
+                            fileInputRefs.current[tier.id] = el;
+                          }}
                           onChange={(e) => handleFileUpload(tier.id, e)}
                         />
                       </label>
@@ -529,9 +508,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                       {/* Rate Display */}
                       <div className="py-3 border-b border-[#EFEAE2]">
                         <div className="flex items-baseline gap-1.5">
-                          <span className={`font-serif font-extrabold text-[#313030] ${
-                            tier.isCustom ? 'text-2xl sm:text-[26px] text-[#8D4B20]' : 'text-3xl'
-                          }`}>
+                          <span className="font-serif font-extrabold text-[#252525] text-3xl">
                             {tier.rateDisplay}
                           </span>
                         </div>
@@ -542,11 +519,11 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
 
                       {/* INCLUDED SERVICES checklist */}
                       <div className="space-y-2 mt-4">
-                        <div className="text-[11px] font-bold uppercase tracking-wider text-[#7C7469]">INCLUDED SERVICES</div>
+                        <div className="text-[11px] font-bold uppercase tracking-wider text-[#7C7469]">INCLUDED SERVICES:</div>
                         <ul className="space-y-1.5">
-                          {tier.deliverables.slice(0, 5).map((item, i) => (
+                          {tier.deliverables.slice(0, 9).map((item, i) => (
                             <li key={i} className="flex items-start gap-2 text-xs text-[#4A453E] leading-snug">
-                              <Check className="w-3.5 h-3.5 text-[#C27848] shrink-0 mt-0.5" />
+                              <Check className="w-3.5 h-3.5 text-[#0B2545] shrink-0 mt-0.5" />
                               <span>{item}</span>
                             </li>
                           ))}
@@ -556,10 +533,10 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                       {/* Project summary highlights */}
                       <div className="mt-4 pt-3 border-t border-[#F0EBE3]">
                         <div className="text-[11px] font-bold uppercase tracking-wider text-[#7C7469] mb-1.5">
-                          Project summary
+                          Project summary:
                         </div>
                         <div className="flex flex-wrap gap-1.5">
-                          {(tier.projectSummary || tier.materialsIncluded || []).slice(0, 4).map((item, i) => (
+                          {(tier.projectSummary  || []).slice(0, 4).map((item, i) => (
                             <span key={i} className="text-[10px] px-2 py-0.5 rounded bg-[#F5F2EC] text-[#5C564E] border border-[#EAE4DC]">
                               {item}
                             </span>
@@ -575,10 +552,8 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                         onClick={() => handleSelectPlan(tier.id)}
                         className={`w-full py-3 px-4 rounded-xl text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-center gap-2 ${
                           isSelected && showStep2
-                            ? 'bg-[#313030] text-white shadow-xs'
-                            : tier.isCustom
-                            ? 'bg-[#8D4B20] text-white hover:bg-[#6f3816] shadow-sm'
-                            : 'bg-[#FAF8F5] border border-[#D5CCC0] text-[#313030] hover:bg-[#C27848] hover:text-white hover:border-[#C27848]'
+                            ? 'bg-[#0B2545] text-white shadow-xs'
+                            : 'bg-[#FAF8F5] border border-[#D5CCC0] text-[#252525] hover:bg-[#0B2545] hover:text-white hover:border-[#0B2545]'
                         }`}
                       >
                         <span>
@@ -597,9 +572,9 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
 
           {/* If on HomePage (showStep2 === false), render a dedicated quick banner to open the full Pricing Estimator */}
           {!showStep2 && (
-            <div className="mt-10 bg-gradient-to-r from-[#14244A] to-[#1A2E56] text-white p-6 sm:p-8 rounded-2xl border border-[#2B4A85] flex flex-col sm:flex-row items-center justify-between gap-6 shadow-md">
+            <div className="mt-10 bg-gradient-to-r from-[#0B2545] to-[#153A66] text-white p-6 sm:p-8 rounded-2xl border border-[#1E4578] flex flex-col sm:flex-row items-center justify-between gap-6 shadow-md">
               <div className="space-y-1.5 text-center sm:text-left">
-                <div className="inline-flex items-center gap-2 text-xs text-[#E5A96A] font-bold uppercase tracking-wider">
+                <div className="inline-flex items-center gap-2 text-xs text-[#93C5FD] font-bold uppercase tracking-wider">
                   <Calculator className="w-4 h-4" />
                   <span>Looking to Calculate Specific Built-Up Area or Custom Rate?</span>
                 </div>
@@ -617,7 +592,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                     onSelectPlanForPricingPage('royal-package');
                   }
                 }}
-                className="w-full sm:w-auto px-7 py-3.5 bg-[#C27848] hover:bg-[#ab6539] text-white text-xs font-bold uppercase tracking-wider rounded-xl shadow-md transition-all flex items-center justify-center gap-2 shrink-0"
+                className="w-full sm:w-auto px-7 py-3.5 bg-white text-[#0B2545] hover:bg-[#F2ECE4] text-xs font-bold uppercase tracking-wider rounded-xl shadow-md transition-all flex items-center justify-center gap-2 shrink-0 border border-white/20"
               >
                 <span>Open Full Pricing Estimator</span>
                 <ChevronRight className="w-4 h-4" />
@@ -634,7 +609,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
               {/* Form Top Header */}
               <div className="bg-gradient-to-r from-[#14244A] via-[#1A2E56] to-[#101D3A] text-white p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-[#233C70]">
                 <div>
-                  <div className="inline-flex items-center gap-2 text-xs text-[#E5A96A] font-bold uppercase tracking-wider mb-1">
+                  <div className="inline-flex items-center gap-2 text-xs text-[#93C5FD] font-bold uppercase tracking-wider mb-1">
                     <Sparkles className="w-3.5 h-3.5" />
                     <span>Customer Requirement & Estimate Engine</span>
                   </div>
@@ -645,7 +620,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                 
                 <div className="bg-[#1F3563] px-4 py-2.5 rounded-xl border border-[#2B4A85] text-right shrink-0 shadow-xs">
                   <div className="text-[10px] uppercase tracking-wider text-[#CBD5E1] font-semibold">Live Estimated Cost</div>
-                  <div className="text-lg sm:text-xl font-bold text-[#E5A96A] font-serif">
+                  <div className="text-lg sm:text-xl font-bold text-[#93C5FD] font-serif">
                     {formatIndianCurrency(estimatedCost)}
                   </div>
                   <div className="text-[10px] text-[#94A3B8]">
@@ -668,40 +643,40 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                       <span className="text-xs font-bold uppercase tracking-widest text-[#128C7E] bg-[#E8F8F0] px-3 py-1 rounded-full">
                         Enquiry Verified & Generated
                       </span>
-                      <h4 className="text-2xl sm:text-3xl font-serif text-[#313030] mt-3">
+                      <h4 className="text-2xl sm:text-3xl font-serif text-[#252525] mt-3">
                         Thank You, {submittedEnquiry.customerName}!
                       </h4>
                       <p className="text-sm text-[#5C564E] mt-2">
-                        Your enquiry reference is <span className="font-bold text-[#313030]">{submittedEnquiry.referenceId}</span>. A WhatsApp chat window has been initiated with our team.
+                        Your enquiry reference is <span className="font-bold text-[#252525]">{submittedEnquiry.referenceId}</span>. A WhatsApp chat window has been initiated with our team.
                       </p>
                     </div>
 
                     {/* Summary Card */}
                     <div className="bg-white rounded-2xl p-6 border border-[#E5DFD5] text-left space-y-3.5 shadow-xs">
-                      <div className="text-xs font-bold uppercase tracking-wider text-[#C27848] border-b border-[#F0EBE3] pb-2">
+                      <div className="text-xs font-bold uppercase tracking-wider text-[#0B2545] border-b border-[#F0EBE3] pb-2">
                         Enquiry Summary Details
                       </div>
 
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
                         <div>
                           <span className="text-[#8C8377] block">Customer Name:</span>
-                          <span className="font-bold text-[#313030] text-sm">{submittedEnquiry.customerName}</span>
+                          <span className="font-bold text-[#252525] text-sm">{submittedEnquiry.customerName}</span>
                         </div>
                         <div>
                           <span className="text-[#8C8377] block">Mobile Number:</span>
-                          <span className="font-bold text-[#313030] text-sm">+91 {submittedEnquiry.mobileNumber}</span>
+                          <span className="font-bold text-[#252525] text-sm">+91 {submittedEnquiry.mobileNumber}</span>
                         </div>
                         <div>
                           <span className="text-[#8C8377] block">Selected Service / Pricing:</span>
-                          <span className="font-bold text-[#313030]">{submittedEnquiry.serviceName}</span>
+                          <span className="font-bold text-[#252525]">{submittedEnquiry.serviceName}</span>
                         </div>
                         <div>
                           <span className="text-[#8C8377] block">Required Measurement:</span>
-                          <span className="font-bold text-[#313030]">{submittedEnquiry.measurement.toLocaleString('en-IN')} sq.ft</span>
+                          <span className="font-bold text-[#252525]">{submittedEnquiry.measurement.toLocaleString('en-IN')} sq.ft</span>
                         </div>
                         <div>
                           <span className="text-[#8C8377] block">Estimated Construction Budget:</span>
-                          <span className="font-bold text-[#C27848] text-sm">
+                          <span className="font-bold text-[#0B2545] text-sm">
                             {typeof submittedEnquiry.estimatedCost === 'number' 
                               ? formatIndianCurrency(submittedEnquiry.estimatedCost)
                               : submittedEnquiry.estimatedCost}
@@ -709,14 +684,14 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                         </div>
                         <div>
                           <span className="text-[#8C8377] block">Preferred Location:</span>
-                          <span className="font-bold text-[#313030]">{submittedEnquiry.location}</span>
+                          <span className="font-bold text-[#252525]">{submittedEnquiry.location}</span>
                         </div>
                       </div>
 
                       {submittedEnquiry.additionalRequirements && (
                         <div className="pt-2 border-t border-[#F0EBE3] text-xs">
                           <span className="text-[#8C8377] block">Additional Requirements:</span>
-                          <p className="text-[#313030] mt-0.5 italic">"{submittedEnquiry.additionalRequirements}"</p>
+                          <p className="text-[#252525] mt-0.5 italic">"{submittedEnquiry.additionalRequirements}"</p>
                         </div>
                       )}
                     </div>
@@ -735,7 +710,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                       <button
                         id="copy-enquiry-btn"
                         onClick={handleCopyEnquiry}
-                        className="w-full sm:w-auto px-5 py-3.5 bg-white border border-[#D8D1C5] hover:bg-[#F5F2EC] text-[#313030] rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2"
+                        className="w-full sm:w-auto px-5 py-3.5 bg-white border border-[#D8D1C5] hover:bg-[#F5F2EC] text-[#252525] rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2"
                       >
                         {copiedText ? <Check className="w-4 h-4 text-emerald-600" /> : <Copy className="w-4 h-4 text-[#7C7469]" />}
                         <span>{copiedText ? 'Copied to Clipboard!' : 'Copy Enquiry Message'}</span>
@@ -743,9 +718,9 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
 
                       <a
                         href={`tel:${COMPANY_INFO.contacts.primaryPhone.replace(/\s+/g, '')}`}
-                        className="w-full sm:w-auto px-5 py-3.5 bg-white border border-[#D8D1C5] hover:bg-[#F5F2EC] text-[#313030] rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2"
+                        className="w-full sm:w-auto px-5 py-3.5 bg-white border border-[#D8D1C5] hover:bg-[#F5F2EC] text-[#252525] rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2"
                       >
-                        <PhoneCall className="w-4 h-4 text-[#C27848]" />
+                        <PhoneCall className="w-4 h-4 text-[#0B2545]" />
                         <span>Call Cavalry Directly</span>
                       </a>
                     </div>
@@ -753,7 +728,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                     <div className="pt-4">
                       <button
                         onClick={handleResetForm}
-                        className="text-xs text-[#7C7469] hover:text-[#313030] underline flex items-center justify-center gap-1 mx-auto"
+                        className="text-xs text-[#7C7469] hover:text-[#252525] underline flex items-center justify-center gap-1 mx-auto"
                       >
                         <RotateCcw className="w-3.5 h-3.5" />
                         <span>Submit another requirement / change measurement</span>
@@ -768,8 +743,8 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                   {/* STEP 2: Select Requirement & Measurement */}
                   <div className="space-y-4">
                     <div className="flex items-center justify-between">
-                      <label className="text-xs font-bold uppercase tracking-wider text-[#313030] flex items-center gap-1.5">
-                        <Building2 className="w-3.5 h-3.5 text-[#C27848]" />
+                      <label className="text-xs font-bold uppercase tracking-wider text-[#252525] flex items-center gap-1.5">
+                        <Building2 className="w-3.5 h-3.5 text-[#0B2545]" />
                         <span>1. Select Service / Pricing Package</span>
                       </label>
                       <span className="text-[11px] text-[#7C7469]">Click any service to adjust rates</span>
@@ -789,12 +764,12 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                             }}
                             className={`p-3 text-left rounded-xl border text-xs font-semibold transition-all flex items-center justify-between gap-2 ${
                               isChosen
-                                ? 'bg-[#313030] text-white border-[#313030] shadow-xs'
-                                : 'bg-white text-[#4A453E] border-[#E2DBCF] hover:border-[#C27848]'
+                                ? 'bg-[#0B2545] text-white border-[#0B2545] shadow-xs'
+                                : 'bg-white text-[#4A453E] border-[#E2DBCF] hover:border-[#0B2545]'
                             }`}
                           >
                             <span className="truncate">{srv.label}</span>
-                            {isChosen && <Check className="w-3.5 h-3.5 text-[#E8A573] shrink-0" />}
+                            {isChosen && <Check className="w-3.5 h-3.5 text-[#93C5FD] shrink-0" />}
                           </button>
                         );
                       })}
@@ -803,15 +778,15 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
 
                   {/* If Client-Custom package is selected: Dedicated Customizer Controls */}
                   {(selectedTierId === 'custom-package' || selectedTierId === 'client-custom' || currentTier.isCustom) && (
-                    <div className="bg-[#FAF5EE] p-5 rounded-2xl border border-[#D5C2AF] space-y-4">
+                    <div className="bg-[#F4F7FA] p-5 rounded-2xl border border-[#D1DCE8] space-y-4">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
-                          <SlidersHorizontal className="w-4 h-4 text-[#8D4B20]" />
-                          <span className="text-xs font-bold uppercase tracking-wider text-[#8D4B20]">
+                          <SlidersHorizontal className="w-4 h-4 text-[#0B2545]" />
+                          <span className="text-xs font-bold uppercase tracking-wider text-[#252525]">
                             Client Customization Configuration
                           </span>
                         </div>
-                        <span className="text-xs font-bold text-[#8D4B20]">100% Bespoke</span>
+                        <span className="text-xs font-bold text-[#0B2545]">100% Bespoke</span>
                       </div>
 
                       {/* Mode switch */}
@@ -821,7 +796,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                           onClick={() => setCustomBudgetMode('rate')}
                           className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
                             customBudgetMode === 'rate'
-                              ? 'bg-[#8D4B20] text-white shadow-xs'
+                              ? 'bg-[#0B2545] text-white shadow-xs'
                               : 'bg-white text-[#5C564E] border border-[#DDD4C7]'
                           }`}
                         >
@@ -832,7 +807,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                           onClick={() => setCustomBudgetMode('target')}
                           className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
                             customBudgetMode === 'target'
-                              ? 'bg-[#8D4B20] text-white shadow-xs'
+                              ? 'bg-[#0B2545] text-white shadow-xs'
                               : 'bg-white text-[#5C564E] border border-[#DDD4C7]'
                           }`}
                         >
@@ -844,7 +819,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                         <div className="bg-white p-4 rounded-xl border border-[#E5DFD5] space-y-3">
                           <div className="flex items-center justify-between">
                             <span className="text-xs text-[#5C564E]">Custom Rate per Sq. Ft:</span>
-                            <span className="text-sm font-bold text-[#8D4B20] font-serif">
+                            <span className="text-sm font-bold text-[#252525] font-serif">
                               ₹{customRatePerSqFt.toLocaleString('en-IN')} / sq.ft
                             </span>
                           </div>
@@ -855,7 +830,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                             step="50"
                             value={customRatePerSqFt}
                             onChange={(e) => setCustomRatePerSqFt(parseInt(e.target.value, 10))}
-                            className="w-full accent-[#8D4B20] cursor-pointer"
+                            className="w-full accent-[#0B2545] cursor-pointer"
                           />
                           <div className="flex justify-between text-[10px] text-[#8C8377]">
                             <span>₹1,600 (Economy)</span>
@@ -867,7 +842,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                         <div className="bg-white p-4 rounded-xl border border-[#E5DFD5] space-y-3">
                           <div className="flex items-center justify-between">
                             <span className="text-xs text-[#5C564E]">Target Budget:</span>
-                            <span className="text-sm font-bold text-[#8D4B20] font-serif">
+                            <span className="text-sm font-bold text-[#252525] font-serif">
                               {formatIndianCurrency(customTargetBudget)}
                             </span>
                           </div>
@@ -879,7 +854,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                                 onClick={() => setCustomTargetBudget(amt)}
                                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold ${
                                   customTargetBudget === amt
-                                    ? 'bg-[#8D4B20] text-white'
+                                    ? 'bg-[#0B2545] text-white'
                                     : 'bg-[#F9F7F4] text-[#4A453E] border border-[#DDD4C7]'
                                 }`}
                               >
@@ -895,11 +870,11 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                   {/* Required Measurement & Dimension Presets */}
                   <div className="space-y-4 pt-4 border-t border-[#EAE4DC]">
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                      <label className="text-xs font-bold uppercase tracking-wider text-[#313030] flex items-center gap-1.5">
-                        <Maximize2 className="w-3.5 h-3.5 text-[#C27848]" />
+                      <label className="text-xs font-bold uppercase tracking-wider text-[#252525] flex items-center gap-1.5">
+                        <Maximize2 className="w-3.5 h-3.5 text-[#0B2545]" />
                         <span>2. Required Measurement (Built-up Area in Sq. Ft.)</span>
                       </label>
-                      <span className="text-xs font-bold text-[#C27848]">
+                      <span className="text-xs font-bold text-[#0B2545]">
                         Active: {measurementSqFt.toLocaleString('en-IN')} sq.ft
                       </span>
                     </div>
@@ -915,13 +890,13 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                             onClick={() => handlePresetSelect(preset.sqft)}
                             className={`p-3 rounded-xl border text-left transition-all ${
                               isPresetActive
-                                ? 'bg-[#EAE4D9] border-[#C27848] ring-1 ring-[#C27848]'
+                                ? 'bg-[#EAE4D9] border-[#0B2545] ring-1 ring-[#0B2545]'
                                 : 'bg-white border-[#E2DBCF] hover:bg-[#F9F7F4]'
                             }`}
                           >
-                            <div className="text-xs font-bold text-[#313030]">{preset.label}</div>
+                            <div className="text-xs font-bold text-[#252525]">{preset.label}</div>
                             <div className="text-[11px] text-[#7C7469]">{preset.sqft} sq.ft</div>
-                            <div className="text-[10px] text-[#C27848] truncate mt-0.5">{preset.popularFor}</div>
+                            <div className="text-[10px] text-[#0B2545] truncate mt-0.5">{preset.popularFor}</div>
                           </button>
                         );
                       })}
@@ -941,7 +916,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                             setMeasurementSqFt(val);
                             setCustomMeasurementInput(val.toString());
                           }}
-                          className="w-full accent-[#C27848] cursor-pointer"
+                          className="w-full accent-[#0B2545] cursor-pointer"
                         />
                       </div>
                       <div className="flex items-center justify-between gap-4">
@@ -953,7 +928,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                             onChange={handleMeasurementChange}
                             min="100"
                             max="50000"
-                            className="w-28 px-3 py-1.5 text-right font-bold text-[#313030] border border-[#D5CCC0] rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-[#C27848]"
+                            className="w-28 px-3 py-1.5 text-right font-bold text-[#252525] border border-[#D5CCC0] rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-[#0B2545]"
                           />
                           <span className="text-xs font-bold text-[#4A453E]">sq.ft</span>
                         </div>
@@ -967,8 +942,8 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                   {/* STEP 3: Enter Customer Details */}
                   <div className="space-y-4 pt-4 border-t border-[#EAE4DC]">
                     <div className="flex items-center justify-between">
-                      <label className="text-xs font-bold uppercase tracking-wider text-[#313030] flex items-center gap-1.5">
-                        <Compass className="w-3.5 h-3.5 text-[#C27848]" />
+                      <label className="text-xs font-bold uppercase tracking-wider text-[#252525] flex items-center gap-1.5">
+                        <Compass className="w-3.5 h-3.5 text-[#0B2545]" />
                         <span>3. Enter Your Details & Submit Enquiry</span>
                       </label>
                       <span className="text-[11px] text-[#7C7469]">Founder-led direct response</span>
@@ -989,7 +964,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                             setCustomerName(e.target.value);
                             if (formErrors.name) setFormErrors({ ...formErrors, name: undefined });
                           }}
-                          className={`w-full px-4 py-2.5 rounded-xl border text-sm text-[#313030] bg-white focus:outline-none focus:ring-2 focus:ring-[#C27848] transition-all ${
+                          className={`w-full px-4 py-2.5 rounded-xl border text-sm text-[#252525] bg-white focus:outline-none focus:ring-2 focus:ring-[#0B2545] transition-all ${
                             formErrors.name ? 'border-red-400 bg-red-50/20' : 'border-[#D5CCC0]'
                           }`}
                         />
@@ -1017,7 +992,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                               setMobileNumber(e.target.value);
                               if (formErrors.mobile) setFormErrors({ ...formErrors, mobile: undefined });
                             }}
-                            className={`w-full px-4 py-2.5 rounded-r-xl border text-sm text-[#313030] bg-white focus:outline-none focus:ring-2 focus:ring-[#C27848] transition-all ${
+                            className={`w-full px-4 py-2.5 rounded-r-xl border text-sm text-[#252525] bg-white focus:outline-none focus:ring-2 focus:ring-[#0B2545] transition-all ${
                               formErrors.mobile ? 'border-red-400 bg-red-50/20' : 'border-[#D5CCC0]'
                             }`}
                           />
@@ -1036,7 +1011,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                       <select
                         value={selectedLocation}
                         onChange={(e) => setSelectedLocation(e.target.value)}
-                        className="w-full px-4 py-2.5 rounded-xl border border-[#D5CCC0] text-sm text-[#313030] bg-white focus:outline-none focus:ring-2 focus:ring-[#C27848]"
+                        className="w-full px-4 py-2.5 rounded-xl border border-[#D5CCC0] text-sm text-[#252525] bg-white focus:outline-none focus:ring-2 focus:ring-[#0B2545]"
                       >
                         {LOCATION_OPTIONS.map((loc, i) => (
                           <option key={i} value={loc}>
@@ -1058,7 +1033,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                           : "e.g. 3-storey G+2 plan with North-facing entrance, modular kitchen with island, target start date in 2 months..."}
                         value={additionalRequirements}
                         onChange={(e) => setAdditionalRequirements(e.target.value)}
-                        className="w-full px-4 py-2.5 rounded-xl border border-[#D5CCC0] text-sm text-[#313030] bg-white focus:outline-none focus:ring-2 focus:ring-[#C27848] resize-none"
+                        className="w-full px-4 py-2.5 rounded-xl border border-[#D5CCC0] text-sm text-[#252525] bg-white focus:outline-none focus:ring-2 focus:ring-[#0B2545] resize-none"
                       />
                     </div>
                   </div>
@@ -1066,14 +1041,14 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                   {/* Submit Enquiry & Launch WhatsApp Action */}
                   <div className="pt-4 border-t border-[#EAE4DC] flex flex-col sm:flex-row items-center justify-between gap-4">
                     <div className="text-xs text-[#6B6359] flex items-center gap-2 text-center sm:text-left">
-                      <ShieldCheck className="w-4 h-4 text-[#C27848] shrink-0" />
+                      <ShieldCheck className="w-4 h-4 text-[#0B2545] shrink-0" />
                       <span>Your contact is confidential. We do not spam or share client records.</span>
                     </div>
 
                     <button
                       id="submit-enquiry-whatsapp-btn"
                       type="submit"
-                      className="w-full sm:w-auto px-8 py-3.5 bg-[#C27848] hover:bg-[#ab663a] text-white rounded-xl text-sm font-bold uppercase tracking-wider shadow-sm transition-all flex items-center justify-center gap-2 shrink-0"
+                      className="w-full sm:w-auto px-8 py-3.5 bg-[#0B2545] hover:bg-[#153A66] text-white rounded-xl text-sm font-bold uppercase tracking-wider shadow-sm transition-all flex items-center justify-center gap-2 shrink-0"
                     >
                       <Send className="w-4 h-4" />
                       <span>Submit Enquiry & WhatsApp</span>
@@ -1090,30 +1065,30 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
         {/* Assurance / Trust Footnote */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
           <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-[#EAE4DC]">
-            <div className="w-9 h-9 rounded-full bg-[#EAE4D9] text-[#8D4B20] flex items-center justify-center mx-auto mb-3">
-              <ShieldCheck className="w-4 h-4 text-[#C27848]" />
+            <div className="w-9 h-9 rounded-full bg-[#0B2545]/10 text-[#0B2545] flex items-center justify-center mx-auto mb-3">
+              <ShieldCheck className="w-4 h-4 text-[#0B2545]" />
             </div>
-            <h4 className="text-sm font-bold text-[#313030] font-serif">Itemized Stage Billing</h4>
+            <h4 className="text-sm font-bold text-[#252525] font-serif">Itemized Stage Billing</h4>
             <p className="text-xs text-[#6B6359] mt-1">
               Payments strictly aligned with verified physical milestones: Foundation, Slab, Masonry, Finishing.
             </p>
           </div>
 
           <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-[#EAE4DC]">
-            <div className="w-9 h-9 rounded-full bg-[#EAE4D9] text-[#8D4B20] flex items-center justify-center mx-auto mb-3">
-              <Clock className="w-4 h-4 text-[#C27848]" />
+            <div className="w-9 h-9 rounded-full bg-[#0B2545]/10 text-[#0B2545] flex items-center justify-center mx-auto mb-3">
+              <Clock className="w-4 h-4 text-[#0B2545]" />
             </div>
-            <h4 className="text-sm font-bold text-[#313030] font-serif">Fast 24-Hour Quotation</h4>
+            <h4 className="text-sm font-bold text-[#252525] font-serif">Fast 24-Hour Quotation</h4>
             <p className="text-xs text-[#6B6359] mt-1">
               Receive comprehensive architectural estimates and civil specifications within 24 hours of enquiry.
             </p>
           </div>
 
           <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-[#EAE4DC]">
-            <div className="w-9 h-9 rounded-full bg-[#EAE4D9] text-[#8D4B20] flex items-center justify-center mx-auto mb-3">
-              <MessageCircle className="w-4 h-4 text-[#C27848]" />
+            <div className="w-9 h-9 rounded-full bg-[#0B2545]/10 text-[#0B2545] flex items-center justify-center mx-auto mb-3">
+              <MessageCircle className="w-4 h-4 text-[#0B2545]" />
             </div>
-            <h4 className="text-sm font-bold text-[#313030] font-serif">Founder-Level Cavalry Desk</h4>
+            <h4 className="text-sm font-bold text-[#252525] font-serif">Founder-Level Cavalry Desk</h4>
             <p className="text-xs text-[#6B6359] mt-1">
               Direct access to Sharath Kumar A N and Palaksha on WhatsApp for technical questions and site reviews.
             </p>
@@ -1147,7 +1122,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
               />
             </div>
             <div className="p-5 bg-white">
-              <h4 className="font-serif text-lg font-bold text-[#313030]">{previewModalImage.title}</h4>
+              <h4 className="font-serif text-lg font-bold text-[#252525]">{previewModalImage.title}</h4>
               <p className="text-xs text-[#6B6359] mt-1">{previewModalImage.subtitle}</p>
             </div>
           </div>

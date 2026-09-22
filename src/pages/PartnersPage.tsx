@@ -25,7 +25,7 @@ export const PartnersPage: React.FC<PartnersPageProps> = ({ onNavigate, onOpenCo
               PARTNERING WITH INDUSTRY LEADERS
             </h1>
             <p className="mt-4 inline font-sans text-base sm:text-lg leading-snug text-center text-[#313030] cursor-crosshair">
-              We never compromise structural longevity for short-term margins. Avani Nivasa specifies certified inputs from global and national leaders in structural concrete, ductile steel, architectural glass, and luxury fittings.
+              We never compromise structural longevity for short-term margins. Avani Nivas specifies certified inputs from global and national leaders in structural concrete, ductile steel, architectural glass, and luxury fittings.
             </p>
           </ScrollReveal>
         </div>
@@ -75,7 +75,7 @@ export const PartnersPage: React.FC<PartnersPageProps> = ({ onNavigate, onOpenCo
               Rigorous Vendor Verification
             </h2>
             <p className="mt-3 text-base text-[#5C564E]">
-              Every vendor in the Avani Nivasa network passes strict batch inspection and compliance criteria.
+              Every vendor in the Avani Nivas network passes strict batch inspection and compliance criteria.
             </p>
           </ScrollReveal>
 

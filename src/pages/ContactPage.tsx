@@ -52,7 +52,7 @@ export const ContactPage: React.FC = () => {
 
   const handleWhatsAppSend = () => {
     const rawNum = COMPANY_INFO.contacts.whatsappNumber;
-    const msg = `*Avani Nivasa by Gowdru Realcom Enquiry*%0A` +
+    const msg = `*Avani Nivas by Gowdru Realcom Enquiry*%0A` +
       `*Name:* ${encodeURIComponent(formData.name || 'Valued Client')}%0A` +
       `*Phone:* ${encodeURIComponent(formData.phone || 'Not provided')}%0A` +
       `*Email:* ${encodeURIComponent(formData.email || 'Not provided')}%0A` +
@@ -76,13 +76,13 @@ export const ContactPage: React.FC = () => {
       <section className="py-16 sm:py-24 bg-[#F5F2EC] border-b border-[#EAE4DC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal className="max-w-3xl mx-auto">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#C27848]">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#0B2545]">
               Connect With Your Construction Cavalry
             </span>
-            <h1 className="mt-4 block font-serif text-3xl sm:text-4xl lg:text-[54.0633px] leading-none text-center text-[#313030] cursor-crosshair">
+            <h1 className="mt-4 block font-serif text-3xl sm:text-4xl lg:text-[54.0633px] leading-none text-center text-[#252525] cursor-crosshair">
               Initiate Your Architectural Consultation
             </h1>
-            <p className="mt-4 inline font-sans text-base sm:text-lg leading-snug text-center text-[#313030] cursor-crosshair">
+            <p className="mt-4 inline font-sans text-base sm:text-lg leading-snug text-center text-[#252525] cursor-crosshair">
               Direct leadership accessibility, transparent BOQ estimates, and zero-compromise engineering for your home or facility.
             </p>
           </ScrollReveal>
@@ -99,7 +99,7 @@ export const ContactPage: React.FC = () => {
                 <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-700 mx-auto flex items-center justify-center">
                   <CheckCircle2 className="w-9 h-9" />
                 </div>
-                <h2 className="text-2xl font-bold font-serif text-[#313030]">
+                <h2 className="text-2xl font-bold font-serif text-[#252525]">
                   Enquiry Transmitted Successfully
                 </h2>
                 <p className="text-sm text-[#5C564E] max-w-md mx-auto leading-relaxed">
@@ -107,7 +107,7 @@ export const ContactPage: React.FC = () => {
                 </p>
 
                 <div className="p-5 bg-[#F5F2EC] rounded-xl text-xs text-[#5C564E] max-w-md mx-auto text-left space-y-1">
-                  <div className="font-semibold text-[#313030]">Summary of Details:</div>
+                  <div className="font-semibold text-[#252525]">Summary of Details:</div>
                   <div>Service: {formData.serviceRequired}</div>
                   <div>Location: {formData.location}</div>
                   <div>Budget: {formData.budgetRange}</div>
@@ -125,7 +125,7 @@ export const ContactPage: React.FC = () => {
 
                   <button
                     onClick={() => setIsSubmitted(false)}
-                    className="w-full sm:w-auto px-6 py-3 bg-[#F5F2EC] text-[#313030] text-xs font-bold uppercase tracking-wider rounded-md hover:bg-[#EAE4D9] transition-colors"
+                    className="w-full sm:w-auto px-6 py-3 bg-[#F5F2EC] text-[#252525] text-xs font-bold uppercase tracking-wider rounded-md hover:bg-[#EAE4D9] transition-colors"
                   >
                     Submit Another Query
                   </button>
@@ -134,7 +134,7 @@ export const ContactPage: React.FC = () => {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <h2 className="text-xl font-bold text-[#313030] font-serif mb-1">
+                  <h2 className="text-xl font-bold text-[#252525] font-serif mb-1">
                     Send Direct Project Inquiry
                   </h2>
                   <p className="text-xs text-[#7C7469]">
@@ -154,7 +154,7 @@ export const ContactPage: React.FC = () => {
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="e.g. Ramesh Gowda"
-                      className="w-full px-3.5 py-2.5 bg-[#FAF8F5] border border-[#D8D1C5] rounded-lg text-sm text-[#313030] focus:outline-none focus:ring-2 focus:ring-[#C27848]"
+                      className="w-full px-3.5 py-2.5 bg-[#FAF8F5] border border-[#D8D1C5] rounded-xl text-sm text-[#252525] focus:outline-none focus:ring-2 focus:ring-[#0B2545]"
                     />
                   </div>
 
@@ -169,7 +169,7 @@ export const ContactPage: React.FC = () => {
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       placeholder="+91 98765 43210"
-                      className="w-full px-3.5 py-2.5 bg-[#FAF8F5] border border-[#D8D1C5] rounded-lg text-sm text-[#313030] focus:outline-none focus:ring-2 focus:ring-[#C27848]"
+                      className="w-full px-3.5 py-2.5 bg-[#FAF8F5] border border-[#D8D1C5] rounded-xl text-sm text-[#252525] focus:outline-none focus:ring-2 focus:ring-[#0B2545]"
                     />
                   </div>
                 </div>
@@ -185,7 +185,7 @@ export const ContactPage: React.FC = () => {
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder="your.email@example.com"
-                      className="w-full px-3.5 py-2.5 bg-[#FAF8F5] border border-[#D8D1C5] rounded-lg text-sm text-[#313030] focus:outline-none focus:ring-2 focus:ring-[#C27848]"
+                      className="w-full px-3.5 py-2.5 bg-[#FAF8F5] border border-[#D8D1C5] rounded-xl text-sm text-[#252525] focus:outline-none focus:ring-2 focus:ring-[#0B2545]"
                     />
                   </div>
 
@@ -197,7 +197,7 @@ export const ContactPage: React.FC = () => {
                       id="contact-service"
                       value={formData.serviceRequired}
                       onChange={(e) => setFormData({ ...formData, serviceRequired: e.target.value })}
-                      className="w-full px-3.5 py-2.5 bg-[#FAF8F5] border border-[#D8D1C5] rounded-lg text-sm text-[#313030] focus:outline-none focus:ring-2 focus:ring-[#C27848]"
+                      className="w-full px-3.5 py-2.5 bg-[#FAF8F5] border border-[#D8D1C5] rounded-xl text-sm text-[#252525] focus:outline-none focus:ring-2 focus:ring-[#0B2545]"
                     >
                       {SERVICES.map((s) => (
                         <option key={s.id} value={s.title}>
@@ -224,7 +224,7 @@ export const ContactPage: React.FC = () => {
                       value={formData.location}
                       onChange={(e) => setFormData({ ...formData, location: e.target.value })}
                       placeholder="e.g. Tumkur, Bengaluru, Hassan, Balangir"
-                      className="w-full px-3.5 py-2.5 bg-[#FAF8F5] border border-[#D8D1C5] rounded-lg text-sm text-[#313030] focus:outline-none focus:ring-2 focus:ring-[#C27848]"
+                      className="w-full px-3.5 py-2.5 bg-[#FAF8F5] border border-[#D8D1C5] rounded-xl text-sm text-[#252525] focus:outline-none focus:ring-2 focus:ring-[#0B2545]"
                     />
                   </div>
 
@@ -236,7 +236,7 @@ export const ContactPage: React.FC = () => {
                       id="contact-budget"
                       value={formData.budgetRange}
                       onChange={(e) => setFormData({ ...formData, budgetRange: e.target.value })}
-                      className="w-full px-3.5 py-2.5 bg-[#FAF8F5] border border-[#D8D1C5] rounded-lg text-sm text-[#313030] focus:outline-none focus:ring-2 focus:ring-[#C27848]"
+                      className="w-full px-3.5 py-2.5 bg-[#FAF8F5] border border-[#D8D1C5] rounded-xl text-sm text-[#252525] focus:outline-none focus:ring-2 focus:ring-[#0B2545]"
                     >
                       <option value="Under ₹30 Lakhs (Single Floor / Interior)">Under ₹30 Lakhs (Single Floor / Interior)</option>
                       <option value="₹30 Lakhs - ₹60 Lakhs (Renovation/Additions)">₹30 Lakhs - ₹60 Lakhs (Renovation/Additions)</option>
@@ -258,7 +258,7 @@ export const ContactPage: React.FC = () => {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Tell us about your plot size, floors planned, style preferences, or current property condition..."
-                    className="w-full px-3.5 py-2.5 bg-[#FAF8F5] border border-[#D8D1C5] rounded-lg text-sm text-[#313030] focus:outline-none focus:ring-2 focus:ring-[#C27848]"
+                    className="w-full px-3.5 py-2.5 bg-[#FAF8F5] border border-[#D8D1C5] rounded-lg text-sm text-[#252525] focus:outline-none focus:ring-2 focus:ring-[#0B2545]"
                   />
                 </div>
 
@@ -266,7 +266,7 @@ export const ContactPage: React.FC = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full sm:flex-1 py-4 bg-[#313030] hover:bg-[#C27848] text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors flex items-center justify-center gap-2 shadow-sm"
+                    className="w-full sm:flex-1 py-4 bg-[#0B2545] hover:bg-[#153A66] text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-colors flex items-center justify-center gap-2 shadow-sm"
                   >
                     <Send className="w-4 h-4" />
                     <span>{isSubmitting ? 'Transmitting...' : 'SUBMIT ENQUIRY'}</span>
@@ -275,7 +275,7 @@ export const ContactPage: React.FC = () => {
                   <button
                     type="button"
                     onClick={handleWhatsAppSend}
-                    className="w-full sm:w-auto px-6 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors flex items-center justify-center gap-2 shadow-sm"
+                    className="w-full sm:w-auto px-6 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-colors flex items-center justify-center gap-2 shadow-sm"
                   >
                     <MessageCircle className="w-4 h-4" />
                     <span>INSTANT WHATSAPP</span>
@@ -283,7 +283,7 @@ export const ContactPage: React.FC = () => {
                 </div>
 
                 <div className="pt-2 text-center text-[11px] text-[#7C7469] flex items-center justify-center gap-1.5">
-                  <Shield className="w-3.5 h-3.5 text-[#C27848]" />
+                  <Shield className="w-3.5 h-3.5 text-[#0B2545]" />
                   <span>Confidential inquiry directly received by Gowdru Realcom leadership.</span>
                 </div>
               </form>
@@ -293,36 +293,36 @@ export const ContactPage: React.FC = () => {
           {/* Right Column: Direct Contact Details & Regional Info */}
           <ScrollReveal delay={0.2} className="lg:col-span-5 space-y-8">
             {/* Corporate Office Card */}
-            <div className="bg-[#2A2724] text-[#EFEAE2] p-8 rounded-2xl border border-[#3E3831] space-y-6">
+            <div className="bg-[#0B2545] text-[#EFEAE2] p-8 rounded-2xl border border-[#173A66] space-y-6 shadow-md">
               <div>
-                <span className="text-xs uppercase tracking-widest text-[#C27848] font-bold">
+                <span className="text-xs uppercase tracking-widest text-[#93C5FD] font-bold">
                   Direct Headquarters
                 </span>
                 <h2 className="text-2xl font-bold font-serif text-white mt-1">
-                  Avani Nivasa Corporate Studio
+                  Avani Nivas Corporate Studio
                 </h2>
-                <p className="text-xs text-[#BDB5AA] mt-1">
+                <p className="text-xs text-[#CBD5E1] mt-1">
                   Gowdru Realcom Private Limited
                 </p>
               </div>
 
-              <div className="space-y-4 text-sm text-[#D8D1C5]">
+              <div className="space-y-4 text-sm text-[#E2E8F0]">
                 <div className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-[#C27848] shrink-0 mt-0.5" />
+                  <MapPin className="w-5 h-5 text-[#93C5FD] shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-white block text-xs uppercase tracking-wider">Office Address</strong>
-                    <p className="text-xs text-[#BDB5AA] mt-0.5 leading-relaxed">
+                    <p className="text-xs text-[#CBD5E1] mt-0.5 leading-relaxed">
                       {COMPANY_INFO.address.street},<br />
                       {COMPANY_INFO.address.city}, {COMPANY_INFO.address.state} - {COMPANY_INFO.address.pincode}
                     </p>
-                    <span className="text-[11px] text-[#C27848] block mt-1">
+                    <span className="text-[11px] text-[#93C5FD] block mt-1">
                       {COMPANY_INFO.address.landmark}
                     </span>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Phone className="w-5 h-5 text-[#C27848] shrink-0 mt-0.5" />
+                  <Phone className="w-5 h-5 text-[#93C5FD] shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-white block text-xs uppercase tracking-wider">Telephone</strong>
                     <div className="mt-0.5 space-y-1 text-xs">
@@ -341,7 +341,7 @@ export const ContactPage: React.FC = () => {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Mail className="w-5 h-5 text-[#C27848] shrink-0 mt-0.5" />
+                  <Mail className="w-5 h-5 text-[#93C5FD] shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-white block text-xs uppercase tracking-wider">Official Email</strong>
                     <div className="mt-0.5 space-y-0.5 text-xs">
@@ -360,19 +360,19 @@ export const ContactPage: React.FC = () => {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Clock className="w-5 h-5 text-[#C27848] shrink-0 mt-0.5" />
+                  <Clock className="w-5 h-5 text-[#93C5FD] shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-white block text-xs uppercase tracking-wider">Working Hours</strong>
-                    <p className="text-xs text-[#BDB5AA] mt-0.5">
+                    <p className="text-xs text-[#CBD5E1] mt-0.5">
                       {COMPANY_INFO.contacts.workingHours}
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="pt-4 border-t border-[#3E3831] flex items-center justify-between">
-                <span className="text-xs text-[#A89E92]">Directors: Sharath Kumar A N • Palaksha</span>
-                <span className="text-xs text-[#C27848] font-bold">15+ Yrs</span>
+              <div className="pt-4 border-t border-[#1E4578] flex items-center justify-between">
+                <span className="text-xs text-[#94A3B8]">Directors: Sharath Kumar A N • Palaksha</span>
+                <span className="text-xs text-[#93C5FD] font-bold">15+ Yrs</span>
               </div>
             </div>
 
@@ -380,14 +380,14 @@ export const ContactPage: React.FC = () => {
             <div className="bg-white p-6 rounded-2xl border border-[#E0D8CC] shadow-xs space-y-4">
               <div className="flex items-center justify-between">
                 <div>
-                  <h3 className="text-base font-bold text-[#313030] font-serif">Location & Directions</h3>
+                  <h3 className="text-base font-bold text-[#252525] font-serif">Location & Directions</h3>
                   <p className="text-xs text-[#7C7469]">Mallathahalli, West Bengaluru 560056</p>
                 </div>
                 <a
                   href="https://www.google.com/maps/search/?api=1&query=Mallathahalli+Bengaluru+560056"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C27848] hover:text-[#935229] transition-colors"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0B2545] hover:text-[#153A66] transition-colors"
                 >
                   <Navigation className="w-3.5 h-3.5" />
                   <span>Google Maps</span>
@@ -398,7 +398,7 @@ export const ContactPage: React.FC = () => {
               {/* Map visual preview iframe via OpenStreetMap */}
               <div className="w-full h-52 rounded-xl overflow-hidden border border-[#E0D8CC] relative bg-[#EFEAE2]">
                 <iframe
-                  title="Avani Nivasa Gowdru Realcom Location Map"
+                  title="Avani Nivas Gowdru Realcom Location Map"
                   src="https://www.openstreetmap.org/export/embed.html?bbox=77.4920%2C12.9560%2C77.5130%2C12.9730&layer=mapnik&marker=12.9647%2C77.5026"
                   className="w-full h-full border-0"
                   loading="lazy"
@@ -411,7 +411,7 @@ export const ContactPage: React.FC = () => {
                 <button
                   type="button"
                   onClick={handleCopyAddress}
-                  className="flex items-center justify-center gap-1.5 px-3 py-2 bg-[#F5F2EC] hover:bg-[#EAE4D9] text-[#313030] text-xs font-bold rounded-lg transition-colors border border-[#E0D8CC]"
+                  className="flex items-center justify-center gap-1.5 px-3 py-2 bg-[#F5F2EC] hover:bg-[#EAE4D9] text-[#252525] text-xs font-bold rounded-lg transition-colors border border-[#E0D8CC]"
                 >
                   {copiedAddress ? (
                     <>
@@ -429,7 +429,7 @@ export const ContactPage: React.FC = () => {
                   href="https://www.google.com/maps/dir/?api=1&destination=Mallathahalli+Bengaluru+Karnataka+560056"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-1.5 px-3 py-2 bg-[#313030] hover:bg-[#C27848] text-white text-xs font-bold rounded-lg transition-colors text-center"
+                  className="flex items-center justify-center gap-1.5 px-3 py-2 bg-[#0B2545] hover:bg-[#153A66] text-white text-xs font-bold rounded-xl transition-colors text-center"
                 >
                   <Navigation className="w-3.5 h-3.5" />
                   <span>Get Driving Route</span>
@@ -438,7 +438,7 @@ export const ContactPage: React.FC = () => {
 
               <div className="bg-[#FAF8F5] p-3 rounded-lg border border-[#ECE7DE] text-[11px] text-[#7C7469] space-y-1">
                 <p>
-                  <strong className="text-[#313030]">Key Landmarks:</strong> Adarsha Layout, Mallathahalli Lake, Bangalore University Jnana Bharathi Campus.
+                  <strong className="text-[#252525]">Key Landmarks:</strong> Adarsha Layout, Mallathahalli Lake, Bangalore University Jnana Bharathi Campus.
                 </p>
                 <p className="text-[10px] text-[#A89E92]">
                   Serving Karnataka (Tumkur, Bengaluru, Mysuru, Hassan), Orissa, and Chhattisgarh.

@@ -1,11 +1,11 @@
 import { ProcessStep, TestimonialItem } from '../types';
 
 export const COMPANY_INFO = {
-  legalName: 'Gowdru Realcom Private Limited',
+  legalName: 'Avani Nivas By Gowdru Realcom Private Limited',
   brandName: 'Gowdru Realcom',
-  flagshipBrand: 'Avani Nivasa',
+  flagshipBrand: 'Avani Nivas',
   foundationHeadline: 'Our foundation: built on trust and excellence',
-  foundationStory: 'Founded by visionary leaders Sharath Kumar A N and Palaksha, Avani Nivasa by Gowdru Realcom private limited is a premier construction company with a proven track record of delivering exceptional projects. With over 15 years of industry experience and a portfolio of 200+ satisfied clients in Karnataka, Orissa and Chhattisgarh, we are committed to redefining the construction landscape.',
+  foundationStory: 'Founded by visionary leaders Sharath Kumar A N and Palaksha, Avani Nivas by Gowdru Realcom private limited is a premier construction company with a proven track record of delivering exceptional projects. With over 15 years of industry experience and a portfolio of 200+ satisfied clients in Karnataka, Orissa and Chhattisgarh, we are committed to redefining the construction landscape.',
   coreValuesStory: 'Our core values revolve around elegance, care, and customization. We believe in crafting spaces that not only meet your functional needs but also reflect your unique style and personality. From initial design concepts to final construction, we are dedicated to providing a seamless and personalized experience.',
   tagline: "From Blueprint to Reality: We're Your Construction Cavalry.",
   subTagline: 'Architectural Excellence, Custom Home Craftsmanship & Refined Interior Transformations',
@@ -63,7 +63,7 @@ export const COMPANY_INFO = {
     primaryPhone: '+91 9916337333',
     secondaryPhone: '+91 9916339333',
     primaryEmail: 'info@gowdrurealcom.com',
-    secondaryEmail: 'info@avaninivasa.com',
+    secondaryEmail: 'info@avaninivas.com',
     whatsappNumber: '919916337333',
     whatsappDisplay: '+91 99163 37333',
     workingHours: 'Mon – Sat: 9:30 AM – 7:00 PM (IST)'
@@ -180,33 +180,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
   }
 ];
 
-export const TRUST_PILLARS = [
-  {
-    title: '15+ Years Industry Provenance',
-    description: 'Over 15 years of industry experience delivering exceptional projects in Karnataka, Orissa, and Chhattisgarh.',
-    iconName: 'ShieldCheck'
-  },
-  {
-    title: 'Direct Founder Oversight',
-    description: 'Visionary leaders Sharath Kumar A N and Palaksha personally inspect construction milestones, guaranteeing accountability.',
-    iconName: 'Users'
-  },
-  {
-    title: 'Transparent Cost Analysis',
-    description: 'Detailed, line-item pricing without surprise escalations or hidden contingencies. Clear understanding of the budget.',
-    iconName: 'Receipt'
-  },
-  {
-    title: 'Paramount Safety Protocols',
-    description: 'We strictly adhere to safety protocols throughout every project, ensuring a secure and disciplined work environment.',
-    iconName: 'Hammer'
-  },
-  {
-    title: 'Care, Elegance & Customization',
-    description: 'We believe in crafting spaces that not only meet your functional needs but also reflect your unique style and personality.',
-    iconName: 'Sparkles'
-  }
-];
+
 
 export const TESTIMONIALS: TestimonialItem[] = [
   {

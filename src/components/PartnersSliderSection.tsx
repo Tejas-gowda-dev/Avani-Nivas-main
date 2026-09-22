@@ -77,7 +77,7 @@ export const PartnersSliderSection: React.FC<PartnersSliderSectionProps> = ({
           </h2>
 
           <p className="mt-5 text-base sm:text-lg text-[#5A534A] leading-relaxed max-w-3xl mx-auto">
-            Avani Nivasa collaborates with certified structural, civil, electrical, plumbing, and interior manufacturers—guaranteeing 100% genuine specifications, milestone-tested compliance, and lifetime build resilience for every turnkey residence.
+            Avani Nivas collaborates with certified structural, civil, electrical, plumbing, and interior manufacturers—guaranteeing 100% genuine specifications, milestone-tested compliance, and lifetime build resilience for every turnkey residence.
           </p>
 
           {/* Quick interactive note */}

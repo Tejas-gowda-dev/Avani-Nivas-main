@@ -27,11 +27,11 @@ export const PricingPage: React.FC<PricingPageProps> = ({ onNavigate, onOpenCons
     },
     {
       q: 'Do you construct homes in Balangir Orissa or other regional hubs?',
-      a: 'Yes! Gowdru Realcom / Avani Nivasa has delivered multiple successful residential and commercial turnkey projects in Balangir Orissa and Chhattisgarh, in addition to our core hubs in Bengaluru, Tumkur, Mysuru, and Hassan.'
+      a: 'Yes! Gowdru Realcom / Avani Nivas has delivered multiple successful residential and commercial turnkey projects in Balangir Orissa and Chhattisgarh, in addition to our core hubs in Bengaluru, Tumkur, Mysuru, and Hassan.'
     },
     {
       q: 'What warranties and guarantees are provided?',
-      a: 'Every turnkey home built by Avani Nivasa comes with a 15-year structural warranty, a 5-year seepage/waterproofing guarantee, and 1-year complimentary maintenance support post-handover.'
+      a: 'Every turnkey home built by Avani Nivas comes with a 15-year structural warranty, a 5-year seepage/waterproofing guarantee, and 1-year complimentary maintenance support post-handover.'
     }
   ];
 
@@ -83,9 +83,9 @@ export const PricingPage: React.FC<PricingPageProps> = ({ onNavigate, onOpenCons
                   <th className="p-4 sm:p-5 font-bold text-[#313030] min-w-[160px]">Feature / Specification</th>
                   <th className="p-4 sm:p-5 font-bold text-[#313030] min-w-[150px]">BASIC PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">₹1,950 / sq.ft</span></th>
                   <th className="p-4 sm:p-5 font-bold text-[#313030] min-w-[150px]">PREMIUM PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">₹2,150 / sq.ft</span></th>
-                  <th className="p-4 sm:p-5 font-bold text-[#C27848] bg-[#FAF5EE] min-w-[160px]">ROYAL PACKAGE<br /><span className="text-[11px] font-normal text-[#C27848]">₹2,400 / sq.ft (Flagship)</span></th>
+                  <th className="p-4 sm:p-5 font-bold text-[#313030] min-w-[160px]">ROYAL PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">₹2,400 / sq.ft</span></th>
                   <th className="p-4 sm:p-5 font-bold text-[#313030] min-w-[150px]">LUXURY PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">₹2,950 / sq.ft</span></th>
-                  <th className="p-4 sm:p-5 font-bold text-[#8D4B20] bg-[#FAF7F2] min-w-[160px]">CUSTOMIZED CLIENT PACKAGE<br /><span className="text-[11px] font-normal text-[#8D4B20]">Custom Quote</span></th>
+                  <th className="p-4 sm:p-5 font-bold text-[#313030] min-w-[160px]">CUSTOMIZED CLIENT PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">Custom Quote</span></th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[#EFEAE2] text-[#4A453E]">
@@ -93,65 +93,65 @@ export const PricingPage: React.FC<PricingPageProps> = ({ onNavigate, onOpenCons
                   <td className="p-4 font-semibold text-[#313030]">TMT Steel Grade</td>
                   <td className="p-4">Fe 500 Grade TMT</td>
                   <td className="p-4">Tata / JSW Fe 550 TMT</td>
-                  <td className="p-4 bg-[#FAF5EE] font-semibold text-[#313030]">Tata Tiscon Fe 550D</td>
+                  <td className="p-4 font-semibold text-[#313030]">Tata Tiscon Fe 550D</td>
                   <td className="p-4">Tata Tiscon Super 550D</td>
-                  <td className="p-4 bg-[#FAF7F2] font-semibold text-[#8D4B20]">Client Choice (Tata / JSW)</td>
+                  <td className="p-4">Client Choice (Tata / JSW)</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold text-[#313030]">Cement Grade</td>
                   <td className="p-4">Grade 43/53 PPC</td>
                   <td className="p-4">UltraTech / ACC 53 Grade</td>
-                  <td className="p-4 bg-[#FAF5EE] font-semibold text-[#313030]">UltraTech / ACC 53 Grade</td>
+                  <td className="p-4 font-semibold text-[#313030]">UltraTech / ACC 53 Grade</td>
                   <td className="p-4">UltraTech Super Premium</td>
-                  <td className="p-4 bg-[#FAF7F2] font-semibold text-[#8D4B20]">Client Choice (UltraTech / ACC)</td>
+                  <td className="p-4">Client Choice (UltraTech / ACC)</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold text-[#313030]">Modular Kitchen</td>
                   <td className="p-4 text-[#8C8377]">Granite counter only</td>
                   <td className="p-4 text-[#8C8377]">Granite counter + provision</td>
-                  <td className="p-4 bg-[#FAF5EE] text-[#128C7E] font-semibold">Included (Acrylic / Laminate)</td>
+                  <td className="p-4 text-[#128C7E] font-semibold">Included (Acrylic / Laminate)</td>
                   <td className="p-4 text-[#128C7E] font-semibold">Included (PU / Quartz Island)</td>
-                  <td className="p-4 bg-[#FAF7F2] text-[#128C7E] font-semibold">100% Customized to Specs</td>
+                  <td className="p-4 text-[#128C7E] font-semibold">100% Customized to Specs</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold text-[#313030]">Bedroom Wardrobes</td>
                   <td className="p-4 text-[#8C8377]">Optional add-on</td>
                   <td className="p-4 text-[#8C8377]">Optional add-on</td>
-                  <td className="p-4 bg-[#FAF5EE] text-[#128C7E] font-semibold">Included (Master & 2nd Bed)</td>
+                  <td className="p-4 text-[#128C7E] font-semibold">Included (Master & 2nd Bed)</td>
                   <td className="p-4 text-[#128C7E] font-semibold">Included (All Bedrooms + Walk-in)</td>
-                  <td className="p-4 bg-[#FAF7F2] text-[#128C7E] font-semibold">Custom Carpentry & Design</td>
+                  <td className="p-4 text-[#128C7E] font-semibold">Custom Carpentry & Design</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold text-[#313030]">Flooring</td>
                   <td className="p-4">Vitrified tiles (2x2)</td>
                   <td className="p-4">Somany/Kajaria (4x2 & 2x2)</td>
-                  <td className="p-4 bg-[#FAF5EE] font-semibold text-[#313030]">Kajaria/Somany (4x2 & 2x2)</td>
+                  <td className="p-4 font-semibold text-[#313030]">Kajaria/Somany (4x2 & 2x2)</td>
                   <td className="p-4">Italian Marble / Granite</td>
-                  <td className="p-4 bg-[#FAF7F2] font-semibold text-[#8D4B20]">Marble, Granite or Tiles</td>
+                  <td className="p-4">Marble, Granite or Tiles</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold text-[#313030]">Sanitary & Bath Fittings</td>
                   <td className="p-4">Cera / Hindware</td>
                   <td className="p-4">Jaquar Continental</td>
-                  <td className="p-4 bg-[#FAF5EE] font-semibold text-[#313030]">Jaquar Continental / Essco</td>
+                  <td className="p-4 font-semibold text-[#313030]">Jaquar Continental / Essco</td>
                   <td className="p-4">Grohe / Kohler Designer</td>
-                  <td className="p-4 bg-[#FAF7F2] font-semibold text-[#8D4B20]">Kohler / Grohe / Jaquar</td>
+                  <td className="p-4">Kohler / Grohe / Jaquar</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold text-[#313030]">Architectural 3D Elevation</td>
                   <td className="p-4">2D Floor Plan</td>
                   <td className="p-4">3D Exterior Elevation</td>
-                  <td className="p-4 bg-[#FAF5EE] text-[#128C7E] font-semibold">3D Exterior + Interior Plan</td>
+                  <td className="p-4 text-[#128C7E] font-semibold">3D Exterior + Interior Plan</td>
                   <td className="p-4 text-[#128C7E] font-semibold">Complete 3D VR Walkthrough</td>
-                  <td className="p-4 bg-[#FAF7F2] text-[#128C7E] font-semibold">Full Custom 3D & Structural</td>
+                  <td className="p-4 text-[#128C7E] font-semibold">Full Custom 3D & Structural</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold text-[#313030]">Structural Warranty</td>
                   <td className="p-4">10 Years</td>
                   <td className="p-4">15 Years</td>
-                  <td className="p-4 bg-[#FAF5EE] font-bold text-[#C27848]">15 Years</td>
-                  <td className="p-4 font-bold text-[#C27848]">15 Years + Lifelong Desk</td>
-                  <td className="p-4 bg-[#FAF7F2] font-bold text-[#8D4B20]">15 Years + Custom Terms</td>
+                  <td className="p-4 font-bold text-[#313030]">15 Years</td>
+                  <td className="p-4 font-bold text-[#313030]">15 Years + Lifelong Desk</td>
+                  <td className="p-4 font-bold text-[#313030]">15 Years + Custom Terms</td>
                 </tr>
               </tbody>
             </table>
