@@ -112,12 +112,12 @@ export const Navbar: React.FC<NavbarProps> = ({
             </button>
           </div>
 
-          {/* Mobile Hamburger Toggle */}
+       {/* Mobile Hamburger Toggle */}
           <div className="flex items-center gap-1.5 sm:gap-2 lg:hidden">
             <button
               id="mobile-consultation-quick-btn"
               onClick={onOpenConsultation}
-              className="px-2 sm:px-2.5 py-1.5 bg-[#C27848] text-white text-[10px] sm:text-[11px] font-semibold uppercase rounded-md tracking-wider whitespace-nowrap"
+              className="px-2.5 sm:px-3 py-1.5 bg-[#0B2545] text-white text-[10px] sm:text-[11px] font-bold uppercase rounded-lg tracking-wider whitespace-nowrap hover:bg-[#153A66] transition-colors"
             >
               Consult
             </button>
@@ -126,7 +126,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label={mobileMenuOpen ? 'Close Menu' : 'Open Menu'}
               aria-expanded={mobileMenuOpen}
-              className="p-2 sm:p-2.5 rounded-lg text-[#2A2724] hover:bg-[#EFEAE2] transition-colors focus:outline-none focus:ring-2 focus:ring-[#C27848]"
+              className="p-2 sm:p-2.5 rounded-lg text-[#0B2545] hover:bg-[#EFEAE2] transition-colors focus:outline-none focus:ring-2 focus:ring-[#0B2545]"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -148,13 +148,14 @@ export const Navbar: React.FC<NavbarProps> = ({
                   key={link.id}
                   id={`mobile-nav-${link.id}`}
                   onClick={() => handleLinkClick(link.id)}
-                  className={`w-full text-left px-4 py-3 text-base font-medium rounded-lg transition-colors flex items-center justify-between ${isActive
-                      ? 'bg-[#EFEAE2] text-[#C27848] font-semibold'
-                      : 'text-[#2A2724] hover:bg-[#F2ECE4]'
-                    }`}
+                  className={`w-full text-left px-4 py-3 text-base font-medium rounded-lg transition-colors flex items-center justify-between ${
+                    isActive
+                      ? 'bg-[#EAE4DC] text-[#0B2545] font-bold'
+                      : 'text-[#252525] hover:bg-[#F2ECE4]'
+                  }`}
                 >
                   <span>{link.label}</span>
-                  {isActive && <ArrowRight className="w-4 h-4 text-[#C27848]" />}
+                  {isActive && <ArrowRight className="w-4 h-4 text-[#0B2545]" />}
                 </button>
               );
             })}
@@ -162,7 +163,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <div className="pt-4 mt-3 border-t border-[#E6E1D8] space-y-3">
               <a
                 href={`tel:${COMPANY_INFO.contacts.primaryPhone.replace(/\s+/g, '')}`}
-                className="flex items-center justify-center gap-2 w-full py-3 bg-[#EFEAE2] text-[#1A1918] text-sm font-medium rounded-lg"
+                className="flex items-center justify-center gap-2 w-full py-3 bg-[#EFEAE2] text-[#252525] text-sm font-medium rounded-lg"
               >
                 <Phone className="w-4 h-4 text-[#0B2545]" />
                 <span>Call: {COMPANY_INFO.contacts.primaryPhone}</span>
@@ -174,7 +175,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   setMobileMenuOpen(false);
                   onOpenConsultation();
                 }}
-                className="w-full py-3.5 bg-[#2A2724] text-white text-sm font-semibold tracking-wide uppercase rounded-lg hover:bg-[#C27848] transition-colors flex items-center justify-center gap-2"
+                className="w-full py-3.5 bg-[#0B2545] text-white text-sm font-bold tracking-wide uppercase rounded-lg hover:bg-[#153A66] transition-colors flex items-center justify-center gap-2"
               >
                 <span>Get a Consultation</span>
                 <ArrowRight className="w-4 h-4" />
