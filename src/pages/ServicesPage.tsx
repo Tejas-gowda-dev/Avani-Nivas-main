@@ -44,7 +44,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal className="max-w-3xl mx-auto">
             <span className="text-xs font-bold uppercase tracking-widest text-[#0B2545]">
-              Verified Capabilities • Gowdru Realcom & Avani Nivas
+              Verified Capabilities • Gowdru Realcom & Avani Nivasa
             </span>
             <h1 className="mt-4 block font-serif text-3xl sm:text-4xl lg:text-[54.0633px] leading-none text-center text-[#252525] cursor-crosshair">
               Architectural & Construction Services
@@ -133,7 +133,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
 
                 <button
                   onClick={onOpenConsultation}
-                  className="px-3 py-1.5 bg-[#0B2545] text-white text-xs font-bold uppercase rounded-md hover:bg-[#0B2545] transition-colors"
+                  className="px-3 py-1.5 bg-[#0B2545] text-white text-xs font-bold uppercase rounded-md hover:bg-[#153A66] transition-colors"
                 >
                   Quote
                 </button>

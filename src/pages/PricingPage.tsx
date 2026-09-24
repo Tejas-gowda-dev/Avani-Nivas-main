@@ -41,11 +41,11 @@ export const PricingPage: React.FC<PricingPageProps> = ({ onNavigate, onOpenCons
       <section className="py-16 sm:py-20 bg-[#F5F2EC] border-b border-[#EAE4DC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal className="max-w-3xl mx-auto">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EAE4D9] text-[#8D4B20] text-xs font-bold uppercase tracking-wider mb-4">
-              <ShieldCheck className="w-3.5 h-3.5 text-[#C27848]" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0B2545]/10 text-[#0B2545] text-xs font-bold uppercase tracking-wider mb-4">
+              <ShieldCheck className="w-3.5 h-3.5 text-[#0B2545]" />
               <span>Direct Transparency & Milestone Accountability</span>
             </div>
-            <h1 className="block font-serif text-3xl sm:text-4xl lg:text-5xl text-[#313030] tracking-tight">
+            <h1 className="block font-serif text-3xl sm:text-4xl lg:text-5xl text-[#252525] tracking-tight">
               Architectural Pricing & Turnkey Packages
             </h1>
             <p className="mt-4 text-base sm:text-lg text-[#5C564E] leading-relaxed">
@@ -56,19 +56,19 @@ export const PricingPage: React.FC<PricingPageProps> = ({ onNavigate, onOpenCons
       </section>
 
       {/* Main Interactive Customer Journey Pricing Section */}
-      <PricingSection 
-        standalone={true} 
+      <PricingSection
+        standalone={true}
         showStep2={true}
         initialTierId={initialTierId}
-        onOpenConsultation={onOpenConsultation} 
+        onOpenConsultation={onOpenConsultation}
       />
 
       {/* Transparent Comparison Table */}
       <section className="py-16 bg-[#F5F2EC] border-y border-[#EAE4DC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#C27848]">Package Comparison</span>
-            <h2 className="text-2xl sm:text-3xl font-serif text-[#313030] mt-1">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#0B2545]">Package Comparison</span>
+            <h2 className="text-2xl sm:text-3xl font-serif text-[#252525] mt-1">
               What’s Included in Each Tier
             </h2>
             <p className="text-xs sm:text-sm text-[#6B6359] mt-2">
@@ -80,33 +80,33 @@ export const PricingPage: React.FC<PricingPageProps> = ({ onNavigate, onOpenCons
             <table className="w-full text-left border-collapse text-xs">
               <thead>
                 <tr className="bg-[#FAF8F5] border-b border-[#E0D8CC]">
-                  <th className="p-4 sm:p-5 font-bold text-[#313030] min-w-[160px]">Feature / Specification</th>
-                  <th className="p-4 sm:p-5 font-bold text-[#313030] min-w-[150px]">BASIC PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">₹1,950 / sq.ft</span></th>
-                  <th className="p-4 sm:p-5 font-bold text-[#313030] min-w-[150px]">PREMIUM PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">₹2,150 / sq.ft</span></th>
-                  <th className="p-4 sm:p-5 font-bold text-[#313030] min-w-[160px]">ROYAL PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">₹2,400 / sq.ft</span></th>
-                  <th className="p-4 sm:p-5 font-bold text-[#313030] min-w-[150px]">LUXURY PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">₹2,950 / sq.ft</span></th>
-                  <th className="p-4 sm:p-5 font-bold text-[#313030] min-w-[160px]">CUSTOMIZED CLIENT PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">Custom Quote</span></th>
+                  <th className="p-4 sm:p-5 font-bold text-[#252525] min-w-[160px]">Feature / Specification</th>
+                  <th className="p-4 sm:p-5 font-bold text-[#252525] min-w-[150px]">BASIC PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">₹1,950 / sq.ft</span></th>
+                  <th className="p-4 sm:p-5 font-bold text-[#252525] min-w-[150px]">PREMIUM PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">₹2,150 / sq.ft</span></th>
+                  <th className="p-4 sm:p-5 font-bold text-[#252525] min-w-[160px]">ROYAL PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">₹2,400 / sq.ft</span></th>
+                  <th className="p-4 sm:p-5 font-bold text-[#252525] min-w-[150px]">LUXURY PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">₹2,950 / sq.ft</span></th>
+                  <th className="p-4 sm:p-5 font-bold text-[#252525] min-w-[160px]">CUSTOMIZED CLIENT PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">Custom Quote</span></th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[#EFEAE2] text-[#4A453E]">
                 <tr>
-                  <td className="p-4 font-semibold text-[#313030]">TMT Steel Grade</td>
+                  <td className="p-4 font-semibold text-[#252525]">TMT Steel Grade</td>
                   <td className="p-4">Fe 500 Grade TMT</td>
                   <td className="p-4">Tata / JSW Fe 550 TMT</td>
-                  <td className="p-4 font-semibold text-[#313030]">Tata Tiscon Fe 550D</td>
+                  <td className="p-4 font-semibold text-[#252525]">Tata Tiscon Fe 550D</td>
                   <td className="p-4">Tata Tiscon Super 550D</td>
                   <td className="p-4">Client Choice (Tata / JSW)</td>
                 </tr>
                 <tr>
-                  <td className="p-4 font-semibold text-[#313030]">Cement Grade</td>
+                  <td className="p-4 font-semibold text-[#252525]">Cement Grade</td>
                   <td className="p-4">Grade 43/53 PPC</td>
                   <td className="p-4">UltraTech / ACC 53 Grade</td>
-                  <td className="p-4 font-semibold text-[#313030]">UltraTech / ACC 53 Grade</td>
+                  <td className="p-4 font-semibold text-[#252525]">UltraTech / ACC 53 Grade</td>
                   <td className="p-4">UltraTech Super Premium</td>
                   <td className="p-4">Client Choice (UltraTech / ACC)</td>
                 </tr>
                 <tr>
-                  <td className="p-4 font-semibold text-[#313030]">Modular Kitchen</td>
+                  <td className="p-4 font-semibold text-[#252525]">Modular Kitchen</td>
                   <td className="p-4 text-[#8C8377]">Granite counter only</td>
                   <td className="p-4 text-[#8C8377]">Granite counter + provision</td>
                   <td className="p-4 text-[#128C7E] font-semibold">Included (Acrylic / Laminate)</td>
@@ -114,7 +114,7 @@ export const PricingPage: React.FC<PricingPageProps> = ({ onNavigate, onOpenCons
                   <td className="p-4 text-[#128C7E] font-semibold">100% Customized to Specs</td>
                 </tr>
                 <tr>
-                  <td className="p-4 font-semibold text-[#313030]">Bedroom Wardrobes</td>
+                  <td className="p-4 font-semibold text-[#252525]">Bedroom Wardrobes</td>
                   <td className="p-4 text-[#8C8377]">Optional add-on</td>
                   <td className="p-4 text-[#8C8377]">Optional add-on</td>
                   <td className="p-4 text-[#128C7E] font-semibold">Included (Master & 2nd Bed)</td>
@@ -122,23 +122,23 @@ export const PricingPage: React.FC<PricingPageProps> = ({ onNavigate, onOpenCons
                   <td className="p-4 text-[#128C7E] font-semibold">Custom Carpentry & Design</td>
                 </tr>
                 <tr>
-                  <td className="p-4 font-semibold text-[#313030]">Flooring</td>
+                  <td className="p-4 font-semibold text-[#252525]">Flooring</td>
                   <td className="p-4">Vitrified tiles (2x2)</td>
                   <td className="p-4">Somany/Kajaria (4x2 & 2x2)</td>
-                  <td className="p-4 font-semibold text-[#313030]">Kajaria/Somany (4x2 & 2x2)</td>
+                  <td className="p-4 font-semibold text-[#252525]">Kajaria/Somany (4x2 & 2x2)</td>
                   <td className="p-4">Italian Marble / Granite</td>
                   <td className="p-4">Marble, Granite or Tiles</td>
                 </tr>
                 <tr>
-                  <td className="p-4 font-semibold text-[#313030]">Sanitary & Bath Fittings</td>
+                  <td className="p-4 font-semibold text-[#252525]">Sanitary & Bath Fittings</td>
                   <td className="p-4">Cera / Hindware</td>
                   <td className="p-4">Jaquar Continental</td>
-                  <td className="p-4 font-semibold text-[#313030]">Jaquar Continental / Essco</td>
+                  <td className="p-4 font-semibold text-[#252525]">Jaquar Continental / Essco</td>
                   <td className="p-4">Grohe / Kohler Designer</td>
                   <td className="p-4">Kohler / Grohe / Jaquar</td>
                 </tr>
                 <tr>
-                  <td className="p-4 font-semibold text-[#313030]">Architectural 3D Elevation</td>
+                  <td className="p-4 font-semibold text-[#252525]">Architectural 3D Elevation</td>
                   <td className="p-4">2D Floor Plan</td>
                   <td className="p-4">3D Exterior Elevation</td>
                   <td className="p-4 text-[#128C7E] font-semibold">3D Exterior + Interior Plan</td>
@@ -146,12 +146,12 @@ export const PricingPage: React.FC<PricingPageProps> = ({ onNavigate, onOpenCons
                   <td className="p-4 text-[#128C7E] font-semibold">Full Custom 3D & Structural</td>
                 </tr>
                 <tr>
-                  <td className="p-4 font-semibold text-[#313030]">Structural Warranty</td>
+                  <td className="p-4 font-semibold text-[#252525]">Structural Warranty</td>
                   <td className="p-4">10 Years</td>
                   <td className="p-4">15 Years</td>
-                  <td className="p-4 font-bold text-[#313030]">15 Years</td>
-                  <td className="p-4 font-bold text-[#313030]">15 Years + Lifelong Desk</td>
-                  <td className="p-4 font-bold text-[#313030]">15 Years + Custom Terms</td>
+                  <td className="p-4 font-bold text-[#252525]">15 Years</td>
+                  <td className="p-4 font-bold text-[#252525]">15 Years + Lifelong Desk</td>
+                  <td className="p-4 font-bold text-[#252525]">15 Years + Custom Terms</td>
                 </tr>
               </tbody>
             </table>
@@ -163,8 +163,8 @@ export const PricingPage: React.FC<PricingPageProps> = ({ onNavigate, onOpenCons
       <section className="py-16 sm:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal className="text-center mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#C27848]">Common Inquiries</span>
-            <h2 className="text-2xl sm:text-3xl font-serif text-[#313030] mt-1">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#0B2545]">Common Inquiries</span>
+            <h2 className="text-2xl sm:text-3xl font-serif text-[#252525] mt-1">
               Frequently Asked Questions About Pricing
             </h2>
           </ScrollReveal>
@@ -173,9 +173,9 @@ export const PricingPage: React.FC<PricingPageProps> = ({ onNavigate, onOpenCons
             {faqs.map((faq, i) => (
               <ScrollReveal key={i} delay={i * 0.06} className="bg-white p-6 rounded-2xl border border-[#E0D8CC]">
                 <div className="flex items-start gap-3">
-                  <HelpCircle className="w-4 h-4 text-[#C27848] shrink-0 mt-0.5" />
+                  <HelpCircle className="w-4 h-4 text-[#0B2545] shrink-0 mt-0.5" />
                   <div>
-                    <h3 className="text-sm font-bold text-[#313030] font-serif">{faq.q}</h3>
+                    <h3 className="text-sm font-bold text-[#252525] font-serif">{faq.q}</h3>
                     <p className="text-xs text-[#5C564E] mt-2 leading-relaxed">{faq.a}</p>
                   </div>
                 </div>
@@ -187,7 +187,7 @@ export const PricingPage: React.FC<PricingPageProps> = ({ onNavigate, onOpenCons
             <p className="text-xs text-[#7C7469]">Have a unique requirement or custom blueprint?</p>
             <button
               onClick={onOpenConsultation}
-              className="mt-2 inline-flex items-center gap-1.5 text-xs font-bold text-[#C27848] hover:underline"
+              className="mt-2 inline-flex items-center gap-1.5 text-xs font-bold text-[#0B2545] hover:text-[#153A66] hover:underline"
             >
               <span>Schedule a 1-on-1 Consultation with Founder Sharath Kumar</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -198,10 +198,9 @@ export const PricingPage: React.FC<PricingPageProps> = ({ onNavigate, onOpenCons
 
       {/* Bottom CTA */}
       <CTASection
-        onOpenConsultation={onOpenConsultation}
-        headline="Ready to Turn Your Blueprint into Reality?"
-        subheadline="Connect with your construction cavalry. We provide transparent estimates, on-site feasibility evaluations, and unwavering commitment to quality."
-      />
+  onConsultationClick={onOpenConsultation}
+  onContactClick={onOpenConsultation}
+/>
     </div>
   );
 };

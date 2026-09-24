@@ -22,8 +22,8 @@ export const CTASection: React.FC<CTASectionProps> = ({
           referrerPolicy="no-referrer"
         />
         {/* Deep Imperial Navy / Slate Tint Overlay for WCAG AA readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0C1935]/95 via-[#0E1E40]/85 to-[#0A1428]/95 backdrop-blur-[1.5px]" />
-        <div className="absolute inset-0 bg-radial from-transparent via-[#081020]/40 to-[#060D1A]/90" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0B2545]/95 via-[#071E36]/90 to-[#041222]/95 backdrop-blur-[1.5px]" />
+        <div className="absolute inset-0 bg-radial from-transparent via-[#051527]/40 to-[#030C17]/90" />
         {/* Subtle architectural blueprint grid overlay */}
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#F1F5F9_1px,transparent_1px)] [background-size:28px_28px]" />
       </div>
@@ -44,7 +44,7 @@ export const CTASection: React.FC<CTASectionProps> = ({
           <button
             id="cta-get-consultation-btn"
             onClick={onConsultationClick}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-white/10 hover:bg-white/20 text-white text-xs font-bold uppercase tracking-wider rounded-xl border border-white/25 backdrop-blur-xs transition-all duration-200"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-white text-[#0B2545] hover:bg-[#F2ECE4] text-xs font-bold uppercase tracking-wider rounded-xl shadow-lg transition-all duration-200"
           >
             <span>Get a Consultation</span>
             <ArrowRight className="w-4 h-4" />
@@ -53,26 +53,26 @@ export const CTASection: React.FC<CTASectionProps> = ({
           <button
             id="cta-contact-us-btn"
             onClick={onContactClick}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-white/10 hover:bg-white/20 text-white text-xs font-bold uppercase tracking-wider rounded-xl border border-white/25 backdrop-blur-xs transition-all duration-200"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-white/10 hover:bg-[#153A66] hover:border-white/40 text-white text-xs font-bold uppercase tracking-wider rounded-xl border border-white/25 backdrop-blur-xs transition-all duration-200"
           >
-            <MessageSquare className="w-4 h-4 text-[#E5A96A]" />
+            <MessageSquare className="w-4 h-4 text-[#93C5FD]" />
             <span>Contact Us</span>
           </button>
 
           <a
             id="cta-call-direct-btn"
             href={`tel:${COMPANY_INFO.contacts.primaryPhone.replace(/\s+/g, '')}`}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 text-xs font-semibold text-[#E2E8F0] hover:text-white bg-[#10203D]/80 hover:bg-[#14264A] rounded-xl border border-[#233C70] transition-colors"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 text-xs font-semibold text-[#E2E8F0] hover:text-white bg-[#081B30]/90 hover:bg-[#102B4E] rounded-xl border border-[#173A66] transition-colors"
           >
-            <Phone className="w-4 h-4 text-[#E5A96A]" />
+            <Phone className="w-4 h-4 text-[#93C5FD]" />
             <span>Call {COMPANY_INFO.contacts.primaryPhone}</span>
           </a>
         </div>
 
         <div className="pt-6 text-xs text-[#94A3B8] flex items-center justify-center gap-6 flex-wrap font-medium">
-          <span className="flex items-center gap-1.5"><span className="text-[#E5A96A]">✓</span> Direct Founder Review</span>
-          <span className="flex items-center gap-1.5"><span className="text-[#E5A96A]">✓</span> Verified BOQ Estimation</span>
-          <span className="flex items-center gap-1.5"><span className="text-[#E5A96A]">✓</span> 15+ Yrs Battle-Tested Experience</span>
+          <span className="flex items-center gap-1.5"><span className="text-[#93C5FD]">✓</span> Direct Founder Review</span>
+          <span className="flex items-center gap-1.5"><span className="text-[#93C5FD]">✓</span> Verified BOQ Estimation</span>
+          <span className="flex items-center gap-1.5"><span className="text-[#93C5FD]">✓</span> 15+ Yrs Battle-Tested Experience</span>
         </div>
       </div>
     </section>

@@ -47,11 +47,11 @@ export const HomePage: React.FC<HomePageProps> = ({
     : PROJECTS.filter((p) => p.category === projectFilter);
 
   return (
-    <div id="home-page-root" className="space-y-0 selection:bg-[#C27848] selection:text-white">
+    <div id="home-page-root" className="pt-[74px] sm:pt-[82px] space-y-0 selection:bg-[#0B2545] selection:text-white">
       {/* ========================================================
-          HERO SECTION: "From Blueprint to Reality: We're Your Construction Cavalry"
+          FULL IMAGE EDITORIAL HERO SECTION
       ======================================================== */}
-       <HeroSection
+      <HeroSection
         onOpenConsultation={onOpenConsultation}
         onNavigate={onNavigate}
         onSelectProject={onSelectProject}
@@ -65,7 +65,7 @@ export const HomePage: React.FC<HomePageProps> = ({
       {/* ========================================================
           SERVICES SECTION: 8 Comprehensive Offerings
       ======================================================== */}
-      <section id="featured-services-section" className="py-20 sm:py-14 bg-[#FAF8F5] border-t border-[#EAE4DC]">
+      <section id="featured-services-section" className="py-20 sm:py-28 bg-[#FAF8F5] border-t border-[#EAE4DC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal className="text-center max-w-3xl mx-auto mb-14">
             <span className="text-xs font-bold uppercase tracking-widest text-[#0B2545]">
@@ -264,7 +264,7 @@ export const HomePage: React.FC<HomePageProps> = ({
           <ScrollReveal delay={0.2} className="mt-12 text-center">
             <button
               onClick={() => onNavigate('projects')}
-              className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#153A66] hover:bg-[#0B2545] text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors shadow-sm"
+              className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#0B2545] hover:bg-[#153A66] text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors shadow-sm"
             >
               <span>View All Projects & Floor Plans</span>
               <ArrowRight className="w-4 h-4" />
@@ -275,7 +275,6 @@ export const HomePage: React.FC<HomePageProps> = ({
 
       {/* ========================================================
           PRICING PLANS SECTION (HOME VIEW: STEP 1 PACKAGES ONLY)
-          Clicking any package navigates directly to Pricing Page with Step 2 & Estimator
       ======================================================== */}
       <PricingSection 
         showStep2={false}
@@ -295,25 +294,23 @@ export const HomePage: React.FC<HomePageProps> = ({
       <ProcessSection onConsultationClick={onOpenConsultation} />
 
       {/* ========================================================
-          CLIENT TESTIMONIALS SECTION:
-          "HERE’S WHAT OUR CLIENTS HAVE TO SAY"
-          Upasana Sarma, Mahesh T N, Jatin Kotian, Shishir Patel
+          CLIENT TESTIMONIALS SECTION
       ======================================================== */}
       <section id="testimonials-section" className="py-20 sm:py-28 bg-[#FAF8F5] border-t border-[#EAE4DC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal className="text-center max-w-3xl mx-auto mb-14">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#C27848]">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#0B2545]">
               Uncompromising Transparency
             </span>
-            <h2 className="mt-3 block font-serif text-3xl sm:text-4xl lg:text-[54.0633px] leading-none text-center text-[#313030] cursor-crosshair">
+            <h2 className="mt-3 block font-serif text-3xl sm:text-4xl lg:text-[54.0633px] leading-none text-center text-[#252525] cursor-crosshair">
               HERE’S WHAT OUR CLIENTS HAVE TO SAY
             </h2>
-            <p className="mt-4 inline font-sans text-base sm:text-lg leading-snug text-center text-[#313030] cursor-crosshair">
-              Real testimonials from homeowners and clients who entrusted their spaces to Avani Nivas and Gowdru Realcom.
+            <p className="mt-4 inline font-sans text-base sm:text-lg leading-snug text-center text-[#252525] cursor-crosshair">
+              Real testimonials from homeowners and clients who entrusted their spaces to Avani Nivasa and Gowdru Realcom.
             </p>
           </ScrollReveal>
 
-          {/* Testimonial Cards Grid (4 client cards) */}
+          {/* Testimonial Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {TESTIMONIALS.map((t, idx) => (
               <ScrollReveal
@@ -323,9 +320,9 @@ export const HomePage: React.FC<HomePageProps> = ({
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <div className="flex items-center gap-1 text-[#C27848]">
+                    <div className="flex items-center gap-1 text-[#D97706]">
                       {[...Array(t.rating)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-[#C27848]" />
+                        <Star key={i} className="w-4 h-4 fill-[#D97706]" />
                       ))}
                     </div>
                     <Quote className="w-6 h-6 text-[#E0D8CC]" />
@@ -337,14 +334,14 @@ export const HomePage: React.FC<HomePageProps> = ({
                 </div>
 
                 <div className="pt-4 border-t border-[#F2ECE4]">
-                  <h4 className="text-sm font-bold text-[#313030] font-sans">
+                  <h4 className="text-sm font-bold text-[#252525] font-sans">
                     - {t.clientName}
                   </h4>
-                  <p className="text-xs text-[#C27848] font-medium mt-0.5">
+                  <p className="text-xs text-[#0B2545] font-medium mt-0.5">
                     {t.projectType}
                   </p>
                   <p className="text-xs text-[#7C7469] flex items-center gap-1 mt-1">
-                    <MapPin className="w-3 h-3 text-[#C27848]" />
+                    <MapPin className="w-3 h-3 text-[#0B2545]" />
                     <span>{t.location}</span>
                   </p>
                 </div>
@@ -357,7 +354,7 @@ export const HomePage: React.FC<HomePageProps> = ({
       {/* ========================================================
           FOUNDATION & CORE VALUES CALLOUT SECTION
       ======================================================== */}
-       <section id="foundation-summary-section" className="py-20 bg-[#F4EFEA] border-t border-[#E2DAD0]">
+      <section id="foundation-summary-section" className="py-20 bg-[#F4EFEA] border-t border-[#E2DAD0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <ScrollReveal className="lg:col-span-7 space-y-4">
@@ -376,14 +373,14 @@ export const HomePage: React.FC<HomePageProps> = ({
               <div className="pt-2 flex flex-wrap items-center gap-3">
                 <button
                   onClick={() => onNavigate('about')}
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#0B2545] text-white text-xs font-bold uppercase tracking-wider rounded-lg hover:bg-[#0B2545] transition-colors shadow-sm"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#0B2545] text-white text-xs font-bold uppercase tracking-wider rounded-lg hover:bg-[#153A66] transition-colors shadow-sm"
                 >
                   <span>Read Our Full Story</span>
                   <ChevronRight className="w-4 h-4" />
                 </button>
                 <button
                   onClick={() => onNavigate('partners')}
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#0B2545] text-xs font-bold uppercase tracking-wider rounded-lg border border-[#0B2545]/30 hover:bg-[#153A66] hover:text-white transition-colors group"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#0B2545] text-xs font-bold uppercase tracking-wider rounded-lg border border-[#0B2545]/30 hover:bg-[#0B2545] hover:text-white transition-colors group"
                 >
                   <span>Industry Partners</span>
                   <ChevronRight className="w-4 h-4 text-[#0B2545] group-hover:text-white" />
@@ -403,16 +400,16 @@ export const HomePage: React.FC<HomePageProps> = ({
                       <span className="text-sm font-semibold text-[#252525]">{area.name}</span>
                       <span className="text-xs text-[#7C7469]">({area.state})</span>
                     </div>
-                    {/* <span className="text-[11px] font-mono font-medium text-[#0B2545] bg-[#E9EFF7] px-2 py-0.5 rounded">
+                    <span className="text-[11px] font-mono font-medium text-[#0B2545] bg-[#E9EFF7] px-2 py-0.5 rounded">
                       {area.type}
-                    </span> */}
+                    </span>
                   </div>
                 ))}
               </div>
-              {/* <div className="mt-4 pt-3 border-t border-[#ECE5DA] flex items-center justify-between text-xs text-[#7C7469]">
+              <div className="mt-4 pt-3 border-t border-[#ECE5DA] flex items-center justify-between text-xs text-[#7C7469]">
                 <span>Regional operations also active in:</span>
                 <span className="font-semibold text-[#252525]">Orissa & Chhattisgarh</span>
-              </div> */}
+              </div>
             </ScrollReveal>
           </div>
         </div>

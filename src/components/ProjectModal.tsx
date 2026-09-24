@@ -27,7 +27,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
         onClick={(e) => e.stopPropagation()}
       >
         {/* Top Image Viewer */}
-        <div className="relative h-72 sm:h-96 w-full bg-[#1A1918]">
+        <div className="relative h-72 sm:h-96 w-full bg-[#252525]">
           <img
             src={currentPhoto}
             alt={project.title}
@@ -48,11 +48,11 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
           <div className="absolute bottom-4 left-6 right-6 text-white flex flex-col sm:flex-row sm:items-end justify-between gap-2">
             <div>
               <div className="flex items-center gap-2 mb-1.5 flex-wrap">
-                <span className="inline-block px-2.5 py-0.5 rounded text-[11px] font-bold uppercase tracking-wider bg-[#C27848] text-white">
+                <span className="inline-block px-2.5 py-0.5 rounded text-[11px] font-bold uppercase tracking-wider bg-[#0B2545] text-white">
                   {project.category}
                 </span>
                 {project.pricing && (
-                  <span className="inline-block px-2.5 py-0.5 rounded text-[11px] font-bold uppercase tracking-wider bg-white text-[#313030]">
+                  <span className="inline-block px-2.5 py-0.5 rounded text-[11px] font-bold uppercase tracking-wider bg-white text-[#252525]">
                     {project.pricing}
                   </span>
                 )}
@@ -64,18 +64,18 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
 
             <div className="flex items-center gap-3 text-xs text-[#D8D1C5] flex-wrap">
               <span className="flex items-center gap-1">
-                <MapPin className="w-3.5 h-3.5 text-[#E8A573]" />
+                <MapPin className="w-3.5 h-3.5 text-[#93C5FD]" />
                 {project.location}
               </span>
               {project.timeline && (
                 <span className="flex items-center gap-1">
-                  <Calendar className="w-3.5 h-3.5 text-[#E8A573]" />
+                  <Calendar className="w-3.5 h-3.5 text-[#93C5FD]" />
                   {project.timeline}
                 </span>
               )}
               {project.area && (
                 <span className="flex items-center gap-1">
-                  <Maximize2 className="w-3.5 h-3.5 text-[#E8A573]" />
+                  <Maximize2 className="w-3.5 h-3.5 text-[#93C5FD]" />
                   {project.area}
                 </span>
               )}
@@ -94,7 +94,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
                 key={i}
                 onClick={() => setActivePhotoIdx(i)}
                 className={`relative w-16 h-11 rounded-md overflow-hidden shrink-0 border-2 transition-all ${
-                  activePhotoIdx === i ? 'border-[#C27848] scale-105' : 'border-transparent opacity-60 hover:opacity-100'
+                  activePhotoIdx === i ? 'border-[#0B2545] scale-105' : 'border-transparent opacity-60 hover:opacity-100'
                 }`}
               >
                 <img src={img} alt={`View ${i + 1}`} className="w-full h-full object-cover" />
@@ -109,7 +109,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
             <span className="text-xs font-bold uppercase tracking-wider text-[#7C7469]">
               Scope of Work
             </span>
-            <p className="text-base font-medium text-[#1A1918] mt-1">{project.scope}</p>
+            <p className="text-base font-medium text-[#252525] mt-1">{project.scope}</p>
           </div>
 
           <div>
@@ -120,13 +120,13 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
           </div>
 
           <div className="pt-2">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#1A1918] block mb-3">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#252525] block mb-3">
               Architectural & Structural Highlights
             </span>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               {project.features.map((feat, idx) => (
                 <li key={idx} className="flex items-start gap-2 text-xs text-[#5C564E]">
-                  <span className="w-4 h-4 rounded-full bg-[#C27848]/15 text-[#C27848] flex items-center justify-center shrink-0 mt-0.5">
+                  <span className="w-4 h-4 rounded-full bg-[#0B2545]/10 text-[#0B2545] flex items-center justify-center shrink-0 mt-0.5">
                     <Check className="w-3 h-3" />
                   </span>
                   <span>{feat}</span>
@@ -140,7 +140,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
         <div className="p-4 sm:p-6 bg-[#F2ECE4] border-t border-[#E6E1D8] flex items-center justify-between gap-4">
           <button
             onClick={onClose}
-            className="text-xs font-medium text-[#7C7469] hover:text-[#1A1918] transition-colors"
+            className="text-xs font-medium text-[#7C7469] hover:text-[#252525] transition-colors"
           >
             Close View
           </button>
@@ -150,7 +150,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
               onClose();
               onEnquire(project.title);
             }}
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#2A2724] hover:bg-[#C27848] text-white text-xs font-semibold uppercase tracking-wider rounded-md transition-colors"
+            className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#0B2545] hover:bg-[#153A66] text-white text-xs font-semibold uppercase tracking-wider rounded-xl transition-colors shadow-xs"
           >
             <span>Enquire About Similar Project</span>
             <ArrowRight className="w-3.5 h-3.5" />

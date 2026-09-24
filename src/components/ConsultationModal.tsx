@@ -93,7 +93,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
               <div className="w-14 h-14 rounded-full bg-emerald-100 text-emerald-700 mx-auto flex items-center justify-center">
                 <CheckCircle2 className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-bold text-[#1A1918] font-serif-heading">
+              <h3 className="text-xl font-bold text-[#252525] font-serif-heading">
                 Consultation Request Received
               </h3>
               <p className="text-sm text-[#5C564E] max-w-sm mx-auto leading-relaxed">
@@ -101,7 +101,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
               </p>
 
               <div className="p-4 bg-[#F4F1EB] rounded-lg text-xs text-[#7C7469] text-left space-y-1">
-                <div className="font-semibold text-[#1A1918]">Enquiry Reference Summary:</div>
+                <div className="font-semibold text-[#252525]">Enquiry Reference Summary:</div>
                 <div>Service: {service}</div>
                 <div>Location: {location}</div>
                 <div>Budget Range: {budget}</div>
@@ -118,7 +118,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
                 </button>
                 <button
                   onClick={onClose}
-                  className="inline-flex items-center justify-center px-5 py-2.5 bg-[#2A2724] text-white text-xs font-semibold uppercase tracking-wider rounded-md hover:bg-[#C27848] transition-colors"
+                  className="inline-flex items-center justify-center px-5 py-2.5 bg-[#0B2545] text-white text-xs font-semibold uppercase tracking-wider rounded-xl hover:bg-[#153A66] transition-colors"
                 >
                   Return to Website
                 </button>
@@ -138,7 +138,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="e.g. Ramesh Kumar"
-                    className="w-full px-3.5 py-2.5 bg-white border border-[#D8D1C5] rounded-lg text-base sm:text-sm text-[#1A1918] focus:outline-none focus:ring-2 focus:ring-[#C27848]"
+                    className="w-full px-3.5 py-2.5 bg-white border border-[#D8D1C5] rounded-lg text-base sm:text-sm text-[#252525] focus:outline-none focus:ring-2 focus:ring-[#0B2545]"
                   />
                 </div>
 
@@ -153,7 +153,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                     placeholder="+91 98765 43210"
-                    className="w-full px-3.5 py-2.5 bg-white border border-[#D8D1C5] rounded-lg text-base sm:text-sm text-[#1A1918] focus:outline-none focus:ring-2 focus:ring-[#C27848]"
+                    className="w-full px-3.5 py-2.5 bg-white border border-[#D8D1C5] rounded-lg text-base sm:text-sm text-[#252525] focus:outline-none focus:ring-2 focus:ring-[#0B2545]"
                   />
                 </div>
               </div>
@@ -168,7 +168,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="ramesh@example.com"
-                  className="w-full px-3.5 py-2.5 bg-white border border-[#D8D1C5] rounded-lg text-base sm:text-sm text-[#1A1918] focus:outline-none focus:ring-2 focus:ring-[#C27848]"
+                  className="w-full px-3.5 py-2.5 bg-white border border-[#D8D1C5] rounded-lg text-base sm:text-sm text-[#252525] focus:outline-none focus:ring-2 focus:ring-[#0B2545]"
                 />
               </div>
 
@@ -181,7 +181,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
                     id="consult-service"
                     value={service}
                     onChange={(e) => setService(e.target.value)}
-                    className="w-full px-3 py-2.5 bg-white border border-[#D8D1C5] rounded-lg text-base sm:text-sm text-[#1A1918] focus:outline-none focus:ring-2 focus:ring-[#C27848]"
+                    className="w-full px-3 py-2.5 bg-white border border-[#D8D1C5] rounded-lg text-base sm:text-sm text-[#252525] focus:outline-none focus:ring-2 focus:ring-[#0B2545]"
                   >
                     {SERVICES.map((s) => (
                       <option key={s.id} value={s.title}>
@@ -199,7 +199,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
                     id="consult-location"
                     value={location}
                     onChange={(e) => setLocation(e.target.value)}
-                    className="w-full px-3 py-2.5 bg-white border border-[#D8D1C5] rounded-lg text-base sm:text-sm text-[#1A1918] focus:outline-none focus:ring-2 focus:ring-[#C27848]"
+                    className="w-full px-3 py-2.5 bg-white border border-[#D8D1C5] rounded-lg text-base sm:text-sm text-[#252525] focus:outline-none focus:ring-2 focus:ring-[#0B2545]"
                   >
                     <option value="Bengaluru (Mallathahalli / West)">Bengaluru (Mallathahalli / West)</option>
                     <option value="Bengaluru (Rajarajeshwari Nagar)">Bengaluru (Rajarajeshwari Nagar)</option>
@@ -222,7 +222,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
                   id="consult-budget"
                   value={budget}
                   onChange={(e) => setBudget(e.target.value)}
-                  className="w-full px-3 py-2.5 bg-white border border-[#D8D1C5] rounded-lg text-base sm:text-sm text-[#1A1918] focus:outline-none focus:ring-2 focus:ring-[#C27848]"
+                  className="w-full px-3 py-2.5 bg-white border border-[#D8D1C5] rounded-lg text-base sm:text-sm text-[#252525] focus:outline-none focus:ring-2 focus:ring-[#0B2545]"
                 >
                   <option value="₹15 Lakhs - ₹25 Lakhs (Interiors/Renovation)">₹15 Lakhs - ₹25 Lakhs (Interiors/Renovation)</option>
                   <option value="₹25 Lakhs - ₹50 Lakhs">₹25 Lakhs - ₹50 Lakhs</option>
@@ -242,7 +242,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   placeholder="Plot size (e.g. 30x40 or 40x60), current condition, key requirements..."
-                  className="w-full px-3.5 py-2.5 bg-white border border-[#D8D1C5] rounded-lg text-base sm:text-sm text-[#1A1918] focus:outline-none focus:ring-2 focus:ring-[#C27848]"
+                  className="w-full px-3.5 py-2.5 bg-white border border-[#D8D1C5] rounded-lg text-base sm:text-sm text-[#252525] focus:outline-none focus:ring-2 focus:ring-[#0B2545]"
                 />
               </div>
 
@@ -250,7 +250,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="w-full sm:flex-1 py-3 bg-[#C27848] hover:bg-[#a9653a] text-white text-xs font-semibold uppercase tracking-wider rounded-lg transition-colors flex items-center justify-center gap-2"
+                  className="w-full sm:flex-1 py-3 bg-[#0B2545] hover:bg-[#153A66] text-white text-xs font-semibold uppercase tracking-wider rounded-xl transition-colors flex items-center justify-center gap-2 shadow-xs"
                 >
                   <Send className="w-4 h-4" />
                   <span>{submitting ? 'Submitting...' : 'Request Consultation'}</span>
@@ -259,7 +259,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
                 <button
                   type="button"
                   onClick={handleWhatsAppDirect}
-                  className="w-full sm:w-auto px-4 py-3 bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-semibold uppercase tracking-wider rounded-lg transition-colors flex items-center justify-center gap-2"
+                  className="w-full sm:w-auto px-4 py-3 bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-semibold uppercase tracking-wider rounded-xl transition-colors flex items-center justify-center gap-2 shadow-xs"
                 >
                   <MessageCircle className="w-4 h-4" />
                   <span>Direct WhatsApp</span>
@@ -267,7 +267,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
               </div>
 
               <div className="pt-2 text-center text-[11px] text-[#7C7469] flex items-center justify-center gap-1">
-                <Shield className="w-3.5 h-3.5 text-[#C27848]" />
+                <Shield className="w-3.5 h-3.5 text-[#0B2545]" />
                 <span>Your information is handled strictly for your construction enquiry. No spam.</span>
               </div>
             </form>

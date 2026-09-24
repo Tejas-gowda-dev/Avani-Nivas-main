@@ -12,11 +12,11 @@ export const ProcessSection: React.FC<{ onConsultationClick?: () => void }> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <ScrollReveal className="max-w-3xl mx-auto text-center">
-          <span className="inline-flex items-center gap-2 px-3 py-1 bg-[#F0EBE1] text-[#9E5D34] rounded-full text-xs font-semibold uppercase tracking-widest border border-[#E3DACD]">
+          <span className="inline-flex items-center gap-2 px-3 py-1 bg-[#0B2545]/10 text-[#0B2545] rounded-full text-xs font-semibold uppercase tracking-widest border border-[#0B2545]/20">
             <Compass className="w-3.5 h-3.5" />
             Turnkey Methodology
           </span>
-          <h2 className="mt-4 block font-serif text-3xl sm:text-4xl lg:text-[46px] leading-tight text-center text-[#313030]">
+          <h2 className="mt-4 block font-serif text-3xl sm:text-4xl lg:text-[46px] leading-tight text-center text-[#252525]">
             Our Proven 3-Phase Construction & Craftsmanship Process
           </h2>
           <p className="mt-3 inline font-sans text-base sm:text-lg leading-relaxed text-center text-[#5C564E] max-w-2xl">
@@ -36,11 +36,11 @@ export const ProcessSection: React.FC<{ onConsultationClick?: () => void }> = ({
                   onClick={() => setActivePhaseIndex(idx)}
                   className={`px-4 sm:px-6 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-200 flex items-center gap-2 shrink-0 ${
                     isActive
-                      ? 'bg-[#313030] text-white shadow-md'
-                      : 'text-[#655E55] hover:text-[#252320] hover:bg-[#E7E0D4]'
+                      ? 'bg-[#252525] text-white shadow-md'
+                      : 'text-[#655E55] hover:text-[#252525] hover:bg-[#E7E0D4]'
                   }`}
                 >
-                  <span className={`text-[10px] font-mono uppercase px-1.5 py-0.5 rounded ${isActive ? 'bg-[#C27848] text-white' : 'bg-[#DDD5C7] text-[#554E46]'}`}>
+                  <span className={`text-[10px] font-mono uppercase px-1.5 py-0.5 rounded ${isActive ? 'bg-[#0B2545] text-white' : 'bg-[#DDD5C7] text-[#554E46]'}`}>
                     0{idx + 1}
                   </span>
                   <span>{phase.phaseTitle}</span>
@@ -57,7 +57,7 @@ export const ProcessSection: React.FC<{ onConsultationClick?: () => void }> = ({
             <div className="p-6 sm:p-10 lg:p-12 lg:col-span-7 flex flex-col justify-between">
               <div>
                 <div className="flex items-center gap-3">
-                  <span className="text-xs font-mono font-bold tracking-widest text-[#C27848] bg-[#F7EFE9] px-2.5 py-1 rounded border border-[#EDDEC6]">
+                  <span className="text-xs font-mono font-bold tracking-widest text-[#0B2545] bg-[#0B2545]/10 px-2.5 py-1 rounded border border-[#0B2545]/20">
                     {activePhase.badge}
                   </span>
                   <span className="text-xs uppercase tracking-wider text-[#7C7469] font-medium">
@@ -65,7 +65,7 @@ export const ProcessSection: React.FC<{ onConsultationClick?: () => void }> = ({
                   </span>
                 </div>
 
-                <h3 className="mt-4 block font-serif text-2xl sm:text-3xl text-[#313030]">
+                <h3 className="mt-4 block font-serif text-2xl sm:text-3xl text-[#252525]">
                   {activePhase.phaseTitle} Execution
                 </h3>
 
@@ -73,11 +73,11 @@ export const ProcessSection: React.FC<{ onConsultationClick?: () => void }> = ({
                 <div className="mt-8 space-y-6">
                   {activePhase.steps.map((step, idx) => (
                     <div key={idx} className="flex items-start gap-4 p-4 rounded-xl bg-[#FAF8F5] border border-[#ECE5DA]">
-                      <div className="w-8 h-8 rounded-lg bg-[#313030] text-white flex items-center justify-center shrink-0 text-xs font-mono font-bold">
+                      <div className="w-8 h-8 rounded-lg bg-[#252525] text-white flex items-center justify-center shrink-0 text-xs font-mono font-bold">
                         0{idx + 1}
                       </div>
                       <div>
-                        <h4 className="text-sm font-bold text-[#2A2724] tracking-wide uppercase">
+                        <h4 className="text-sm font-bold text-[#252525] tracking-wide uppercase">
                           {step.title}
                         </h4>
                         <p className="mt-1 text-sm text-[#5C564E] leading-relaxed">
@@ -92,7 +92,7 @@ export const ProcessSection: React.FC<{ onConsultationClick?: () => void }> = ({
               {/* Action row */}
               <div className="mt-8 pt-6 border-t border-[#EAE4DC] flex flex-wrap items-center justify-between gap-4">
                 <div className="flex items-center gap-2 text-xs text-[#7C7469]">
-                  <HardHat className="w-4 h-4 text-[#C27848]" />
+                  <HardHat className="w-4 h-4 text-[#0B2545]" />
                   <span>On-site supervision & digital tracking</span>
                 </div>
 
@@ -100,7 +100,7 @@ export const ProcessSection: React.FC<{ onConsultationClick?: () => void }> = ({
                   <button
                     id="next-process-phase-btn"
                     onClick={() => setActivePhaseIndex(activePhaseIndex + 1)}
-                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#313030] text-white text-xs font-semibold uppercase tracking-wider rounded-lg hover:bg-[#C27848] transition-colors"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#252525] text-white text-xs font-semibold uppercase tracking-wider rounded-xl hover:bg-[#0B2545] transition-colors"
                   >
                     <span>Next: {STRUCTURED_PROCESS_PHASES[activePhaseIndex + 1].phaseTitle}</span>
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -109,7 +109,7 @@ export const ProcessSection: React.FC<{ onConsultationClick?: () => void }> = ({
                   <button
                     id="initiate-project-process-btn"
                     onClick={onConsultationClick}
-                    className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#C27848] text-white text-xs font-semibold uppercase tracking-wider rounded-lg hover:bg-[#ad673b] transition-colors shadow-sm"
+                    className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#0B2545] text-white text-xs font-semibold uppercase tracking-wider rounded-xl hover:bg-[#153A66] transition-colors shadow-xs"
                   >
                     <span>Schedule Site Consultation</span>
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -130,7 +130,7 @@ export const ProcessSection: React.FC<{ onConsultationClick?: () => void }> = ({
 
               <div className="relative z-10">
                 <div className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-white/20 backdrop-blur-sm rounded text-[11px] font-mono tracking-wider mb-3">
-                  <Sparkles className="w-3 h-3 text-[#E8A573]" />
+                  <Sparkles className="w-3 h-3 text-[#93C5FD]" />
                   <span>FIELD DOCUMENTATION</span>
                 </div>
                 <p className="text-xs text-white/90 leading-relaxed font-sans">
@@ -138,7 +138,7 @@ export const ProcessSection: React.FC<{ onConsultationClick?: () => void }> = ({
                 </p>
                 <div className="mt-4 pt-3 border-t border-white/15 flex items-center justify-between text-[11px] text-white/70 font-mono">
                   <span>Standard: BIS / NBC Compliant</span>
-                  <span className="flex items-center gap-1 text-[#E8A573]">
+                  <span className="flex items-center gap-1 text-[#93C5FD]">
                     <CheckCircle2 className="w-3 h-3" /> Zero Tolerances
                   </span>
                 </div>

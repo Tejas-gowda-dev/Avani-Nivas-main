@@ -30,7 +30,7 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({ service, onClose, on
             className="w-full h-full object-cover opacity-85"
             loading="lazy"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1A1918] via-transparent to-black/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#252525] via-transparent to-black/30" />
 
           <button
             onClick={onClose}
@@ -41,7 +41,7 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({ service, onClose, on
           </button>
 
           <div className="absolute bottom-6 left-6 right-6 text-white">
-            <span className="text-[11px] uppercase tracking-widest text-[#C27848] font-bold">
+            <span className="text-[11px] uppercase tracking-widest text-[#93C5FD] font-bold">
               Gowdru Realcom / Avani Nivas Service
             </span>
             <h2 id="service-modal-title" className="text-2xl sm:text-3xl font-normal font-serif-heading">
@@ -61,13 +61,13 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({ service, onClose, on
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
             <div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#1A1918] mb-3">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-[#252525] mb-3">
                 Architectural Highlights
               </h3>
               <ul className="space-y-2">
                 {service.highlights.map((item, idx) => (
                   <li key={idx} className="flex items-start gap-2 text-xs text-[#5C564E]">
-                    <span className="w-4 h-4 rounded-full bg-[#C27848]/15 text-[#C27848] flex items-center justify-center shrink-0 mt-0.5">
+                    <span className="w-4 h-4 rounded-full bg-[#0B2545]/10 text-[#0B2545] flex items-center justify-center shrink-0 mt-0.5">
                       <Check className="w-3 h-3" />
                     </span>
                     <span>{item}</span>
@@ -77,13 +77,13 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({ service, onClose, on
             </div>
 
             <div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#1A1918] mb-3">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-[#252525] mb-3">
                 Included Deliverables
               </h3>
               <ul className="space-y-2">
                 {service.deliverables.map((item, idx) => (
                   <li key={idx} className="flex items-start gap-2 text-xs text-[#5C564E]">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#C27848] shrink-0 mt-1.5" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#0B2545] shrink-0 mt-1.5" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -92,7 +92,7 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({ service, onClose, on
           </div>
 
           <div className="p-4 bg-[#F4F1EB] rounded-lg border border-[#E6E1D8] text-xs text-[#5C564E]">
-            <span className="font-semibold text-[#1A1918]">Recommended For: </span>
+            <span className="font-semibold text-[#252525]">Recommended For: </span>
             {service.idealFor}
           </div>
         </div>
@@ -101,7 +101,7 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({ service, onClose, on
         <div className="p-4 sm:p-6 bg-[#F2ECE4] border-t border-[#E6E1D8] flex items-center justify-between gap-4">
           <button
             onClick={onClose}
-            className="text-xs font-medium text-[#7C7469] hover:text-[#1A1918] transition-colors"
+            className="text-xs font-medium text-[#7C7469] hover:text-[#252525] transition-colors"
           >
             Close Window
           </button>
@@ -111,7 +111,7 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({ service, onClose, on
               onClose();
               onEnquire(service.title);
             }}
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#C27848] hover:bg-[#a9653a] text-white text-xs font-semibold uppercase tracking-wider rounded-md transition-colors"
+            className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#0B2545] hover:bg-[#153A66] text-white text-xs font-semibold uppercase tracking-wider rounded-xl transition-colors shadow-xs"
           >
             <span>Request Quote For This Service</span>
             <ArrowRight className="w-3.5 h-3.5" />

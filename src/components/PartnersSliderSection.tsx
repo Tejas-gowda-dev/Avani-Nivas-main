@@ -25,10 +25,10 @@ export const PartnersSliderSection: React.FC<PartnersSliderSectionProps> = ({
       <div
         key={`${partner.id}-${partner.number}`}
         onClick={() => setActivePartner(partner)}
-        className="group relative shrink-0 mx-3 px-5 py-3.5 bg-white rounded-xl border border-[#E8E2D8] hover:border-[#C27848] shadow-xs hover:shadow-md transition-all duration-300 flex items-center gap-3.5 cursor-pointer min-w-[200px] sm:min-w-[230px] select-none"
+        className="group relative shrink-0 mx-3 px-5 py-3.5 bg-white rounded-xl border border-[#E8E2D8] hover:border-[#0B2545] shadow-xs hover:shadow-md transition-all duration-300 flex items-center gap-3.5 cursor-pointer min-w-[200px] sm:min-w-[230px] select-none"
       >
         {/* Logo or Branded Emblem */}
-        <div className="w-10 h-10 rounded-lg bg-[#FAF8F5] border border-[#EDE7DF] flex items-center justify-center shrink-0 overflow-hidden group-hover:border-[#C27848]/40 transition-colors">
+        <div className="w-10 h-10 rounded-lg bg-[#FAF8F5] border border-[#EDE7DF] flex items-center justify-center shrink-0 overflow-hidden group-hover:border-[#0B2545]/40 transition-colors">
           {hasImage ? (
             <img
               src={partner.logoUrl}
@@ -46,7 +46,7 @@ export const PartnersSliderSection: React.FC<PartnersSliderSectionProps> = ({
         {/* Text Information */}
         <div className="text-left overflow-hidden">
           <div className="flex items-center gap-1.5">
-            <span className="text-xs font-bold text-[#14244A] group-hover:text-[#C27848] transition-colors truncate">
+            <span className="text-xs font-bold text-[#252525] group-hover:text-[#0B2545] transition-colors truncate">
               {partner.name}
             </span>
           </div>
@@ -54,7 +54,7 @@ export const PartnersSliderSection: React.FC<PartnersSliderSectionProps> = ({
             {partner.category}
           </p>
           {partner.spec && (
-            <span className="inline-block text-[9px] text-[#C27848] font-semibold tracking-wide truncate max-w-[150px]">
+            <span className="inline-block text-[9px] text-[#0B2545] font-semibold tracking-wide truncate max-w-[150px]">
               {partner.spec}
             </span>
           )}
@@ -72,29 +72,29 @@ export const PartnersSliderSection: React.FC<PartnersSliderSectionProps> = ({
         
         {/* Section Header: Styled directly after reference design */}
         <ScrollReveal className="max-w-4xl mx-auto mb-14 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#14244A] tracking-tight font-serif leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#252525] tracking-tight font-serif leading-tight">
             Trusted by 40+ Industry-Leading Partners across India
           </h2>
 
           <p className="mt-5 text-base sm:text-lg text-[#5A534A] leading-relaxed max-w-3xl mx-auto">
-            Avani Nivas collaborates with certified structural, civil, electrical, plumbing, and interior manufacturers—guaranteeing 100% genuine specifications, milestone-tested compliance, and lifetime build resilience for every turnkey residence.
+            Avani Nivasa collaborates with certified structural, civil, electrical, plumbing, and interior manufacturers—guaranteeing 100% genuine specifications, milestone-tested compliance, and lifetime build resilience for every turnkey residence.
           </p>
 
           {/* Quick interactive note */}
           <div className="mt-4 flex items-center justify-center gap-4 text-xs text-[#8C8275]">
             <span className="inline-flex items-center gap-1.5 font-medium">
-              <ShieldCheck className="w-3.5 h-3.5 text-[#C27848]" />
+              <ShieldCheck className="w-3.5 h-3.5 text-[#0B2545]" />
               Zero Counterfeit Tolerance
             </span>
             <span>•</span>
             <span className="inline-flex items-center gap-1.5 font-medium">
-              <Sparkles className="w-3.5 h-3.5 text-[#C27848]" />
+              <Sparkles className="w-3.5 h-3.5 text-[#0B2545]" />
               40 Verified Partner Slots
             </span>
             <span>•</span>
             <button
               onClick={() => setIsPaused(!isPaused)}
-              className="inline-flex items-center gap-1 text-[#14244A] hover:text-[#C27848] font-semibold transition-colors cursor-pointer"
+              className="inline-flex items-center gap-1 text-[#14244A] hover:text-[#0B2545] font-semibold transition-colors cursor-pointer"
               title={isPaused ? 'Resume slider motion' : 'Pause slider motion'}
             >
               {isPaused ? (
@@ -167,16 +167,16 @@ export const PartnersSliderSection: React.FC<PartnersSliderSectionProps> = ({
           >
             <div className="flex items-start justify-between">
               <div>
-                <span className="text-[10px] uppercase font-bold text-[#C27848] tracking-wider">
+                <span className="text-[10px] uppercase font-bold text-[#0B2545] tracking-wider">
                   Partner Slot #{activePartner.number}
                 </span>
-                <h3 className="text-xl font-bold font-serif text-[#14244A] mt-0.5">
+                <h3 className="text-xl font-bold font-serif text-[#252525] mt-0.5">
                   {activePartner.name}
                 </h3>
               </div>
               <button
                 onClick={() => setActivePartner(null)}
-                className="text-xs text-[#786E62] hover:text-[#14244A] p-1 font-bold"
+                className="text-xs text-[#786E62] hover:text-[#252525] p-1 font-bold"
               >
                 ✕
               </button>
@@ -192,7 +192,7 @@ export const PartnersSliderSection: React.FC<PartnersSliderSectionProps> = ({
                 />
               ) : (
                 <div className="text-center">
-                  <div className="text-xs font-bold text-[#14244A] uppercase tracking-wider">
+                  <div className="text-xs font-bold text-[#252525] uppercase tracking-wider">
                     Partner Logo Slot #{activePartner.number}
                   </div>
                   <p className="text-[11px] text-[#786E62] mt-1">
@@ -205,11 +205,11 @@ export const PartnersSliderSection: React.FC<PartnersSliderSectionProps> = ({
             <div className="text-xs space-y-2 text-[#5A534A]">
               <div className="flex justify-between py-1 border-b border-[#F0EAE1]">
                 <span className="font-semibold text-[#786E62]">Category:</span>
-                <span className="font-bold text-[#14244A]">{activePartner.category}</span>
+                <span className="font-bold text-[#252525]">{activePartner.category}</span>
               </div>
               <div className="flex justify-between py-1 border-b border-[#F0EAE1]">
                 <span className="font-semibold text-[#786E62]">Specification:</span>
-                <span className="font-bold text-[#C27848]">{activePartner.spec || 'Standard Compliant'}</span>
+                <span className="font-bold text-[#0B2545]">{activePartner.spec || 'Standard Compliant'}</span>
               </div>
             </div>
 

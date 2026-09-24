@@ -161,7 +161,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenConsulta
                 <div key={idx} className="flex items-center justify-between p-3.5 rounded-xl bg-white border border-[#E0D8CC] shadow-xs">
                   <div className="flex items-center gap-3 text-sm text-[#252525] font-semibold">
                     <div className="w-6 h-6 rounded-full bg-[#0B2545]/10 text-[#0B2545] flex items-center justify-center shrink-0">
-                      <MapPin className="w-3.5 h-3.5 " />
+                      <MapPin className="w-3.5 h-3.5" />
                     </div>
                     <span>{hub.name}, {hub.state}</span>
                   </div>
@@ -172,11 +172,11 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenConsulta
               ))}
             </div>
 
-           
+
             <div className="pt-2">
               <button
                 onClick={() => onNavigate('contact')}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[#153A66] hover:bg-[#0B2545] text-white text-xs font-bold uppercase tracking-wider rounded-xl shadow-xs transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#0B2545] hover:bg-[#153A66] text-white text-xs font-bold uppercase tracking-wider rounded-xl shadow-xs transition-colors"
               >
                 <span>Schedule a Site Consultation</span>
                 <ArrowRight className="w-4 h-4" />

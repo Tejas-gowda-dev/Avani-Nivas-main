@@ -2,7 +2,6 @@ import React from 'react';
 import { PageId } from '../types';
 import { COMPANY_INFO } from '../data/company';
 import { MapPin, Phone, Mail, Clock, ArrowUpRight, ShieldCheck, FileText } from 'lucide-react';
-const logo = new URL('../assets/CompanyLogo.png', import.meta.url).href;
 
 
 interface FooterProps {
