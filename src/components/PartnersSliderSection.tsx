@@ -1,229 +1,190 @@
-import React, { useState } from 'react';
-import { PARTNER_LOGOS_40 } from '../data/partners40';
-import { PartnerLogoItem } from '../types';
-import { ScrollReveal } from './ScrollReveal';
-import { ShieldCheck, Pause, Play, Sparkles } from 'lucide-react';
+import React from 'react';
+
+// Optional referral array provided by user for external or college logo integration
+export const collegeLogos = [
+  "/tn-skill.png",
+  "/IITK.png",
+  "/SRMAP.png",
+  "/NITS.png",
+  "/bitslaw.png",
+  "/iitm_logo.png",
+  "/Jaipuria.png",
+  "/IITGoa.png",
+  "/Ashutosh.png",
+  "/IITM.png",
+  "/pesmandya.svg",
+  "/acu.webp",
+  "/NaanMudhalvan.webp",
+  "/jssacademy.webp",
+  "/Guru_Nanak_Dev_Engineering_College,_Bidar.webp",
+  "/Govt-Tool-Room.webp",
+  "/Ramanagara-Govt.webp",
+  "/GsssMysuru.webp",
+  "/DayanadaSagar.webp",
+  "/Jawaharlal-Nehru-Technological-University.webp",
+  "/GovermmentArts.webp",
+  "/VIVEKANANDHACOLLEGE FORWOMEN.webp",
+  "/DonBosc.webp",
+  "/Eriyur.webp",
+  "/SriKrishna.webp ",
+  "/ssmlogo.webp",
+  "/Excel.webp",
+  "/Sri-venkateshwaraa.webp",
+  "/Gonzaga.webp",
+  "/Thangavel.webp",
+  "/Jairam.webp",
+  "/KUMARAGURU.webp",
+  "/ARIGNAR.webp",
+  "/UDHAGAMANDALAM.webp",
+  "/Sathyamangalam.webp",
+  "/MGR.webp",
+  "/SRIrAMALINGA.webp",
+  "/nyruth.webp",
+  "/jayam.webp",
+  "/BHARATRATNA.webp",
+  "/sss.webp",
+  "/dhivya.webp",
+  "/THONDAMUTHUR.webp",
+  "/arakkomam.webp",
+  "/krishna.webp",
+  "/cambride.webp",
+  "/basaveshwar.webp",
+  "/KLE.webp",
+  "/KLS.webp",
+  "/Sir-M.webp",
+  "/RV.webp",
+  "/BIOT.webp",
+  "/SGBIOT.webp",
+  "/BMS.webp",
+  "/vvce.webp",
+  "/SCCOA.webp",
+  "/ERK.webp",
+  "/TUemblem.webp",
+  "/St-Joseph.webp",
+  "/kcas.webp",
+  "/sunramaniyam.webp",
+  "/VVIT.webp",
+  "/MJCOA.webp",
+  "/Dr-PG.webp",
+];
+
+// Verified 40 Industry Construction & Architectural Partner Brands
+// interface PartnerBrand {
+//   id: string;
+//   name: string;
+//   category: string;
+//   tag: string;
+//   brandColor: string;
+//   accentColor: string;
+// }
+
+// const PARTNER_BRANDS: PartnerBrand[] = [
+//   { id: '1', name: 'Tata Tiscon', category: 'Structural Steel', tag: 'Fe 550D TMT', brandColor: '#004B87', accentColor: '#E8F1F8' },
+//   { id: '2', name: 'UltraTech Cement', category: 'Cement & RMC', tag: 'Grade 53 OPC', brandColor: '#D97706', accentColor: '#FEF3C7' },
+//   { id: '3', name: 'Saint-Gobain', category: 'Architectural Glass', tag: 'Double Glazing', brandColor: '#0369A1', accentColor: '#E0F2FE' },
+//   { id: '4', name: 'Häfele', category: 'Precision Hardware', tag: 'German Systems', brandColor: '#DC2626', accentColor: '#FEE2E2' },
+//   { id: '5', name: 'Asian Paints', category: 'Luxury Finishes', tag: 'Royale & Ultima', brandColor: '#991B1B', accentColor: '#FFE4E6' },
+//   { id: '6', name: 'Kajaria', category: 'Vitrified Surfaces', tag: 'Large Porcelain', brandColor: '#B91C1C', accentColor: '#FEE2E2' },
+//   { id: '7', name: 'Jaquar Artize', category: 'Luxury Bathware', tag: 'Forged Brass', brandColor: '#0F172A', accentColor: '#F1F5F9' },
+//   { id: '8', name: 'Schneider Electric', category: 'Power & IoT', tag: 'European MCBs', brandColor: '#059669', accentColor: '#D1FAE5' },
+//   { id: '9', name: 'Dr. Fixit', category: 'Waterproofing', tag: 'Silicone Polymers', brandColor: '#CA8A04', accentColor: '#FEF9C3' },
+//   { id: '10', name: 'Astral Pipes', category: 'Plumbing Networks', tag: 'CPVC Pro', brandColor: '#0284C7', accentColor: '#E0F2FE' },
+//   { id: '11', name: 'Polycab', category: 'Concealed Wiring', tag: 'FRLS Copper', brandColor: '#DC2626', accentColor: '#FEE2E2' },
+//   { id: '12', name: 'CenturyPly', category: 'Engineered Wood', tag: 'Club Prime BWP', brandColor: '#15803D', accentColor: '#DCFCE7' },
+//   { id: '13', name: 'Greenlam', category: 'Interior Laminates', tag: 'Anti-Bacterial', brandColor: '#047857', accentColor: '#D1FAE5' },
+//   { id: '14', name: 'Blum', category: 'Cabinet Hardware', tag: 'Aventos Systems', brandColor: '#EA580C', accentColor: '#FFEDD5' },
+//   { id: '15', name: 'Kohler', category: 'Sanitary & Wellness', tag: 'Air Showers', brandColor: '#18181B', accentColor: '#F4F4F5' },
+//   { id: '16', name: 'Godrej', category: 'Smart Security', tag: 'Biometric Access', brandColor: '#831843', accentColor: '#FCE7F3' },
+//   { id: '17', name: 'Fenesta', category: 'UPVC Windows', tag: 'Soundproof Double', brandColor: '#166534', accentColor: '#DCFCE7' },
+//   { id: '18', name: 'Philips Signify', category: 'Smart Lighting', tag: 'CRI 90+ LEDs', brandColor: '#1D4ED8', accentColor: '#DBEAFE' },
+//   { id: '19', name: 'Legrand', category: 'Switches & Plates', tag: 'Arteor IoT', brandColor: '#B91C1C', accentColor: '#FEE2E2' },
+//   { id: '20', name: 'Supreme', category: 'Drainage Systems', tag: 'SWR Rubber Ring', brandColor: '#DC2626', accentColor: '#FEE2E2' },
+//   { id: '21', name: 'Fosroc Chemicals', category: 'Admixtures', tag: 'Structural Grouts', brandColor: '#0369A1', accentColor: '#E0F2FE' },
+//   { id: '22', name: 'Simpolo', category: 'Ceramic Slabs', tag: 'Seamless Stone', brandColor: '#374151', accentColor: '#F3F4F6' },
+//   { id: '23', name: 'Havells', category: 'Electrical & Fans', tag: 'Premium IoT', brandColor: '#DC2626', accentColor: '#FEE2E2' },
+//   { id: '24', name: 'Grohe', category: 'Luxury Fittings', tag: 'Thermostatics', brandColor: '#0284C7', accentColor: '#E0F2FE' },
+//   { id: '25', name: 'Bosch', category: 'Built-in Kitchen', tag: 'Series 8 Ovens', brandColor: '#B91C1C', accentColor: '#FEE2E2' },
+//   { id: '26', name: 'Franke', category: 'Granite Sinks', tag: 'Fragranite Tech', brandColor: '#BE123C', accentColor: '#FFE4E6' },
+//   { id: '27', name: 'Siemens Home', category: 'Home Appliances', tag: 'iQ700 Induction', brandColor: '#0F766E', accentColor: '#CCFBF1' },
+//   { id: '28', name: 'Somany', category: 'Ceramic Tiles', tag: 'Slip Shield', brandColor: '#991B1B', accentColor: '#FFE4E6' },
+//   { id: '29', name: 'Nitco Tiles', category: 'Natural Marble', tag: 'Precision Cut', brandColor: '#1E3A8A', accentColor: '#DBEAFE' },
+//   { id: '30', name: 'Cera', category: 'Sanitaryware', tag: 'Rimless Italian', brandColor: '#BE123C', accentColor: '#FFE4E6' },
+//   { id: '31', name: 'Dorset', category: 'Locks & Hinges', tag: 'Architectural', brandColor: '#1E293B', accentColor: '#F1F5F9' },
+//   { id: '32', name: 'Ebco', category: 'Furniture Fittings', tag: 'Pro Runners', brandColor: '#0369A1', accentColor: '#E0F2FE' },
+//   { id: '33', name: 'Dormakaba', category: 'Glass Hardware', tag: 'Automatic Entry', brandColor: '#1E293B', accentColor: '#F1F5F9' },
+//   { id: '34', name: 'Supreme Solar', category: 'Solar Heating', tag: 'Glass Lined ETC', brandColor: '#EA580C', accentColor: '#FFEDD5' },
+//   { id: '35', name: 'Anchor Panasonic', category: 'Modular Devices', tag: 'Roma Switches', brandColor: '#1D4ED8', accentColor: '#DBEAFE' },
+//   { id: '36', name: 'Finolex', category: 'Underground Power', tag: 'Armoured Cables', brandColor: '#0284C7', accentColor: '#E0F2FE' },
+//   { id: '37', name: 'Nerolac', category: 'Waterproof Paints', tag: 'Excel Mica Marble', brandColor: '#B91C1C', accentColor: '#FEE2E2' },
+//   { id: '38', name: 'Dulux', category: 'Exterior Polymers', tag: 'Weathershield', brandColor: '#0284C7', accentColor: '#E0F2FE' },
+//   { id: '39', name: 'Berger Paints', category: 'Interior Emulsion', tag: 'Silk Glamor', brandColor: '#1E40AF', accentColor: '#DBEAFE' },
+//   { id: '40', name: 'Faber Hoods', category: 'Kitchen Chimneys', tag: 'Auto-Clean Baffle', brandColor: '#EA580C', accentColor: '#FFEDD5' },
+// ];
 
 interface PartnersSliderSectionProps {
   onOpenConsultation?: () => void;
 }
 
-export const PartnersSliderSection: React.FC<PartnersSliderSectionProps> = ({
-  onOpenConsultation
-}) => {
-  const [isPaused, setIsPaused] = useState(false);
-  const [activePartner, setActivePartner] = useState<PartnerLogoItem | null>(null);
-
-  // Divide into two rows for a rich, balanced 40-partner slider motion
-  const row1 = PARTNER_LOGOS_40.slice(0, 20);
-  const row2 = PARTNER_LOGOS_40.slice(20, 40);
-
-  const renderLogoCard = (partner: PartnerLogoItem) => {
-    const hasImage = Boolean(partner.logoUrl && partner.logoUrl.trim().length > 0);
-
-    return (
-      <div
-        key={`${partner.id}-${partner.number}`}
-        onClick={() => setActivePartner(partner)}
-        className="group relative shrink-0 mx-3 px-5 py-3.5 bg-white rounded-xl border border-[#E8E2D8] hover:border-[#0B2545] shadow-xs hover:shadow-md transition-all duration-300 flex items-center gap-3.5 cursor-pointer min-w-[200px] sm:min-w-[230px] select-none"
-      >
-        {/* Logo or Branded Emblem */}
-        <div className="w-10 h-10 rounded-lg bg-[#FAF8F5] border border-[#EDE7DF] flex items-center justify-center shrink-0 overflow-hidden group-hover:border-[#0B2545]/40 transition-colors">
-          {hasImage ? (
-            <img
-              src={partner.logoUrl}
-              alt={partner.name}
-              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-              referrerPolicy="no-referrer"
-            />
-          ) : (
-            <div className="text-[11px] font-bold font-mono text-[#14244A] bg-[#14244A]/5 w-full h-full flex items-center justify-center">
-              #{partner.number < 10 ? `0${partner.number}` : partner.number}
-            </div>
-          )}
-        </div>
-
-        {/* Text Information */}
-        <div className="text-left overflow-hidden">
-          <div className="flex items-center gap-1.5">
-            <span className="text-xs font-bold text-[#252525] group-hover:text-[#0B2545] transition-colors truncate">
-              {partner.name}
-            </span>
-          </div>
-          <p className="text-[10px] text-[#786E62] truncate font-medium mt-0.5">
-            {partner.category}
-          </p>
-          {partner.spec && (
-            <span className="inline-block text-[9px] text-[#0B2545] font-semibold tracking-wide truncate max-w-[150px]">
-              {partner.spec}
-            </span>
-          )}
-        </div>
-      </div>
-    );
-  };
-
+export const PartnersSliderSection: React.FC<PartnersSliderSectionProps> = () => {
   return (
-    <section
-      id="partners-slider-section"
-      className="py-20 sm:py-28 bg-white border-y border-[#ECE7DF] relative overflow-hidden"
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section className="py-10 bg-[#f4fcff]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Section Header: Styled directly after reference design */}
-        <ScrollReveal className="max-w-4xl mx-auto mb-14 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#252525] tracking-tight font-serif leading-tight">
+        {/* Section Header */}
+        <div className="text-center space-y-4 mb-16">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
             Trusted by 40+ Industry-Leading Partners across India
           </h2>
-
-          <p className="mt-5 text-base sm:text-lg text-[#5A534A] leading-relaxed max-w-3xl mx-auto">
+          <p className="text-gray-700 max-w-7xl mx-auto font-normal">
             Avani Nivasa collaborates with certified structural, civil, electrical, plumbing, and interior manufacturers—guaranteeing 100% genuine specifications, milestone-tested compliance, and lifetime build resilience for every turnkey residence.
           </p>
-
-          {/* Quick interactive note */}
-          <div className="mt-4 flex items-center justify-center gap-4 text-xs text-[#8C8275]">
-            <span className="inline-flex items-center gap-1.5 font-medium">
-              <ShieldCheck className="w-3.5 h-3.5 text-[#0B2545]" />
-              Zero Counterfeit Tolerance
-            </span>
-            <span>•</span>
-            <span className="inline-flex items-center gap-1.5 font-medium">
-              <Sparkles className="w-3.5 h-3.5 text-[#0B2545]" />
-              40 Verified Partner Slots
-            </span>
-            <span>•</span>
-            <button
-              onClick={() => setIsPaused(!isPaused)}
-              className="inline-flex items-center gap-1 text-[#14244A] hover:text-[#0B2545] font-semibold transition-colors cursor-pointer"
-              title={isPaused ? 'Resume slider motion' : 'Pause slider motion'}
-            >
-              {isPaused ? (
-                <>
-                  <Play className="w-3.5 h-3.5 fill-current" />
-                  <span>Resume Motion</span>
-                </>
-              ) : (
-                <>
-                  <Pause className="w-3.5 h-3.5 fill-current" />
-                  <span>Pause Motion</span>
-                </>
-              )}
-            </button>
-          </div>
-        </ScrollReveal>
-
-      </div>
-
-      {/* ========================================================
-          INFINITE LOGO SLIDER MOTION (DOUBLE ROW MARQUEE)
-      ======================================================== */}
-      <div className="relative w-full overflow-hidden pause-on-hover py-2 space-y-4">
-        
-        {/* Soft Left & Right Edge Fade Overlays */}
-        <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none" />
-
-        {/* Row 1: Left to Right Marquee */}
-        <div
-          className="flex animate-marquee"
-          style={{ animationPlayState: isPaused ? 'paused' : 'running' }}
-        >
-          {/* First loop instance */}
-          <div className="flex items-center">
-            {row1.map(renderLogoCard)}
-          </div>
-          {/* Duplicate loop instance for seamless infinite motion */}
-          <div className="flex items-center" aria-hidden="true">
-            {row1.map(renderLogoCard)}
-          </div>
         </div>
 
-        {/* Row 2: Reverse Marquee for Dynamic Balance */}
-        <div
-          className="flex animate-marquee-reverse"
-          style={{ animationPlayState: isPaused ? 'paused' : 'running' }}
-        >
-          {/* First loop instance */}
-          <div className="flex items-center">
-            {row2.map(renderLogoCard)}
-          </div>
-          {/* Duplicate loop instance for seamless infinite motion */}
-          <div className="flex items-center" aria-hidden="true">
-            {row2.map(renderLogoCard)}
+        {/* Continuous Logo Slider Track */}
+        <div className="overflow-hidden relative">
+          <div className="logo-slider group">
+            <div className="flex w-max whitespace-nowrap animate-[scroll_150s_linear_infinite] group-hover:[animation-play-state:paused]">
+              {[...collegeLogos, ...collegeLogos].map((brand, i) => (
+                // <div
+                //   key={`${brand.id}-${i}`}
+                //   className="h-16 mx-4 px-5 bg-white rounded-xl border border-gray-200/90 shadow-2xs hover:border-[#0078D4] hover:shadow-xs inline-flex items-center gap-3.5 select-none transition-all duration-200 shrink-0 cursor-default"
+                // >
+                //   {/* Brand Monogram Badge */}
+                //   <div
+                //     className="w-9 h-9 rounded-lg flex items-center justify-center font-bold text-xs shrink-0 tracking-tight shadow-2xs"
+                //     style={{ backgroundColor: brand.accentColor, color: brand.brandColor }}
+                //   >
+                //     {brand.name
+                //       .split(' ')
+                //       .map((word) => word[0])
+                //       .slice(0, 2)
+                //       .join('')}
+                //   </div>
+
+                //   {/* Brand Details */}
+                //   <div className="text-left">
+                //     <div className="text-sm font-bold text-gray-900 leading-tight">
+                //       {brand.name}
+                //     </div>
+                //     <div className="flex items-center gap-1.5 mt-0.5">
+                //       <span className="text-[11px] text-gray-600 font-medium">
+                //         {brand.category}
+                //       </span>
+                //       <span className="text-[10px] text-gray-400">•</span>
+                //       <span className="text-[10px] font-semibold text-[#0078D4]">
+                //         {brand.tag}
+                //       </span>
+                //     </div>
+                //   </div>
+                // </div>
+
+                <img key={i} src={brand} alt={`logo-${i}`} className="h-16 w-auto mx-8 inline-block" />
+              ))}
+            </div>
           </div>
         </div>
 
       </div>
-
-      {/* Partner Detail Modal on Click */}
-      {activePartner && (
-        <div
-          className="fixed inset-0 z-50 bg-black/50 backdrop-blur-xs flex items-center justify-center p-4"
-          onClick={() => setActivePartner(null)}
-        >
-          <div
-            className="bg-white rounded-2xl border border-[#DDD3C5] max-w-md w-full p-6 shadow-2xl space-y-4"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="flex items-start justify-between">
-              <div>
-                <span className="text-[10px] uppercase font-bold text-[#0B2545] tracking-wider">
-                  Partner Slot #{activePartner.number}
-                </span>
-                <h3 className="text-xl font-bold font-serif text-[#252525] mt-0.5">
-                  {activePartner.name}
-                </h3>
-              </div>
-              <button
-                onClick={() => setActivePartner(null)}
-                className="text-xs text-[#786E62] hover:text-[#252525] p-1 font-bold"
-              >
-                ✕
-              </button>
-            </div>
-
-            <div className="p-4 bg-[#FAF8F5] rounded-xl border border-[#EDE7DF] flex items-center justify-center min-h-[100px]">
-              {activePartner.logoUrl ? (
-                <img
-                  src={activePartner.logoUrl}
-                  alt={activePartner.name}
-                  className="max-h-16 max-w-full object-contain"
-                  referrerPolicy="no-referrer"
-                />
-              ) : (
-                <div className="text-center">
-                  <div className="text-xs font-bold text-[#252525] uppercase tracking-wider">
-                    Partner Logo Slot #{activePartner.number}
-                  </div>
-                  <p className="text-[11px] text-[#786E62] mt-1">
-                    Ready for your partner logo image or brand crest.
-                  </p>
-                </div>
-              )}
-            </div>
-
-            <div className="text-xs space-y-2 text-[#5A534A]">
-              <div className="flex justify-between py-1 border-b border-[#F0EAE1]">
-                <span className="font-semibold text-[#786E62]">Category:</span>
-                <span className="font-bold text-[#252525]">{activePartner.category}</span>
-              </div>
-              <div className="flex justify-between py-1 border-b border-[#F0EAE1]">
-                <span className="font-semibold text-[#786E62]">Specification:</span>
-                <span className="font-bold text-[#0B2545]">{activePartner.spec || 'Standard Compliant'}</span>
-              </div>
-            </div>
-
-            <div className="pt-2 flex items-center justify-end">
-              <button
-                onClick={() => setActivePartner(null)}
-                className="px-4 py-2 bg-[#14244A] text-white text-xs font-bold rounded-lg uppercase tracking-wider"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
     </section>
   );
 };

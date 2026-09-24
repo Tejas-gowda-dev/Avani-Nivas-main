@@ -25,7 +25,7 @@ export const ContactPage: React.FC = () => {
     email: '',
     serviceRequired: 'Kitchen Renovations',
     location: 'Bengaluru / Mallathahalli',
-    budgetRange: '₹30 Lakhs - ₹60 Lakhs (Renovation/Additions)',
+    budgetRange: '₹10 Lakhs - ₹60 Lakhs (Renovation/Additions)',
     message: ''
   });
 

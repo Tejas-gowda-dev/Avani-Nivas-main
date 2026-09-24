@@ -80,7 +80,7 @@ export const HomePage: React.FC<HomePageProps> = ({
           </ScrollReveal>
 
           {/* Services Grid (8 items) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {SERVICES.map((service, idx) => (
               <ScrollReveal
                 key={service.id}
@@ -296,7 +296,7 @@ export const HomePage: React.FC<HomePageProps> = ({
       {/* ========================================================
           CLIENT TESTIMONIALS SECTION
       ======================================================== */}
-      <section id="testimonials-section" className="py-20 sm:py-28 bg-[#FAF8F5] border-t border-[#EAE4DC]">
+      <section id="testimonials-section" className="py-20 sm:py-14 bg-[#FAF8F5] border-t border-[#EAE4DC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal className="text-center max-w-3xl mx-auto mb-14">
             <span className="text-xs font-bold uppercase tracking-widest text-[#0B2545]">
@@ -373,14 +373,14 @@ export const HomePage: React.FC<HomePageProps> = ({
               <div className="pt-2 flex flex-wrap items-center gap-3">
                 <button
                   onClick={() => onNavigate('about')}
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#0B2545] text-white text-xs font-bold uppercase tracking-wider rounded-lg hover:bg-[#153A66] transition-colors shadow-sm"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#0B2545] text-xs font-bold uppercase tracking-wider rounded-lg border border-[#0B2545]/30 hover:bg-[#153A66] hover:text-white transition-colors shadow-sm"
                 >
                   <span>Read Our Full Story</span>
                   <ChevronRight className="w-4 h-4" />
                 </button>
                 <button
                   onClick={() => onNavigate('partners')}
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#0B2545] text-xs font-bold uppercase tracking-wider rounded-lg border border-[#0B2545]/30 hover:bg-[#0B2545] hover:text-white transition-colors group"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#0B2545] text-xs font-bold uppercase tracking-wider rounded-lg border border-[#0B2545]/30 hover:bg-[#153A66] hover:text-white transition-colors group"
                 >
                   <span>Industry Partners</span>
                   <ChevronRight className="w-4 h-4 text-[#0B2545] group-hover:text-white" />
@@ -394,21 +394,21 @@ export const HomePage: React.FC<HomePageProps> = ({
               </h4>
               <div className="space-y-3">
                 {COMPANY_INFO.areasWeServe.map((area) => (
-                  <div key={area.name} className="flex items-center justify-between p-3 rounded-lg bg-[#FAF8F5] border border-[#ECE5DA]">
+                  <div key={area.name} className="flex items-center justify-center p-3 rounded-lg bg-[#FAF8F5] border border-[#ECE5DA]">
                     <div className="flex items-center gap-2.5">
                       <MapPin className="w-4 h-4 text-[#0B2545]" />
                       <span className="text-sm font-semibold text-[#252525]">{area.name}</span>
                       <span className="text-xs text-[#7C7469]">({area.state})</span>
                     </div>
-                    <span className="text-[11px] font-mono font-medium text-[#0B2545] bg-[#E9EFF7] px-2 py-0.5 rounded">
+                    {/* <span className="text-[11px] font-mono font-medium text-[#0B2545] bg-[#E9EFF7] px-2 py-0.5 rounded">
                       {area.type}
-                    </span>
+                    </span> */}
                   </div>
                 ))}
               </div>
               <div className="mt-4 pt-3 border-t border-[#ECE5DA] flex items-center justify-between text-xs text-[#7C7469]">
                 <span>Regional operations also active in:</span>
-                <span className="font-semibold text-[#252525]">Orissa & Chhattisgarh</span>
+                <span className="font-semibold text-[#252525]">All Over Karnataka</span>
               </div>
             </ScrollReveal>
           </div>
