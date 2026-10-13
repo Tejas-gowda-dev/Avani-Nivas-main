@@ -3,27 +3,21 @@ import { PageId, ServiceItem, ProjectItem, ProjectCategory } from '../types';
 import { COMPANY_INFO, TESTIMONIALS } from '../data/company';
 import { SERVICES } from '../data/services';
 import { PROJECTS } from '../data/projects';
+import { HeroSection } from '../components/HeroSection';
+import { TrustSection } from '../components/TrustSection';
 import { ProcessSection } from '../components/ProcessSection';
 import { PricingSection } from '../components/PricingSection';
+import { InteriorFeaturesSection } from '../components/InteriorFeaturesSection';
 import { PartnersSliderSection } from '../components/PartnersSliderSection';
 import { CTASection } from '../components/CTASection';
 import { ScrollReveal } from '../components/ScrollReveal';
-import { HeroSection } from '../components/HeroSection';
-
 import {
   ArrowRight,
-  ShieldCheck,
   MapPin,
   Star,
   Quote,
-  Phone,
-  Calendar,
-  IndianRupee,
-  Clock,
-  Sparkles,
   ChevronRight
 } from 'lucide-react';
-import { TrustSection } from '../components/TrustSection';
 
 interface HomePageProps {
   onNavigate: (page: PageId) => void;
@@ -65,7 +59,7 @@ export const HomePage: React.FC<HomePageProps> = ({
       {/* ========================================================
           SERVICES SECTION: 8 Comprehensive Offerings
       ======================================================== */}
-      <section id="featured-services-section" className="py-20 sm:py-28 bg-[#FAF8F5] border-t border-[#EAE4DC]">
+      <section id="featured-services-section" className="py-20 sm:py-14 bg-[#FAF8F5] border-t border-[#EAE4DC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal className="text-center max-w-3xl mx-auto mb-14">
             <span className="text-xs font-bold uppercase tracking-widest text-[#0B2545]">
@@ -287,6 +281,11 @@ export const HomePage: React.FC<HomePageProps> = ({
         }}
         onOpenConsultation={onOpenConsultation} 
       />
+
+      {/* ========================================================
+          INTERIOR FEATURES SECTION (HOME PAGE ONLY)
+      ======================================================== */}
+      <InteriorFeaturesSection onOpenConsultation={onOpenConsultation} />
 
       {/* ========================================================
           3-PHASE PROCESS SECTION

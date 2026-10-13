@@ -162,6 +162,7 @@ export const PRICING_TIERS: PricingTier[] = [
   
     ]
   }
+  
 ];
 
 export interface DimensionPreset {
