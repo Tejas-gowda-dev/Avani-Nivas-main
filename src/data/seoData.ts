@@ -138,7 +138,7 @@ export const SEO_CONFIG: Record<PageId, PageSEO> = {
       'description': 'Itemized construction and interior rate cards with Tata Tiscon steel, UltraTech cement, and milestone payments.',
       'priceCurrency': 'INR',
       'minPrice': '1999',
-      'maxPrice': '2950',
+      'maxPrice': '2749',
       'unitText': 'sq.ft'
     }
   },

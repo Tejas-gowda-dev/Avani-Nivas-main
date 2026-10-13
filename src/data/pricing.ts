@@ -21,8 +21,8 @@ export const PRICING_TIERS: PricingTier[] = [
     name: 'ESSENTIAL PACKAGE',
     badge: 'Essential Build',
     subtitle: 'Standard residential construction with high-strength RCC foundation & durable finishes',
-    ratePerSqFt: 1998,
-    rateDisplay: '₹1,998 / sq.ft',
+    ratePerSqFt: 1999,
+    rateDisplay: '₹1,999 / sq.ft',
     pricingType: 'per_sqft',
     minArea: 800,
     image: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80',
@@ -50,8 +50,8 @@ export const PRICING_TIERS: PricingTier[] = [
   name: 'CLASSIC PACKAGE',
     badge: 'Quality Turnkey',
     subtitle: 'Elevated turnkey construction with premium brand fittings, teak accents & 3D elevation',
-    ratePerSqFt: 2150,
-    rateDisplay: '₹2,150 / sq.ft',
+    ratePerSqFt: 2199,
+    rateDisplay: '₹2,199 / sq.ft',
     pricingType: 'per_sqft',
     minArea: 1000,
     image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80',
@@ -79,8 +79,8 @@ export const PRICING_TIERS: PricingTier[] = [
     name: 'PREMIUM PACKAGE',
     badge: 'Most Popular & Flagship',
     subtitle: 'Complete turnkey construction with full modular kitchen & designer bedroom wardrobes',
-    ratePerSqFt: 2400,
-    rateDisplay: '₹2,400 / sq.ft',
+    ratePerSqFt: 2549,
+    rateDisplay: '₹2,549 / sq.ft',
     pricingType: 'per_sqft',
     minArea: 1000,
     popular: true,
@@ -109,8 +109,8 @@ export const PRICING_TIERS: PricingTier[] = [
     name: 'ROYAL PACKAGE',
     badge: 'Ultra-Luxury Custom',
     subtitle: 'Architectural living with Italian marble, custom carpentry & smart home automation',
-    ratePerSqFt: 2950,
-    rateDisplay: '₹2,950 / sq.ft',
+    ratePerSqFt: 2749,
+    rateDisplay: '₹2,749 / sq.ft',
     pricingType: 'per_sqft',
     minArea: 1500,
     image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80',
@@ -179,10 +179,10 @@ export const DIMENSION_PRESETS: DimensionPreset[] = [
 ];
 
 export const SERVICE_OPTIONS = [
-  { id: 'basic-package', label: 'BASIC PACKAGE (₹1,998 / sq.ft)', rate: 1998, type: 'per_sqft' },
-  { id: 'premium-package', label: 'PREMIUM PACKAGE (₹2,150 / sq.ft)', rate: 2211, type: 'per_sqft' },
-  { id: 'royal-package', label: 'ROYAL PACKAGE (₹2,400 / sq.ft)', rate: 2555, type: 'per_sqft' },
-  { id: 'luxury-package', label: 'LUXURY PACKAGE (₹2,950 / sq.ft)', rate: 2950, type: 'per_sqft' },
+  { id: 'basic-package', label: 'BASIC PACKAGE (₹1,999 / sq.ft)', rate: 1999, type: 'per_sqft' },
+  { id: 'premium-package', label: 'PREMIUM PACKAGE (₹2,199 / sq.ft)', rate: 2199, type: 'per_sqft' },
+  { id: 'royal-package', label: 'ROYAL PACKAGE (₹2,549 / sq.ft)', rate: 2549, type: 'per_sqft' },
+  { id: 'luxury-package', label: 'LUXURY PACKAGE (₹2,749 / sq.ft)', rate: 2749, type: 'per_sqft' },
   { id: 'custom-package', label: 'CUSTOMIZED CLIENT PACKAGE (Custom Quote)', rate: 0, type: 'custom' }
 ];
 

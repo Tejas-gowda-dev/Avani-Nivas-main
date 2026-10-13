@@ -81,10 +81,10 @@ export const PricingPage: React.FC<PricingPageProps> = ({ onNavigate, onOpenCons
               <thead>
                 <tr className="bg-[#FAF8F5] border-b border-[#E0D8CC]">
                   <th className="p-4 sm:p-5 font-bold text-[#252525] min-w-[160px]">Feature / Specification</th>
-                  <th className="p-4 sm:p-5 font-bold text-[#252525] min-w-[150px]">BASIC PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">₹1,950 / sq.ft</span></th>
-                  <th className="p-4 sm:p-5 font-bold text-[#252525] min-w-[150px]">PREMIUM PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">₹2,150 / sq.ft</span></th>
-                  <th className="p-4 sm:p-5 font-bold text-[#252525] min-w-[160px]">ROYAL PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">₹2,400 / sq.ft</span></th>
-                  <th className="p-4 sm:p-5 font-bold text-[#252525] min-w-[150px]">LUXURY PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">₹2,950 / sq.ft</span></th>
+                  <th className="p-4 sm:p-5 font-bold text-[#252525] min-w-[150px]">BASIC PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">₹1,999 / sq.ft</span></th>
+                  <th className="p-4 sm:p-5 font-bold text-[#252525] min-w-[150px]">PREMIUM PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">₹2,199 / sq.ft</span></th>
+                  <th className="p-4 sm:p-5 font-bold text-[#252525] min-w-[160px]">ROYAL PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">₹2,549 / sq.ft</span></th>
+                  <th className="p-4 sm:p-5 font-bold text-[#252525] min-w-[150px]">LUXURY PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">₹2,749 / sq.ft</span></th>
                   <th className="p-4 sm:p-5 font-bold text-[#252525] min-w-[160px]">CUSTOMIZED CLIENT PACKAGE<br /><span className="text-[11px] font-normal text-[#6B6359]">Custom Quote</span></th>
                 </tr>
               </thead>
