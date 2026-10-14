@@ -111,7 +111,7 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({ service, onClose, on
               onClose();
               onEnquire(service.title);
             }}
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#0B2545] hover:bg-[#153A66] text-white text-xs font-semibold uppercase tracking-wider rounded-xl transition-colors shadow-xs"
+            className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#153A66] hover:bg-[#0B2545] text-white text-xs font-semibold uppercase tracking-wider rounded-xl transition-colors shadow-xs"
           >
             <span>Request Quote For This Service</span>
             <ArrowRight className="w-3.5 h-3.5" />

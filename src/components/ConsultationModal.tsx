@@ -118,7 +118,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
                 </button>
                 <button
                   onClick={onClose}
-                  className="inline-flex items-center justify-center px-5 py-2.5 bg-[#0B2545] text-white text-xs font-semibold uppercase tracking-wider rounded-xl hover:bg-[#153A66] transition-colors"
+                  className="inline-flex items-center justify-center px-5 py-2.5 bg-[#153A66] text-white text-xs font-semibold uppercase tracking-wider rounded-xl hover:bg-[#0B2545] transition-colors"
                 >
                   Return to Website
                 </button>
@@ -250,7 +250,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="w-full sm:flex-1 py-3 bg-[#0B2545] hover:bg-[#153A66] text-white text-xs font-semibold uppercase tracking-wider rounded-xl transition-colors flex items-center justify-center gap-2 shadow-xs"
+                  className="w-full sm:flex-1 py-3 bg-[#153A66] hover:bg-[#0B2545] text-white text-xs font-semibold uppercase tracking-wider rounded-xl transition-colors flex items-center justify-center gap-2 shadow-xs"
                 >
                   <Send className="w-4 h-4" />
                   <span>{submitting ? 'Submitting...' : 'Request Consultation'}</span>

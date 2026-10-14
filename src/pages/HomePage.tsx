@@ -138,7 +138,7 @@ export const HomePage: React.FC<HomePageProps> = ({
           <ScrollReveal delay={0.2} className="mt-12 text-center">
             <button
               onClick={() => onNavigate('services')}
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#0B2545] hover:bg-[#153A66] text-white text-xs font-semibold uppercase tracking-wider rounded-xl transition-colors shadow-sm"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#153A66] hover:bg-[#0B2545] text-white text-xs font-semibold uppercase tracking-wider rounded-xl transition-colors shadow-sm"
             >
               <span>Explore All Capabilities</span>
               <ArrowRight className="w-4 h-4" />
@@ -258,7 +258,7 @@ export const HomePage: React.FC<HomePageProps> = ({
           <ScrollReveal delay={0.2} className="mt-12 text-center">
             <button
               onClick={() => onNavigate('projects')}
-              className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#0B2545] hover:bg-[#153A66] text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors shadow-sm"
+              className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#153A66] hover:bg-[#0B2545] text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors shadow-sm"
             >
               <span>View All Projects & Floor Plans</span>
               <ArrowRight className="w-4 h-4" />

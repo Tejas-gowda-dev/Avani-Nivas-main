@@ -266,7 +266,7 @@ export const ContactPage: React.FC = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full sm:flex-1 py-4 bg-[#0B2545] hover:bg-[#153A66] text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-colors flex items-center justify-center gap-2 shadow-sm"
+                    className="w-full sm:flex-1 py-4 bg-[#153A66] hover:bg-[#0B2545] text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-colors flex items-center justify-center gap-2 shadow-sm"
                   >
                     <Send className="w-4 h-4" />
                     <span>{isSubmitting ? 'Transmitting...' : 'SUBMIT ENQUIRY'}</span>
@@ -429,7 +429,7 @@ export const ContactPage: React.FC = () => {
                   href="https://www.google.com/maps/dir/?api=1&destination=Mallathahalli+Bengaluru+Karnataka+560056"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-1.5 px-3 py-2 bg-[#0B2545] hover:bg-[#153A66] text-white text-xs font-bold rounded-xl transition-colors text-center"
+                  className="flex items-center justify-center gap-1.5 px-3 py-2 bg-[#153A66] hover:bg-[#0B2545] text-white text-xs font-bold rounded-xl transition-colors text-center"
                 >
                   <Navigation className="w-3.5 h-3.5" />
                   <span>Get Driving Route</span>

@@ -154,7 +154,7 @@ export const InteriorFeaturesSection: React.FC<InteriorFeaturesSectionProps> = (
                       e.stopPropagation();
                       setSelectedCategory(category);
                     }}
-                    className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#0B2545] hover:bg-[#153A66] text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-all group-hover:translate-x-0.5 shadow-sm"
+                    className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#153A66] hover:bg-[#0B2545] text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-all group-hover:translate-x-0.5 shadow-sm"
                   >
                     <span>View Designs</span>
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -180,7 +180,7 @@ export const InteriorFeaturesSection: React.FC<InteriorFeaturesSectionProps> = (
             {onOpenConsultation && (
               <button
                 onClick={onOpenConsultation}
-                className="px-6 py-3 bg-[#0B2545] hover:bg-[#153A66] text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-all shadow-sm"
+                className="px-6 py-3 bg-[#153A66] hover:bg-[#0B2545] text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-all shadow-sm"
               >
                 Book Interior Consultation
               </button>

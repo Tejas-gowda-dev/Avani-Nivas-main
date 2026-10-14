@@ -175,7 +175,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   setMobileMenuOpen(false);
                   onOpenConsultation();
                 }}
-                className="w-full py-3.5 bg-[#0B2545] text-white text-sm font-bold tracking-wide uppercase rounded-lg hover:bg-[#153A66] transition-colors flex items-center justify-center gap-2"
+                className="w-full py-3.5 bg-[#153A66] text-white text-sm font-bold tracking-wide uppercase rounded-lg hover:bg-[#0B2545] transition-colors flex items-center justify-center gap-2"
               >
                 <span>Get a Consultation</span>
                 <ArrowRight className="w-4 h-4" />

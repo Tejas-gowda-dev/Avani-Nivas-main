@@ -176,7 +176,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenConsulta
             <div className="pt-2">
               <button
                 onClick={() => onNavigate('contact')}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[#0B2545] hover:bg-[#153A66] text-white text-xs font-bold uppercase tracking-wider rounded-xl shadow-xs transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#153A66] hover:bg-[#0B2545] text-white text-xs font-bold uppercase tracking-wider rounded-xl shadow-xs transition-colors"
               >
                 <span>Schedule a Site Consultation</span>
                 <ArrowRight className="w-4 h-4" />

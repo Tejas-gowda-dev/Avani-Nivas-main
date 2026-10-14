@@ -419,8 +419,8 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
               </span>
               <h3 className="text-2xl font-serif text-[#252525]">Explore Architectural & Construction Packages</h3>
             </div>
-            <span className="text-xs text-[#7C7469]">All rates include architectural blueprint guidance & GST compliance</span>
-          </div>
+              <span className="text-xs text-[#7C7469]">All rates include architectural blueprint guidance & GST compliance</span>
+            </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {PRICING_TIERS.map((tier, idx) => {
@@ -586,17 +586,17 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                 </p>
               </div>
 
-              <button
-                onClick={() => {
-                  if (onSelectPlanForPricingPage) {
+                <button
+                  onClick={() => {
+                    if (onSelectPlanForPricingPage) {
                     onSelectPlanForPricingPage('royal-package');
-                  }
-                }}
-                className="w-full sm:w-auto px-7 py-3.5 bg-white text-[#0B2545] hover:bg-[#F2ECE4] text-xs font-bold uppercase tracking-wider rounded-xl shadow-md transition-all flex items-center justify-center gap-2 shrink-0 border border-white/20"
-              >
-                <span>Open Full Pricing Estimator</span>
-                <ChevronRight className="w-4 h-4" />
-              </button>
+                    }
+                  }}
+                  className="w-full sm:w-auto px-7 py-3.5 bg-white text-[#0B2545] hover:bg-[#F2ECE4] text-xs font-bold uppercase tracking-wider rounded-xl shadow-md transition-all flex items-center justify-center gap-2 shrink-0 border border-white/20"
+                >
+                  <span>Open Full Pricing Estimator</span>
+                  <ChevronRight className="w-4 h-4" />
+                </button>
             </div>
           )}
         </div>
@@ -1048,7 +1048,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                     <button
                       id="submit-enquiry-whatsapp-btn"
                       type="submit"
-                      className="w-full sm:w-auto px-8 py-3.5 bg-[#0B2545] hover:bg-[#153A66] text-white rounded-xl text-sm font-bold uppercase tracking-wider shadow-sm transition-all flex items-center justify-center gap-2 shrink-0"
+                      className="w-full sm:w-auto px-8 py-3.5 bg-[#153A66] hover:bg-[#0B2545] text-white rounded-xl text-sm font-bold uppercase tracking-wider shadow-sm transition-all flex items-center justify-center gap-2 shrink-0"
                     >
                       <Send className="w-4 h-4" />
                       <span>Submit Enquiry & WhatsApp</span>

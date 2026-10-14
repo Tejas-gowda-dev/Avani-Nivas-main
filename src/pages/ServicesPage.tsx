@@ -133,7 +133,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
 
                 <button
                   onClick={onOpenConsultation}
-                  className="px-3 py-1.5 bg-[#0B2545] text-white text-xs font-bold uppercase rounded-md hover:bg-[#153A66] transition-colors"
+                  className="px-3 py-1.5 bg-[#153A66] text-white text-xs font-bold uppercase rounded-md hover:bg-[#0B2545] transition-colors"
                 >
                   Quote
                 </button>
