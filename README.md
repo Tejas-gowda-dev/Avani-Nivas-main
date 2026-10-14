@@ -13,7 +13,7 @@ A modern, high-performance, and conversion-focused business website designed and
 - **Client Footprint**: 200+ satisfied clients across Karnataka, Orissa, and Chhattisgarh
 - **Primary Regional Hubs**: Bengaluru (Mallathahalli & Rajarajeshwari Nagar), Tumkur, Mysuru, Hassan
 - **Corporate Office**: Avani Nivas, 10th Main Road, 1st Cross, Adarsha Layout, Mallathahalli, Bengaluru 560056
-- **Contact Numbers**: +91 9916337333 / +91 9916339333
+- **Contact Numbers**: +91 9916339333 / +91 9916337333
 - **Official Emails**: `info@gowdrurealcom.com` / `info@avaninivas.com`
 
 ---
@@ -35,7 +35,7 @@ A modern, high-performance, and conversion-focused business website designed and
 
 3. **Lead Generation & Contact**
    - Strategic CTAs: "Get a Consultation", "Request Quote", "WhatsApp Us".
-   - Floating WhatsApp button reading configurable `VITE_WHATSAPP_NUMBER` or `NEXT_PUBLIC_WHATSAPP_NUMBER` (defaults to verified +919916337333).
+   - Floating WhatsApp button reading configurable `VITE_WHATSAPP_NUMBER` or `NEXT_PUBLIC_WHATSAPP_NUMBER` (defaults to verified +919916339333).
    - Instant consultation modal accessible from any section.
 
 4. **WordPress Migration & 301 Redirects**
@@ -63,8 +63,8 @@ Copy `.env.example` to `.env.local` or `.env`:
 
 ```bash
 # Configurable business WhatsApp number (defaults to +91 9916337333)
-VITE_WHATSAPP_NUMBER="919916337333"
-NEXT_PUBLIC_WHATSAPP_NUMBER="919916337333"
+VITE_WHATSAPP_NUMBER="919916339333"
+NEXT_PUBLIC_WHATSAPP_NUMBER="919916339333"
 ```
 
 ### 3. Development Server

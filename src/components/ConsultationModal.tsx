@@ -152,7 +152,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
                     required
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
-                    placeholder="+91 98765 43210"
+                    placeholder="+91 99163 39333"
                     className="w-full px-3.5 py-2.5 bg-white border border-[#D8D1C5] rounded-lg text-base sm:text-sm text-[#252525] focus:outline-none focus:ring-2 focus:ring-[#0B2545]"
                   />
                 </div>

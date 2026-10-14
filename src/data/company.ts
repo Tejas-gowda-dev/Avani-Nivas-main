@@ -60,12 +60,12 @@ export const COMPANY_INFO = {
     landmark: 'Near Bangalore University Campus / Mallathahalli Lake'
   },
   contacts: {
-    primaryPhone: '+91 9916337333',
-    secondaryPhone: '+91 9916339333',
+    primaryPhone: '+91 9916339333',
+    secondaryPhone: '+91 9916337333',
     primaryEmail: 'info@gowdrurealcom.com',
     secondaryEmail: 'info@avaninivas.com',
-    whatsappNumber: '919916337333',
-    whatsappDisplay: '+91 99163 37333',
+    whatsappNumber: '919916339333',
+    whatsappDisplay: '+91 99163 39333',
     workingHours: 'Mon – Sat: 9:30 AM – 7:00 PM (IST)'
   },
   socialLinks: {

@@ -295,8 +295,21 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
     <section id="pricing" className={`${standalone ? 'py-12 sm:py-14' : 'py-20 bg-[#FAF9F6] border-t border-[#EAE4DC]'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-      
-  
+        {/* Section Header */}
+        <ScrollReveal className="text-center max-w-3xl mx-auto mb-12">
+          {/* <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0B2545]/10 text-[#0B2545] text-xs font-bold uppercase tracking-wider mb-4 border border-[#0B2545]/20">
+            <Calculator className="w-3.5 h-3.5 text-[#0B2545]" />
+            <span>Transparent Rate Cards & Fast Enquiry</span>
+          </div> */}
+          <h2 className="block font-serif text-3xl sm:text-4xl lg:text-[46px] leading-tight text-[#252525] tracking-tight">
+            Transparent Pricing with No Hidden Surprises
+          </h2>
+          <p className="mt-4 text-base text-[#5C564E] leading-relaxed">
+            {showStep2 
+              ? 'Choose your architectural package, calculate your estimated investment, and connect directly with our founders on WhatsApp for itemized milestone budgeting.'
+              : 'Select from our standard turnkey packages or our 100% bespoke client-customized package. Click any plan to calculate your exact project estimate.'}
+          </p>
+        </ScrollReveal>
 
         {/* Customer Journey Roadmap Bar - Rendered only when showStep2 is true */}
         {showStep2 && (
@@ -420,7 +433,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
               <h3 className="text-2xl font-serif text-[#252525]">Explore Architectural & Construction Packages</h3>
             </div>
               <span className="text-xs text-[#7C7469]">All rates include architectural blueprint guidance & GST compliance</span>
-            </div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {PRICING_TIERS.map((tier, idx) => {
@@ -568,6 +581,133 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                 </ScrollReveal>
               );
             })}
+
+            {/* CARD 6: INTERIOR FEATURES (Rendered ONLY on Home Page to complete the 3-column pricing grid) */}
+            {!showStep2 && (
+              <ScrollReveal
+                delay={PRICING_TIERS.length * 0.05}
+                className="rounded-2xl border border-[#0B2545]/25 bg-gradient-to-b from-white to-[#F8F5F0] hover:border-[#0B2545] transition-all duration-300 flex flex-col justify-between relative overflow-hidden group shadow-xs hover:shadow-xl cursor-pointer"
+                onClick={() => {
+                  document.getElementById('interior-features-section')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                {/* Top Image Banner */}
+                <div className="relative h-48 sm:h-52 w-full overflow-hidden bg-[#2D2A26]">
+                  <img
+                    src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80"
+                    alt="Interior Features"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-black/30" />
+
+                  {/* Top Badge */}
+                  <div className="absolute top-3 right-3 z-10">
+                    <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm bg-[#0B2545] text-white">
+                      <span>Portfolio of Distinction</span>
+                    </span>
+                  </div>
+
+                  {/* Image Controls: Expand */}
+                  <div className="absolute top-3 left-3 flex items-center gap-1.5 z-10">
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setPreviewModalImage({
+                          url: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80',
+                          title: 'INTERIOR FEATURES',
+                          subtitle: 'Explore thoughtfully designed interiors and choose the perfect finish for your home.'
+                        });
+                      }}
+                      title="View Full Image"
+                      className="p-1.5 bg-black/60 hover:bg-black/80 text-white rounded-lg backdrop-blur-xs transition-colors"
+                    >
+                      <Eye className="w-3.5 h-3.5" />
+                    </button>
+                  </div>
+
+                  {/* Title Overlay in Image */}
+                  <div className="absolute bottom-3 left-4 right-4 text-white z-10">
+                    <h4 className="text-lg font-bold font-serif leading-tight drop-shadow-sm flex items-center gap-2">
+                      <span>INTERIOR FEATURES</span>
+                    </h4>
+                    <p className="text-[11px] text-[#E2DCD5] line-clamp-1 mt-0.5">
+                      Explore thoughtfully designed interiors and choose the perfect finish for your home.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="p-6 flex-1 flex flex-col justify-between">
+                  <div>
+                    {/* Rate Display / Highlight */}
+                    <div className="py-3 border-b border-[#EFEAE2]">
+                      <div className="flex items-baseline justify-between gap-1.5">
+                        <span className="font-serif font-extrabold text-[#0B2545] text-2xl sm:text-3xl">
+                          Bespoke Finishes
+                        </span>
+                        <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 bg-[#93C5FD]/20 text-[#0B2545] rounded font-semibold">
+                          7 Categories
+                        </span>
+                      </div>
+                      <p className="text-[11px] text-[#8C8377] mt-1 font-medium">
+                        Laminate • Veneer • PU & Modular Carpentry
+                      </p>
+                    </div>
+
+                    {/* FEATURED INTERIOR ZONES checklist */}
+                    <div className="space-y-2 mt-4">
+                      <div className="text-[11px] font-bold uppercase tracking-wider text-[#7C7469]">
+                        FEATURED INTERIOR ZONES
+                      </div>
+                      <ul className="space-y-1.5">
+                        {[
+                          'Foyer & Shoe Consoles (Laminate / Veneer / PU)',
+                          'Modular Kitchens & Countertops',
+                          'Pooja Mane (Sacred Pooja Rooms)',
+                          'Living Room & Wall Partitions',
+                          'Bedroom Wardrobes, TV Units & Headboards'
+                        ].map((item, i) => (
+                          <li key={i} className="flex items-start gap-2 text-xs text-[#4A453E] leading-snug">
+                            <Check className="w-3.5 h-3.5 text-[#0B2545] shrink-0 mt-0.5" />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Interactive Finish Selection highlights */}
+                    <div className="mt-4 pt-3 border-t border-[#F0EBE3]">
+                      <div className="text-[11px] font-bold uppercase tracking-wider text-[#7C7469] mb-1.5">
+                        Interactive Finish Selection
+                      </div>
+                      <div className="flex flex-wrap gap-1.5">
+                        {['Laminate Finish', 'Veneer Finish', 'PU Finish', 'Direct WhatsApp Enquiry'].map((item, i) => (
+                          <span key={i} className="text-[10px] px-2 py-0.5 rounded bg-[#FAF8F5] text-[#0B2545] font-medium border border-[#E5DFD5]">
+                            {item}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Action CTA Button named exactly 'Interior Features' */}
+                  <div className="mt-6 pt-2">
+                    <button
+                      id="card-interior-features-btn"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        document.getElementById('interior-features-section')?.scrollIntoView({ behavior: 'smooth' });
+                      }}
+                      className="w-full py-3 px-4 rounded-xl text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-center gap-2 bg-[#153A66] hover:bg-[#0B2545] text-white shadow-sm hover:shadow"
+                    >
+                      <span>Interior Features</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </button>
+                  </div>
+                </div>
+              </ScrollReveal>
+            )}
           </div>
 
           {/* If on HomePage (showStep2 === false), render a dedicated quick banner to open the full Pricing Estimator */}
@@ -586,6 +726,17 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                 </p>
               </div>
 
+              <div className="flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto shrink-0">
+                <button
+                  id="cta-banner-interior-features"
+                  onClick={() => {
+                    document.getElementById('interior-features-section')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="w-full sm:w-auto px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-all border border-white/30 flex items-center justify-center gap-2"
+                >
+                  <Sparkles className="w-3.5 h-3.5 text-[#93C5FD]" />
+                  <span>Interior Features</span>
+                </button>
                 <button
                   onClick={() => {
                     if (onSelectPlanForPricingPage) {
@@ -597,6 +748,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                   <span>Open Full Pricing Estimator</span>
                   <ChevronRight className="w-4 h-4" />
                 </button>
+              </div>
             </div>
           )}
         </div>

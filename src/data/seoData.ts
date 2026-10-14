@@ -233,7 +233,7 @@ export const SEO_CONFIG: Record<PageId, PageSEO> = {
 
   contact: {
     title: 'Contact & Site Consultation | Avani Nivas Mallathahalli Bengaluru',
-    description: 'Connect with your construction cavalry. Call +91 99163 37333 or +91 99163 39333. Office in Adarsha Layout, Mallathahalli, Bengaluru 560056.',
+    description: 'Connect with your construction cavalry. Call +91 99163 39333 or +91 99163 37333. Office in Adarsha Layout, Mallathahalli, Bengaluru 560056.',
     keywords: 'contact Avani Nivas, Gowdru Realcom phone number, Mallathahalli office address, site consultation booking, construction cavalry contact',
     canonicalPath: '/contact',
     ogType: 'website',
