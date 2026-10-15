@@ -143,7 +143,7 @@ export const InteriorFeaturesSection: React.FC<InteriorFeaturesSectionProps> = (
                 </div>
 
                 {/* Card Action Button Bar */}
-                <div className="p-6 pt-0 flex items-center justify-between bg-white border-t border-[#ECE5DA] mt-2">
+                <div className="p-6 pt-2 flex items-center justify-between bg-white border-t border-[#ECE5DA] mt-2">
                   <span className="text-xs font-semibold text-[#7C7469] flex items-center gap-1">
                     <Eye className="w-3.5 h-3.5 text-[#0B2545]" />
                     <span>3 Custom Finishes</span>

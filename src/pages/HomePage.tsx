@@ -242,7 +242,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   </div>
                 </div>
 
-                <div className="p-6 pt-0 flex items-center justify-between bg-white/50 border-t border-[#ECE5DA]">
+                <div className="p-6 pt-4 flex items-center justify-between bg-white/50 border-t border-[#ECE5DA]">
                   <span className="text-xs font-semibold text-[#7C7469]">
                     Scope: <span className="text-[#252525]">{project.scope}</span>
                   </span>
@@ -353,7 +353,7 @@ export const HomePage: React.FC<HomePageProps> = ({
       {/* ========================================================
           FOUNDATION & CORE VALUES CALLOUT SECTION
       ======================================================== */}
-      <section id="foundation-summary-section" className="py-20 bg-[#F4EFEA] border-t border-[#E2DAD0]">
+      <section id="foundation-summary-section" className="py-20 bg-[#F5F2EC] border-t border-[#E2DAD0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <ScrollReveal className="lg:col-span-7 space-y-4">

@@ -1,16 +1,16 @@
 import React from 'react';
 
+
 // Optional referral array provided by user for external or college logo integration
 export const collegeLogos = [
-  "/tn-skill.png",
-  "/IITK.png",
-  "/SRMAP.png",
-  "/NITS.png",
-  "/bitslaw.png",
-  "/iitm_logo.png",
-  "/Jaipuria.png",
-  "/IITGoa.png",
-  "/Ashutosh.png",
+  "/jsw-logo.webp",
+  "/tata-steel-logo.webp",
+  "/INDUS-555-.webp",
+  "/Sunvik-Logo.webp",
+  "/meghalit.webp",
+  "/kalinga-stone-logo.webp",
+  "/rd-tmt.webp",
+  
  
 
 ];
@@ -22,7 +22,7 @@ interface PartnersSliderSectionProps {
 
 export const PartnersSliderSection: React.FC<PartnersSliderSectionProps> = () => {
   return (
-    <section className="py-10 bg-[#f4fcff]">
+    <section className="py-10 bg-[#F5F2EC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -31,7 +31,7 @@ export const PartnersSliderSection: React.FC<PartnersSliderSectionProps> = () =>
             Trusted by 40+ Industry-Leading Partners across India
           </h2>
           <p className="text-gray-700 max-w-7xl mx-auto font-normal">
-            Avani Nivasa collaborates with certified structural, civil, electrical, plumbing, and interior manufacturers—guaranteeing 100% genuine specifications, milestone-tested compliance, and lifetime build resilience for every turnkey residence.
+            Avani Nivas collaborates with certified structural, civil, electrical, plumbing, and interior manufacturers—guaranteeing 100% genuine specifications, milestone-tested compliance, and lifetime build resilience for every turnkey residence.
           </p>
         </div>
 
