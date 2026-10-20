@@ -1,18 +1,22 @@
 import React from 'react';
 import { PageId } from '../types';
 import { COMPANY_INFO } from '../data/company';
-import { MapPin, Phone, Mail, Clock, ArrowUpRight, ShieldCheck, FileText } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, ArrowUpRight, ShieldCheck, Sparkles, Hammer } from 'lucide-react';
 
 interface FooterProps {
   onNavigate: (page: PageId) => void;
   onOpenConsultation: () => void;
   onOpenMigrationGuide: () => void;
+  serviceMode?: 'construction' | 'interiors';
+  onSwitchServiceMode?: (mode: 'construction' | 'interiors') => void;
 }
 
 export const Footer: React.FC<FooterProps> = ({
   onNavigate,
   onOpenConsultation,
-  onOpenMigrationGuide
+  onOpenMigrationGuide,
+  serviceMode = 'construction',
+  onSwitchServiceMode
 }) => {
   const currentYear = new Date().getFullYear();
 
@@ -30,13 +34,48 @@ export const Footer: React.FC<FooterProps> = ({
           <div className="lg:col-span-2 space-y-4">
             <button
               onClick={() => handleNav('home')}
-              className="text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40 rounded-lg"
+              className="text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40 rounded-lg group"
             >
+              <span className="font-serif font-extrabold tracking-wide text-xl uppercase text-white block">
+                AVANI NIVAS
+              </span>
+              <span className="text-[10px] font-semibold tracking-wider uppercase text-[#CBD5E1] block mt-0.5">
+                Builders • Developers • Interiors
+              </span>
             </button>
 
             <p className="text-sm text-[#CBD5E1] leading-relaxed max-w-sm pt-1">
-              Over 15 years of industry excellence, crafting bespoke private residences, turnkey architectural duplexes, and premium interior transformations across Karnataka, Orissa, and Chhattisgarh.
+              Over 15 years of industry excellence, crafting bespoke private residences, turnkey architectural duplexes, and premium modular interior transformations across Karnataka, Orissa, and Chhattisgarh.
             </p>
+
+            {/* Quick Experience Switcher in Footer: Only show the alternative service */}
+            {onSwitchServiceMode && (
+              <div className="pt-2">
+                {serviceMode === 'construction' ? (
+                  <button
+                    id="footer-switch-to-interiors"
+                    onClick={() => onSwitchServiceMode('interiors')}
+                    className="px-4 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider flex items-center gap-2 transition-all bg-[#153A66] hover:bg-[#0B2545] text-white border border-[#D4AF37]/50 shadow-md group"
+                    title="Switch to Interior Design"
+                  >
+                    <Sparkles className="w-3.5 h-3.5 text-[#D4AF37] group-hover:scale-110 transition-transform" />
+                    <span>Explore Interior Design</span>
+                    <ArrowUpRight className="w-3.5 h-3.5 text-[#D4AF37] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </button>
+                ) : (
+                  <button
+                    id="footer-switch-to-construction"
+                    onClick={() => onSwitchServiceMode('construction')}
+                    className="px-4 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider flex items-center gap-2 transition-all bg-[#153A66] hover:bg-[#0B2545] text-white border border-[#3B82F6]/50 shadow-md group"
+                    title="Switch to Construction"
+                  >
+                    <Hammer className="w-3.5 h-3.5 text-[#D4AF37] group-hover:scale-110 transition-transform" />
+                    <span>Explore Construction</span>
+                    <ArrowUpRight className="w-3.5 h-3.5 text-[#D4AF37] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </button>
+                )}
+              </div>
+            )}
 
             <div className="flex flex-wrap gap-2 pt-2">
               <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#081B30] text-[11px] text-[#93C5FD] border border-[#173A66]">
@@ -55,18 +94,18 @@ export const Footer: React.FC<FooterProps> = ({
             <ul className="space-y-2.5 text-sm text-[#CBD5E1]">
               <li>
                 <button onClick={() => handleNav('home')} className="hover:text-white transition-colors">
-                  Home
+                  {serviceMode === 'interiors' ? 'Interiors Home' : 'Construction Home'}
                 </button>
               </li>
               <li>
                 <button onClick={() => handleNav('pricing')} className="hover:text-white transition-colors text-left flex items-center gap-1.5 font-medium text-white">
-                  <span>Pricing & Rate Cards</span>
-                  <span className="text-[10px] px-1.5 py-0.2 rounded bg-[#153A66] text-white font-bold border border-[#2B568E]">New</span>
+                  <span>{serviceMode === 'interiors' ? 'Interior Packages & Rates' : 'Construction Pricing'}</span>
+                  <span className="text-[10px] px-1.5 py-0.2 rounded bg-[#153A66] text-white font-bold border border-[#2B568E]">Active</span>
                 </button>
               </li>
               <li>
                 <button onClick={() => handleNav('services')} className="hover:text-white transition-colors">
-                  Architectural Services
+                  {serviceMode === 'interiors' ? 'Interior Services' : 'Architectural Services'}
                 </button>
               </li>
               <li>
@@ -92,41 +131,78 @@ export const Footer: React.FC<FooterProps> = ({
             </ul>
           </div>
 
-          {/* Services Col */}
+          {/* Services & Packages Col */}
           <div className="space-y-4">
-            <h3 className="text-xs font-bold uppercase tracking-wider text-white">Key Packages</h3>
-            <ul className="space-y-2.5 text-sm text-[#CBD5E1]">
-              <li>
-                <button onClick={() => handleNav('pricing')} className="hover:text-white transition-colors text-left">
-                  Essential Package (₹1,999/sq.ft)
-                </button>
-              </li>
-              <li>
-                <button onClick={() => handleNav('pricing')} className="hover:text-white transition-colors text-left">
-                  Classic Package (₹2,199/sq.ft)
-                </button>
-              </li>
-              <li>
-                <button onClick={() => handleNav('pricing')} className="hover:text-white transition-colors text-left">
-                  Premium Package (₹2,549/sq.ft)
-                </button>
-              </li>
-              <li>
-                <button onClick={() => handleNav('pricing')} className="hover:text-white transition-colors text-left">
-                  Royal Package (₹2,749/sq.ft)
-                </button>
-              </li>
-              <li>
-                <button onClick={() => handleNav('pricing')} className="hover:text-white transition-colors text-left">
-                  Customized Client Package
-                </button>
-              </li>
-              <li>
-                <button onClick={() => handleNav('pricing')} className="hover:text-white transition-colors text-left">
-                  Commercial & Factory Setup
-                </button>
-              </li>
-            </ul>
+            <h3 className="text-xs font-bold uppercase tracking-wider text-white">
+              {serviceMode === 'interiors' ? 'Interior Offerings' : 'Construction Packages'}
+            </h3>
+            {serviceMode === 'interiors' ? (
+              <ul className="space-y-2.5 text-sm text-[#CBD5E1]">
+                <li>
+                  <button onClick={() => handleNav('pricing')} className="hover:text-white transition-colors text-left">
+                    CM (Commercial Plywood) (₹1,599/sq.ft)
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => handleNav('pricing')} className="hover:text-white transition-colors text-left">
+                    MR (Moisture Resistant) (₹1,799/sq.ft)
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => handleNav('pricing')} className="hover:text-white transition-colors text-left">
+                    BWR (Boiling Water Resistant) (₹1,999/sq.ft)
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => handleNav('pricing')} className="hover:text-white transition-colors text-left">
+                    BWP (Boiling Water Proof) (₹2,199/sq.ft)
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => handleNav('pricing')} className="hover:text-white transition-colors text-left">
+                    Gurjan (₹2,999/sq.ft)
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => handleNav('pricing')} className="hover:text-white transition-colors text-left">
+                    Customized Client Package
+                  </button>
+                </li>
+              </ul>
+            ) : (
+              <ul className="space-y-2.5 text-sm text-[#CBD5E1]">
+                <li>
+                  <button onClick={() => handleNav('pricing')} className="hover:text-white transition-colors text-left">
+                    Essential Package (₹1,999/sq.ft)
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => handleNav('pricing')} className="hover:text-white transition-colors text-left">
+                    Classic Package (₹2,199/sq.ft)
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => handleNav('pricing')} className="hover:text-white transition-colors text-left">
+                    Premium Package (₹2,549/sq.ft)
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => handleNav('pricing')} className="hover:text-white transition-colors text-left">
+                    Royal Package (₹2,749/sq.ft)
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => handleNav('pricing')} className="hover:text-white transition-colors text-left">
+                    Customized Client Package
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => handleNav('pricing')} className="hover:text-white transition-colors text-left">
+                    Commercial & Factory Setup
+                  </button>
+                </li>
+              </ul>
+            )}
           </div>
 
           {/* Contact Col */}
@@ -169,9 +245,9 @@ export const Footer: React.FC<FooterProps> = ({
 
             <button
               onClick={onOpenConsultation}
-              className="w-full mt-2 py-3 px-4 bg-white/10 text-white text-xs font-bold uppercase tracking-wider rounded-xl hover:bg-[#153A66] hover:border-white/40 transition-all duration-200 border border-white/25 backdrop-blur-xs inline-flex items-center justify-center gap-1.5 shadow-sm"
+              className="w-full mt-2 py-3 px-4 bg-[#153A66] hover:bg-[#0B2545] text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-all duration-200 border border-white/20 inline-flex items-center justify-center gap-1.5 shadow-sm"
             >
-              <span>Book Site Visit</span>
+              <span>{serviceMode === 'interiors' ? 'Book Interior Visit' : 'Book Site Visit'}</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
             </button>
           </div>
@@ -184,15 +260,7 @@ export const Footer: React.FC<FooterProps> = ({
           </p>
 
           <div className="flex items-center gap-4 flex-wrap">
-            <span className="text-[#CBD5E1]">Active Hubs: Bengaluru • Tumkur • Mysuru • Hassan • All Over karnataka</span>
-            <button
-              id="wp-migration-guide-btn"
-              onClick={onOpenMigrationGuide}
-              className="inline-flex items-center gap-1 text-[#93C5FD] hover:underline"
-            >
-              {/* <FileText className="w-3.5 h-3.5" /> */}
-              {/* <span>301 WordPress Migration Map</span> */}
-            </button>
+            <span className="text-[#CBD5E1]">Active Hubs: Bengaluru • Tumkur • Mysuru • Hassan • All Over Karnataka</span>
           </div>
         </div>
       </div>

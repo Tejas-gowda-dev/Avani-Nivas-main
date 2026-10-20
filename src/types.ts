@@ -1,3 +1,5 @@
+export type ServiceMode = 'landing' | 'construction' | 'interiors';
+
 export type PageId = 'home' | 'services' | 'pricing' | 'projects' | 'about' | 'partners' | 'contact';
 
 export interface ServiceItem {

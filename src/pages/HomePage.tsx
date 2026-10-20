@@ -7,7 +7,6 @@ import { HeroSection } from '../components/HeroSection';
 import { TrustSection } from '../components/TrustSection';
 import { ProcessSection } from '../components/ProcessSection';
 import { PricingSection } from '../components/PricingSection';
-import { InteriorFeaturesSection } from '../components/InteriorFeaturesSection';
 import { PartnersSliderSection } from '../components/PartnersSliderSection';
 import { CTASection } from '../components/CTASection';
 import { ScrollReveal } from '../components/ScrollReveal';
@@ -25,6 +24,7 @@ interface HomePageProps {
   onSelectService: (service: ServiceItem) => void;
   onSelectProject: (project: ProjectItem) => void;
   onSelectPricingPlan?: (tierId: string) => void;
+  onSwitchToInteriors?: () => void;
 }
 
 export const HomePage: React.FC<HomePageProps> = ({
@@ -32,7 +32,8 @@ export const HomePage: React.FC<HomePageProps> = ({
   onOpenConsultation,
   onSelectService,
   onSelectProject,
-  onSelectPricingPlan
+  onSelectPricingPlan,
+  onSwitchToInteriors
 }) => {
   const [projectFilter, setProjectFilter] = useState<ProjectCategory>('All');
 
@@ -279,13 +280,9 @@ export const HomePage: React.FC<HomePageProps> = ({
             onNavigate('pricing');
           }
         }}
-        onOpenConsultation={onOpenConsultation} 
+        onOpenConsultation={onOpenConsultation}
+        onSwitchToInteriors={onSwitchToInteriors}
       />
-
-      {/* ========================================================
-          INTERIOR FEATURES SECTION (HOME PAGE ONLY)
-      ======================================================== */}
-      <InteriorFeaturesSection onOpenConsultation={onOpenConsultation} />
 
       {/* ========================================================
           3-PHASE PROCESS SECTION

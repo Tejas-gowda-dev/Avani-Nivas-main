@@ -199,15 +199,22 @@ export const ContactPage: React.FC = () => {
                       onChange={(e) => setFormData({ ...formData, serviceRequired: e.target.value })}
                       className="w-full px-3.5 py-2.5 bg-[#FAF8F5] border border-[#D8D1C5] rounded-xl text-sm text-[#252525] focus:outline-none focus:ring-2 focus:ring-[#0B2545]"
                     >
-                      {SERVICES.map((s) => (
-                        <option key={s.id} value={s.title}>
-                          {s.title}
-                        </option>
-                      ))}
-                      <option value="Single Floor Individual House Construction">Single Floor Individual House</option>
-                      <option value="Luxurious Duplex Homes Construction">Luxurious Duplex Homes Construction</option>
-                      <option value="Opulent Villa Construction">Opulent Villa Construction</option>
-                      <option value="Factory & Industrial Construction">Factory & Industrial Construction</option>
+                      <optgroup label="Interior Design & Modular Woodwork">
+                        <option value="Full Home Turnkey Interior Design">Full Home Turnkey Interior Design</option>
+                        <option value="Modular Kitchens & Islands">Modular Kitchens & Islands</option>
+                        <option value="Wardrobes & Walk-In Closets">Wardrobes & Walk-In Closets</option>
+                        <option value="Bespoke Pooja Mandir">Bespoke Pooja Mandir</option>
+                        <option value="Living Room & False Ceiling">Living Room & False Ceiling</option>
+                      </optgroup>
+                      <optgroup label="Civil & Turnkey Construction">
+                        <option value="Turnkey Residential Construction">Turnkey Residential Construction</option>
+                        <option value="Single Floor Individual House Construction">Single Floor Individual House</option>
+                        <option value="Luxurious Duplex Homes Construction">Luxurious Duplex Homes Construction</option>
+                        <option value="Opulent Villa Construction">Opulent Villa Construction</option>
+                        <option value="Factory & Industrial Construction">Factory & Industrial Construction</option>
+                        <option value="Kitchen Renovations">Kitchen Renovations</option>
+                        <option value="Bathroom Remodels">Bathroom Remodels</option>
+                      </optgroup>
                     </select>
                   </div>
                 </div>

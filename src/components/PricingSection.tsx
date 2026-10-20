@@ -38,6 +38,7 @@ interface PricingSectionProps {
   showStep2?: boolean; // When false (on HomePage), Step 2 is hidden and cards navigate to PricingPage
   onSelectPlanForPricingPage?: (tierId: string) => void;
   initialTierId?: string;
+  onSwitchToInteriors?: () => void;
 }
 
 type JourneyStep = 'view' | 'select' | 'details' | 'submitted';
@@ -46,7 +47,8 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
   standalone = false,
   showStep2 = true,
   onSelectPlanForPricingPage,
-  initialTierId = 'royal-package'
+  initialTierId = 'royal-package',
+  onSwitchToInteriors
 }) => {
   // Current active step in customer journey: View Pricing (1) -> Select Requirement (2) -> Enter Details (3) -> Submit Enquiry (4) -> WhatsApp (5)
   const [activeStep, setActiveStep] = useState<JourneyStep>('view');
@@ -697,11 +699,15 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                       id="card-interior-features-btn"
                       onClick={(e) => {
                         e.stopPropagation();
-                        document.getElementById('interior-features-section')?.scrollIntoView({ behavior: 'smooth' });
+                        if (onSwitchToInteriors) {
+                          onSwitchToInteriors();
+                        } else {
+                          document.getElementById('interior-features-section')?.scrollIntoView({ behavior: 'smooth' });
+                        }
                       }}
                       className="w-full py-3 px-4 rounded-xl text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-center gap-2 bg-[#153A66] hover:bg-[#0B2545] text-white shadow-sm hover:shadow"
                     >
-                      <span>Interior Features</span>
+                      <span>Explore Interior Packages & Features</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </button>
                   </div>
@@ -728,22 +734,12 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
 
               <div className="flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto shrink-0">
                 <button
-                  id="cta-banner-interior-features"
-                  onClick={() => {
-                    document.getElementById('interior-features-section')?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="w-full sm:w-auto px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-all border border-white/30 flex items-center justify-center gap-2"
-                >
-                  <Sparkles className="w-3.5 h-3.5 text-[#93C5FD]" />
-                  <span>Interior Features</span>
-                </button>
-                <button
                   onClick={() => {
                     if (onSelectPlanForPricingPage) {
                     onSelectPlanForPricingPage('royal-package');
                     }
                   }}
-                  className="w-full sm:w-auto px-7 py-3.5 bg-white text-[#0B2545] hover:bg-[#F2ECE4] text-xs font-bold uppercase tracking-wider rounded-xl shadow-md transition-all flex items-center justify-center gap-2 shrink-0 border border-white/20"
+                  className="w-full sm:w-auto px-7 py-3.5 bg-white/20 text-white hover:bg-[#FFFFFF]/10 text-xs font-bold uppercase tracking-wider rounded-xl shadow-md transition-all flex items-center justify-center gap-2 shrink-0 border border-white/20"
                 >
                   <span>Open Full Pricing Estimator</span>
                   <ChevronRight className="w-4 h-4" />

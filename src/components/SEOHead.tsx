@@ -4,14 +4,29 @@ import { SEO_CONFIG } from '../data/seoData';
 
 interface SEOHeadProps {
   currentPage: PageId;
+  serviceMode?: 'landing' | 'construction' | 'interiors';
 }
 
-export const SEOHead: React.FC<SEOHeadProps> = ({ currentPage }) => {
+export const SEOHead: React.FC<SEOHeadProps> = ({ currentPage, serviceMode = 'construction' }) => {
   const seo = SEO_CONFIG[currentPage] || SEO_CONFIG.home;
 
   useEffect(() => {
-    // 1. Update Title
-    document.title = seo.title;
+    // 1. Update Title based on mode and page
+    if (serviceMode === 'landing') {
+      document.title = 'Avani Nivas by Gowdru Realcom | Construction & Interior Design';
+    } else if (serviceMode === 'interiors') {
+      if (currentPage === 'home') {
+        document.title = 'Avani Nivas Interiors | Bespoke Luxury Residential Interior Design Bengaluru';
+      } else if (currentPage === 'pricing') {
+        document.title = 'Interior Design Packages & Cost Estimator | Avani Nivas Bengaluru';
+      } else if (currentPage === 'services') {
+        document.title = 'Modular Kitchens, Wardrobes & Interior Services | Avani Nivas';
+      } else {
+        document.title = `${seo.title.split('|')[0]} | Avani Nivas Interiors`;
+      }
+    } else {
+      document.title = seo.title;
+    }
 
     // Helper to safely set or create meta tag
     const setMetaTag = (name: string, content: string, isProperty = false) => {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { X, Send, MessageCircle, CheckCircle2, Shield } from 'lucide-react';
 import { COMPANY_INFO } from '../data/company';
 import { SERVICES } from '../data/services';
@@ -17,12 +17,18 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
-  const [service, setService] = useState(prefilledService || 'Kitchen Renovations');
+  const [service, setService] = useState(prefilledService || 'Turnkey House Construction');
   const [location, setLocation] = useState('Bengaluru (Mallathahalli / West)');
   const [budget, setBudget] = useState('₹40 Lakhs - ₹80 Lakhs');
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+
+  useEffect(() => {
+    if (prefilledService) {
+      setService(prefilledService);
+    }
+  }, [prefilledService]);
 
   if (!isOpen) return null;
 
@@ -183,11 +189,22 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
                     onChange={(e) => setService(e.target.value)}
                     className="w-full px-3 py-2.5 bg-white border border-[#D8D1C5] rounded-lg text-base sm:text-sm text-[#252525] focus:outline-none focus:ring-2 focus:ring-[#0B2545]"
                   >
-                    {SERVICES.map((s) => (
-                      <option key={s.id} value={s.title}>
-                        {s.title}
-                      </option>
-                    ))}
+                    <optgroup label="Interior Design & Modular Woodwork">
+                      <option value="Turnkey Interior Design (Full Home)">Turnkey Interior Design (Full Home)</option>
+                      <option value="Modular Kitchens & Islands">Modular Kitchens & Islands</option>
+                      <option value="Wardrobes & Walk-In Closets">Wardrobes & Walk-In Closets</option>
+                      <option value="Bespoke Pooja Mandir">Bespoke Pooja Mandir</option>
+                      <option value="Living Room & False Ceiling">Living Room & False Ceiling</option>
+                      <option value="Foyer & Shoe Console">Foyer & Shoe Console</option>
+                    </optgroup>
+                    <optgroup label="Civil & Turnkey Construction">
+                      <option value="Turnkey Residential Construction">Turnkey Residential Construction</option>
+                      <option value="Duplex / Villa Construction">Duplex / Villa Construction</option>
+                      <option value="Floor Additions & Extensions">Floor Additions & Extensions</option>
+                      <option value="Commercial & Factory Build">Commercial & Factory Build</option>
+                      <option value="Kitchen Renovations">Kitchen Renovations</option>
+                      <option value="Bathroom Remodels">Bathroom Remodels</option>
+                    </optgroup>
                   </select>
                 </div>
 

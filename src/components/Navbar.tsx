@@ -1,19 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import { PageId } from '../types';
 import { COMPANY_INFO } from '../data/company';
-import { Menu, X, Phone, ArrowRight, Shield } from 'lucide-react';
+import { Menu, X, Phone, ArrowRight, Shield, Sparkles, Hammer, LayoutGrid } from 'lucide-react';
 // @ts-ignore
 import logo from '../assets/Companylogo.png';
+
 interface NavbarProps {
   currentPage: PageId;
   onNavigate: (page: PageId) => void;
   onOpenConsultation: () => void;
+  serviceMode?: 'construction' | 'interiors';
+  onSwitchServiceMode?: (mode: 'construction' | 'interiors') => void;
+  onReturnToLanding?: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
   currentPage,
   onNavigate,
-  onOpenConsultation
+  onOpenConsultation,
+  serviceMode = 'construction',
+  onSwitchServiceMode,
+  onReturnToLanding
 }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -47,26 +54,64 @@ export const Navbar: React.FC<NavbarProps> = ({
       id="main-header"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-[#FAF9F6]/95 backdrop-blur-md shadow-sm border-b border-[#E6E1D8]/80 py-3'
-          : 'bg-[#FAF9F6] border-b border-[#E6E1D8]/80 py-4 sm:py-5'
+          ? 'bg-[#FAF9F6]/95 backdrop-blur-md shadow-sm border-b border-[#E6E1D8]/80 py-2.5 sm:py-3'
+          : 'bg-[#FAF9F6] border-b border-[#E6E1D8]/80 py-3 sm:py-4'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-2">
           {/* Brand Identity / Logo */}
-          <button
-            id="brand-logo-btn"
-            onClick={() => handleLinkClick('home')}
-            className="flex items-center  text-left group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0B2545] rounded-lg p-1"
-          >
-            <img
+          <div className="flex items-center gap-10">
+            <button
+              id="brand-logo-btn"
+              onClick={() => handleLinkClick('home')}
+              className="flex items-center text-left group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0B2545] rounded-lg p-0.5"
+            >
+              <img
               src={logo}
               alt={`${COMPANY_INFO.brandName} logo`}
               className="h-16 w-auto object-contain"  // h-9 when scrolled if you want it to shrink
             />
+            </button>
 
-          </button>
+            {/* Single Service Switcher CTA: If in Construction show Interiors; if in Interiors show Construction */}
+            {onSwitchServiceMode && (
+              <div className="hidden md:flex items-center gap-2">
+                {serviceMode === 'construction' ? (
+                  <button
+                    id="nav-switch-to-interiors"
+                    onClick={() => onSwitchServiceMode('interiors')}
+                    className="px-3.5 py-1.5 rounded-xl bg-[#153A66] hover:bg-[#0B2545] text-white text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-1.5 shadow-sm border border-[#3B82F6]/30 active:scale-95 group"
+                    title="Switch to Interior Design"
+                  >
+                    <span>Interior </span>
+                    <ArrowRight className="w-3 h-3 text-[#D4AF37] group-hover:translate-x-0.5 transition-transform" />
+                  </button>
+                ) : (
+                  <button
+                    id="nav-switch-to-construction"
+                    onClick={() => onSwitchServiceMode('construction')}
+                    className="px-3.5 py-1.5 rounded-xl bg-[#153A66] hover:bg-[#0B2545] text-white text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-1.5 shadow-sm border border-[#3B82F6]/30 active:scale-95 group"
+                    title="Switch to Construction"
+                  >
+                    <span>Construction</span>
+                    <ArrowRight className="w-3 h-3 text-[#D4AF37] group-hover:translate-x-0.5 transition-transform" />
+                  </button>
+                )}
 
+                {onReturnToLanding && (
+                  <button
+                    id="nav-return-landing"
+                    onClick={onReturnToLanding}
+                    title="Return to Selection Screen"
+                    className="p-1.5 rounded-lg text-[#7C7469] hover:text-[#0B2545] hover:bg-[#ECE5DA] transition-colors"
+                  >
+                    <LayoutGrid className="w-3.5 h-3.5" />
+                  </button>
+                )}
+              </div>
+            )}
+          </div>
 
           {/* Desktop Navigation Links */}
           <nav id="desktop-nav-menu" aria-label="Main Navigation" className="hidden lg:flex items-center gap-1">
@@ -77,14 +122,15 @@ export const Navbar: React.FC<NavbarProps> = ({
                   key={link.id}
                   id={`nav-link-${link.id}`}
                   onClick={() => handleLinkClick(link.id)}
-                  className={`px-3.5 py-2 text-sm font-medium transition-all duration-200 rounded-md relative ${isActive
+                  className={`px-3 py-2 text-sm font-medium transition-all duration-200 rounded-md relative ${
+                    isActive
                       ? 'text-[#0B2545] font-semibold'
                       : 'text-[#5C564E] hover:text-[#0B2545] hover:bg-[#F2ECE4]'
-                    }`}
+                  }`}
                 >
                   {link.label}
                   {isActive && (
-                    <span className="absolute bottom-0 left-3.5 right-3.5 h-0.5 bg-[#0B2545] rounded-full" />
+                    <span className="absolute bottom-0 left-3 right-3 h-0.5 bg-[#0B2545] rounded-full" />
                   )}
                 </button>
               );
@@ -92,35 +138,63 @@ export const Navbar: React.FC<NavbarProps> = ({
           </nav>
 
           {/* Desktop Quick Actions */}
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-3">
             <a
               id="desktop-phone-quicklink"
               href={`tel:${COMPANY_INFO.contacts.primaryPhone.replace(/\s+/g, '')}`}
-              className="flex items-center gap-2 text-xs font-medium text-[#0B2545] hover:text-[#1A1918] transition-colors py-1.5 px-2.5 rounded border border-[#E6E1D8] bg-[#F7F4EF]"
+              className="flex items-center gap-1.5 text-xs font-medium text-[#0B2545] hover:text-[#1A1918] transition-colors py-2 px-2.5 rounded-lg border border-[#E6E1D8] bg-[#F7F4EF]"
             >
               <Phone className="w-3.5 h-3.5 text-[#0B2545]" />
-              <span>{COMPANY_INFO.contacts.primaryPhone}</span>
+              <span className="font-semibold">{COMPANY_INFO.contacts.primaryPhone}</span>
             </a>
 
             <button
               id="desktop-consultation-btn"
               onClick={onOpenConsultation}
-              className="inline-flex items-center gap-2 px-4 py-2.5 bg-[#153A66] text-white text-xs font-semibold tracking-wide uppercase rounded-md hover:bg-[#0B2545] active:scale-98 transition-all duration-200 shadow-sm"
+              className="inline-flex items-center gap-2 px-4 py-2.5 bg-[#153A66] hover:bg-[#0B2545] text-white text-xs font-semibold tracking-wide uppercase rounded-xl active:scale-98 transition-all duration-200 shadow-sm"
             >
-              <span>Get a Consultation</span>
+              <span>{serviceMode === 'interiors' ? 'Interior Consultation' : 'Get a Consultation'}</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </button>
           </div>
 
-       {/* Mobile Hamburger Toggle */}
-          <div className="flex items-center gap-1.5 sm:gap-2 lg:hidden">
+          {/* Mobile Actions & Hamburger Toggle */}
+          <div className="flex items-center gap-2 lg:hidden">
+            {/* Mobile Mode Switcher: Only show the other service to switch to */}
+            {onSwitchServiceMode && (
+              <>
+                {serviceMode === 'construction' ? (
+                  <button
+                    id="mobile-switch-to-interiors"
+                    onClick={() => onSwitchServiceMode('interiors')}
+                    className="px-2.5 py-1.5 bg-[#153A66] hover:bg-[#0B2545] text-white rounded-lg text-[11px] font-bold uppercase tracking-wider flex items-center gap-1 shadow-2xs border border-[#3B82F6]/30"
+                    title="Switch to Interior Design"
+                  >
+                    {/* <Sparkles className="w-3 h-3 text-[#D4AF37]" /> */}
+                    <span>Interiors</span>
+                  </button>
+                ) : (
+                  <button
+                    id="mobile-switch-to-construction"
+                    onClick={() => onSwitchServiceMode('construction')}
+                    className="px-2.5 py-1.5 bg-[#153A66] hover:bg-[#0B2545] text-white rounded-lg text-[11px] font-bold uppercase tracking-wider flex items-center gap-1 shadow-2xs border border-[#3B82F6]/30"
+                    title="Switch to Construction"
+                  >
+                    <Hammer className="w-3 h-3 text-[#D4AF37]" />
+                    <span>Construction</span>
+                  </button>
+                )}
+              </>
+            )}
+
             <button
               id="mobile-consultation-quick-btn"
               onClick={onOpenConsultation}
-              className="px-2.5 sm:px-3 py-1.5 bg-[#0B2545] text-white text-[10px] sm:text-[11px] font-bold uppercase rounded-lg tracking-wider whitespace-nowrap hover:bg-[#153A66] transition-colors"
+              className="px-2.5 sm:px-3 py-1.5 bg-[#153A66] hover:bg-[#0B2545] text-white text-[10px] sm:text-[11px] font-bold uppercase rounded-lg tracking-wider whitespace-nowrap transition-colors"
             >
               Consult
             </button>
+
             <button
               id="mobile-menu-toggle-btn"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -140,7 +214,38 @@ export const Navbar: React.FC<NavbarProps> = ({
           id="mobile-nav-drawer"
           className="lg:hidden border-t border-[#E6E1D8] bg-[#FAF9F6] shadow-xl animate-in slide-in-from-top-2 duration-200 max-h-[calc(100vh-4.5rem)] overflow-y-auto"
         >
-          <div className="max-w-7xl mx-auto px-4 py-5 space-y-1">
+          <div className="max-w-7xl mx-auto px-4 py-5 space-y-2">
+            {/* Mobile Service Switcher: Only show the alternative service */}
+            {onSwitchServiceMode && (
+              <div className="mb-4">
+                {serviceMode === 'construction' ? (
+                  <button
+                    onClick={() => {
+                      onSwitchServiceMode('interiors');
+                      setMobileMenuOpen(false);
+                    }}
+                    className="w-full py-2.5 px-4 rounded-xl bg-[#153A66] hover:bg-[#0B2545] text-white text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-xs border border-[#3B82F6]/30"
+                  >
+                    <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
+                    <span>Switch to Interior Design</span>
+                    <ArrowRight className="w-3.5 h-3.5 text-[#D4AF37]" />
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => {
+                      onSwitchServiceMode('construction');
+                      setMobileMenuOpen(false);
+                    }}
+                    className="w-full py-2.5 px-4 rounded-xl bg-[#153A66] hover:bg-[#0B2545] text-white text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-xs border border-[#3B82F6]/30"
+                  >
+                    <Hammer className="w-3.5 h-3.5 text-[#D4AF37]" />
+                    <span>Switch to Construction</span>
+                    <ArrowRight className="w-3.5 h-3.5 text-[#D4AF37]" />
+                  </button>
+                )}
+              </div>
+            )}
+
             {navLinks.map((link) => {
               const isActive = currentPage === link.id;
               return (
@@ -161,6 +266,19 @@ export const Navbar: React.FC<NavbarProps> = ({
             })}
 
             <div className="pt-4 mt-3 border-t border-[#E6E1D8] space-y-3">
+              {onReturnToLanding && (
+                <button
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    onReturnToLanding();
+                  }}
+                  className="w-full py-2.5 px-4 rounded-lg bg-white border border-[#0B2545]/30 text-[#0B2545] text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2"
+                >
+                  <LayoutGrid className="w-4 h-4" />
+                  <span>Return to Selection Screen</span>
+                </button>
+              )}
+
               <a
                 href={`tel:${COMPANY_INFO.contacts.primaryPhone.replace(/\s+/g, '')}`}
                 className="flex items-center justify-center gap-2 w-full py-3 bg-[#EFEAE2] text-[#252525] text-sm font-medium rounded-lg"
@@ -175,9 +293,9 @@ export const Navbar: React.FC<NavbarProps> = ({
                   setMobileMenuOpen(false);
                   onOpenConsultation();
                 }}
-                className="w-full py-3.5 bg-[#153A66] text-white text-sm font-bold tracking-wide uppercase rounded-lg hover:bg-[#0B2545] transition-colors flex items-center justify-center gap-2"
+                className="w-full py-3.5 bg-[#153A66] hover:bg-[#0B2545] text-white text-sm font-bold tracking-wide uppercase rounded-lg transition-colors flex items-center justify-center gap-2"
               >
-                <span>Get a Consultation</span>
+                <span>{serviceMode === 'interiors' ? 'Book Interior Consultation' : 'Get a Consultation'}</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
 
