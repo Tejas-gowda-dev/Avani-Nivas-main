@@ -21,7 +21,7 @@ export const ServiceLandingPage: React.FC<ServiceLandingPageProps> = ({
       {/* Top Floating Branding Header */}
       <header className="absolute top-0 left-0 right-0 z-30 px-4 sm:px-8 py-4 sm:py-6 flex items-center justify-between bg-gradient-to-b from-black/90 via-black/50 to-transparent">
         <div className="flex items-center gap-3">
-          <div className="p-1.5 rounded-xl bg-[#FAF9F6] shadow-sm border border-white/20">
+          <div className="p-1.5 rounded-xl bg-white/10 shadow-sm border border-white/20">
              <img
             //   src={logo}
               alt={`${COMPANY_INFO.brandName} logo`}
@@ -83,7 +83,6 @@ export const ServiceLandingPage: React.FC<ServiceLandingPageProps> = ({
           {/* Construction Content */}
           <div className="relative z-20 max-w-xl transition-transform duration-500 group-hover:-translate-y-2">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-[#93C5FD] text-[11px] sm:text-xs font-bold uppercase tracking-widest mb-3 sm:mb-4 shadow-sm">
-              <Hammer className="w-3.5 h-3.5 text-[#D4AF37]" />
               <span>Civil & Architectural Build</span>
             </div>
 
@@ -174,8 +173,7 @@ export const ServiceLandingPage: React.FC<ServiceLandingPageProps> = ({
           {/* Interior Design Content */}
           <div className="relative z-20 max-w-xl transition-transform duration-500 group-hover:-translate-y-2">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-[#FDE68A] text-[11px] sm:text-xs font-bold uppercase tracking-widest mb-3 sm:mb-4 shadow-sm">
-              <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
-              <span>Bespoke Interior Architecture</span>
+              <span>Interior Architecture</span>
             </div>
 
             <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-white mb-2 sm:mb-3 drop-shadow-md">
@@ -232,7 +230,7 @@ export const ServiceLandingPage: React.FC<ServiceLandingPageProps> = ({
         <div className="flex items-center gap-2 text-center sm:text-left">
           <ShieldCheck className="w-4 h-4 text-[#D4AF37] shrink-0" />
           <span>
-            <strong className="text-white">Avani Nivas by Gowdru Realcom Pvt. Ltd.</strong> • Bengaluru, Karnataka • Orissa • Chhattisgarh
+            <strong className="text-white">Avani Nivas by Gowdru Realcom Pvt. Ltd.</strong> • Bengaluru, Karnataka •
           </span>
         </div>
         <div className="flex items-center gap-4 text-slate-300 text-[11px]">

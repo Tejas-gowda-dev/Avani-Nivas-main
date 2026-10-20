@@ -28,19 +28,19 @@ export const InteriorHeroSection: React.FC<InteriorHeroSectionProps> = ({
           className="w-full h-full object-cover object-center scale-105 animate-in fade-in zoom-in duration-1000"
         />
         {/* Editorial Gradient Scrim */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/75 to-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/ via-black/ to-black/" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0F0C0A] via-transparent to-black/60" />
       </div>
 
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 sm:py-36 w-full">
         <div className="max-w-3xl space-y-6 sm:space-y-8">
           {/* Eyebrow Badge */}
-          <ScrollReveal>
+          {/* <ScrollReveal>
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/40 text-[#FDE68A] text-xs font-bold uppercase tracking-widest shadow-md">
               <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
               <span>Avani Nivas • Bespoke Residential Interiors</span>
             </div>
-          </ScrollReveal>
+          </ScrollReveal> */}
 
           {/* Main Hero Headline */}
           <ScrollReveal delay={0.1}>
@@ -95,7 +95,7 @@ export const InteriorHeroSection: React.FC<InteriorHeroSectionProps> = ({
           </ScrollReveal>
 
           {/* Action CTAs */}
-          <ScrollReveal delay={0.4}>
+          {/* <ScrollReveal delay={0.4}>
             <div className="flex flex-wrap items-center gap-3.5 sm:gap-4 pt-4">
               <button
                 id="hero-explore-interior-packages"
@@ -124,7 +124,7 @@ export const InteriorHeroSection: React.FC<InteriorHeroSectionProps> = ({
                 <span>WhatsApp Designer</span>
               </a>
             </div>
-          </ScrollReveal>
+          </ScrollReveal> */}
         </div>
       </div>
     </section>
