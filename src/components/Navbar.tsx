@@ -153,7 +153,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               onClick={onOpenConsultation}
               className="inline-flex items-center gap-2 px-4 py-2.5 bg-[#153A66] hover:bg-[#0B2545] text-white text-xs font-semibold tracking-wide uppercase rounded-xl active:scale-98 transition-all duration-200 shadow-sm"
             >
-              <span>{serviceMode === 'interiors' ? 'Interior Consultation' : 'Get a Consultation'}</span>
+              <span>{serviceMode === 'interiors' ? 'Get a Consultation' : 'Get a Consultation'}</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </button>
           </div>

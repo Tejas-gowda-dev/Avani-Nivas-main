@@ -34,6 +34,7 @@ export default function App() {
   const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null);
   const [migrationModalOpen, setMigrationModalOpen] = useState(false);
   const [pricingInitialTierId, setPricingInitialTierId] = useState<string>('royal-package');
+  const [interiorInitialTierId, setInteriorInitialTierId] = useState<string>('bwp-package');
 
   // Initialize and handle URL routing & legacy WordPress 301 redirects
   useEffect(() => {
@@ -216,6 +217,10 @@ export default function App() {
                 }}
                 onSelectService={(service) => setSelectedService(service)}
                 onSelectProject={(project) => setSelectedProject(project)}
+                onSelectPricingPlan={(tierId) => {
+                  setInteriorInitialTierId(tierId);
+                  handleNavigate('pricing');
+                }}
                 onSwitchToConstruction={() => handleSwitchServiceMode('construction')}
               />
             )}
@@ -234,6 +239,7 @@ export default function App() {
             {currentPage === 'pricing' && (
               <InteriorPricingPage
                 onNavigate={handleNavigate}
+                initialTierId={interiorInitialTierId}
                 onOpenConsultation={() => {
                   setPrefilledService('Interior Package Estimation');
                   setConsultationOpen(true);

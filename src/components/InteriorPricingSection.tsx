@@ -18,14 +18,18 @@ import {
 
 interface InteriorPricingSectionProps {
   onOpenConsultation?: () => void;
-  showEstimatorOnly?: boolean;
+  showEstimator?: boolean; // When false, the instant interior cost estimator section is removed
+  onSelectPlanForPricingPage?: (tierId: string) => void;
+  initialSelectedTierId?: string;
 }
 
 export const InteriorPricingSection: React.FC<InteriorPricingSectionProps> = ({
   onOpenConsultation,
-  showEstimatorOnly = false
+  showEstimator = true,
+  onSelectPlanForPricingPage,
+  initialSelectedTierId
 }) => {
-  const [selectedTierId, setSelectedTierId] = useState<string>('bwp-package');
+  const [selectedTierId, setSelectedTierId] = useState<string>(initialSelectedTierId || 'bwp-package');
   const [customSqFt, setCustomSqFt] = useState<number>(1000);
 
   // Form states for WhatsApp quotation
@@ -172,16 +176,24 @@ export const InteriorPricingSection: React.FC<InteriorPricingSectionProps> = ({
                 <div className="p-6 pt-0">
                   <button
                     onClick={() => {
+                      if (!showEstimator && onSelectPlanForPricingPage) {
+                        onSelectPlanForPricingPage(tier.id);
+                        return;
+                      }
                       setSelectedTierId(tier.id);
-                      document.getElementById('interior-calculator-box')?.scrollIntoView({ behavior: 'smooth' });
+                      if (showEstimator) {
+                        document.getElementById('interior-calculator-box')?.scrollIntoView({ behavior: 'smooth' });
+                      } else if (onSelectPlanForPricingPage) {
+                        onSelectPlanForPricingPage(tier.id);
+                      }
                     }}
                     className={`w-full py-3.5 px-4 rounded-xl text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-sm ${
-                      isSelected
+                      isSelected && showEstimator
                         ? 'bg-[#153A66] hover:bg-[#0B2545] text-white shadow'
-                        : 'bg-white hover:bg-[#FAF8F5] text-[#0B2545] border border-[#0B2545]/30'
+                        : 'bg-[#153A66] hover:bg-[#0B2545] text-white'
                     }`}
                   >
-                    <span>{isSelected ? 'Selected Package' : 'Calculate Estimate'}</span>
+                    <span>Calculate Estimate</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </button>
                 </div>
@@ -191,9 +203,10 @@ export const InteriorPricingSection: React.FC<InteriorPricingSectionProps> = ({
         </div>
 
         {/* ========================================================
-            INSTANT ESTIMATOR & WHATSAPP QUOTATION GENERATOR
+            INSTANT ESTIMATOR & WHATSAPP QUOTATION GENERATOR (Pricing Page Only)
         ======================================================== */}
-        <div id="interior-calculator-box" className="mt-16 bg-white rounded-3xl border border-[#E0D8CC] p-6 sm:p-10 shadow-lg">
+        {showEstimator && (
+          <div id="interior-calculator-box" className="mt-16 bg-white rounded-3xl border border-[#E0D8CC] p-6 sm:p-10 shadow-lg">
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-[#ECE5DA]">
               <div className="space-y-1">
@@ -383,6 +396,7 @@ export const InteriorPricingSection: React.FC<InteriorPricingSectionProps> = ({
             </div>
           </div>
         </div>
+        )}
       </div>
     </section>
   );

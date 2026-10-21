@@ -34,6 +34,7 @@ interface InteriorHomePageProps {
   onOpenConsultation: () => void;
   onSelectService: (service: ServiceItem) => void;
   onSelectProject: (project: ProjectItem) => void;
+  onSelectPricingPlan?: (tierId: string) => void;
   onSwitchToConstruction: () => void;
 }
 
@@ -42,6 +43,7 @@ export const InteriorHomePage: React.FC<InteriorHomePageProps> = ({
   onOpenConsultation,
   onSelectService,
   onSelectProject,
+  onSelectPricingPlan,
   onSwitchToConstruction
 }) => {
   const [activeProcessStep, setActiveProcessStep] = useState(0);
@@ -206,7 +208,7 @@ export const InteriorHomePage: React.FC<InteriorHomePageProps> = ({
           </ScrollReveal>
 
           {/* 8 Interior Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {INTERIOR_SERVICES.map((service, idx) => (
               <ScrollReveal
                 key={service.id}
@@ -267,9 +269,19 @@ export const InteriorHomePage: React.FC<InteriorHomePageProps> = ({
       <InteriorFeaturesSection onOpenConsultation={onOpenConsultation} />
 
       {/* ========================================================
-          6. INTERIOR DESIGN PRICING & ESTIMATOR
+          6. INTERIOR DESIGN PRICING PLANS (HOME VIEW: PACKAGES ONLY)
       ======================================================== */}
-      <InteriorPricingSection onOpenConsultation={onOpenConsultation} />
+      <InteriorPricingSection 
+        showEstimator={false}
+        onSelectPlanForPricingPage={(tierId) => {
+          if (onSelectPricingPlan) {
+            onSelectPricingPlan(tierId);
+          } else {
+            onNavigate('pricing');
+          }
+        }}
+        onOpenConsultation={onOpenConsultation} 
+      />
 
       {/* ========================================================
           7. CURATED INTERIOR PORTFOLIO / GALLERY

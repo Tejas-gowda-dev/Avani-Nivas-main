@@ -57,7 +57,7 @@ export const ServiceLandingPage: React.FC<ServiceLandingPageProps> = ({
           {onOpenConsultation && (
             <button
               onClick={onOpenConsultation}
-              className="rounded-full border border-[#D4AF37]/60 bg-[#D4AF37]/20 px-4 sm:px-5 py-2 text-xs font-semibold tracking-wide text-white backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.35)] transition-all duration-300 hover:bg-[#D4AF37] hover:text-[#0B1528] hover:shadow-[0_0_30px_rgba(212,175,55,0.45)]"
+              className="rounded-full border border-[#D4AF37]/60 bg-white/20 px-4 sm:px-5 py-2 text-xs font-semibold tracking-wide text-white backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.35)] transition-all duration-300 hover:bg-white/10 hover:text-white hover:shadow-[0_0_30px_rgba(212,175,55,0.45)]"
             >
               Free Consultation
             </button>

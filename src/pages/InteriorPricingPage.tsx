@@ -8,11 +8,13 @@ import { ShieldCheck, HelpCircle, ArrowRight, Clock, Sparkles } from 'lucide-rea
 interface InteriorPricingPageProps {
   onNavigate: (page: PageId) => void;
   onOpenConsultation: () => void;
+  initialTierId?: string;
 }
 
 export const InteriorPricingPage: React.FC<InteriorPricingPageProps> = ({
   onNavigate,
-  onOpenConsultation
+  onOpenConsultation,
+  initialTierId
 }) => {
   const faqs = [
     {
@@ -58,7 +60,11 @@ export const InteriorPricingPage: React.FC<InteriorPricingPageProps> = ({
       </section>
 
       {/* Main Interior Pricing & Interactive Estimator */}
-      <InteriorPricingSection onOpenConsultation={onOpenConsultation} />
+      <InteriorPricingSection 
+        showEstimator={true} 
+        initialSelectedTierId={initialTierId}
+        onOpenConsultation={onOpenConsultation} 
+      />
 
       {/* Interior FAQs Section */}
       <section className="py-20 bg-white border-t border-[#EAE4DC]">
