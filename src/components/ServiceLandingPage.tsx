@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowRight, Hammer, Sparkles, Phone, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, Phone, ShieldCheck, CheckCircle2 } from 'lucide-react';
 // import { BrandLogo } from './BrandLogo';
 import { COMPANY_INFO } from '../data/company';
 // @ts-ignore
@@ -10,6 +10,21 @@ interface ServiceLandingPageProps {
   onOpenConsultation?: () => void;
 }
 
+/* Shared glass recipes (Tailwind utility strings) */
+const GLASS_CARD =
+  'relative z-20 w-full max-w-xl rounded-[28px] border border-white/20 backdrop-blur-2xl ' +
+  'p-6 sm:p-8 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.6),inset_0_1px_0_rgba(255,255,255,0.35),inset_0_-1px_0_rgba(255,255,255,0.05)] ' +
+  'transition-all duration-500 group-hover:-translate-y-2 group-hover:border-white/35';
+
+const GLASS_CHIP =
+  'flex items-center gap-2 rounded-xl border border-white/15 bg-white/[0.08] px-3 py-2.5 ' +
+  'backdrop-blur-md shadow-[inset_0_1px_0_rgba(255,255,255,0.18)] transition-colors duration-300 ' +
+  'group-hover:bg-white/[0.14]';
+
+const GLASS_PILL =
+  'rounded-full border border-white/25 bg-white/10 backdrop-blur-xl ' +
+  'shadow-[inset_0_1px_0_rgba(255,255,255,0.3)] transition-all duration-300 hover:bg-white/20 hover:border-white/40';
+
 export const ServiceLandingPage: React.FC<ServiceLandingPageProps> = ({
   onSelectService,
   onOpenConsultation
@@ -18,30 +33,31 @@ export const ServiceLandingPage: React.FC<ServiceLandingPageProps> = ({
 
   return (
     <div className="relative min-h-screen w-full bg-[#0B1528] text-white flex flex-col justify-between overflow-x-hidden selection:bg-[#D4AF37] selection:text-[#0B1528]">
-      {/* Top Floating Branding Header */}
-      <header className="absolute top-0 left-0 right-0 z-30 px-4 sm:px-8 py-4 sm:py-6 flex items-center justify-between bg-gradient-to-b from-black/90 via-black/50 to-transparent">
+      {/* Floating Glass Header */}
+      <header className="absolute top-3 sm:top-5 left-3 sm:left-6 right-3 sm:right-6 z-30 flex items-center justify-between rounded-2xl border border-white/20 bg-white/10 backdrop-blur-2xl px-3 sm:px-5 py-2.5 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5),inset_0_1px_0_rgba(255,255,255,0.3)]">
         <div className="flex items-center gap-3">
-          <div className="p-1.5 rounded-xl bg-white/10 shadow-sm border border-white/20">
-             <img
-            //   src={logo}
+          <div className="rounded-xl border border-white/25 bg-white/10 p-1.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.3)]">
+            <img
+                src={logo}
               alt={`${COMPANY_INFO.brandName} logo`}
+              className="h-7 sm:h-8 w-auto"
             />
           </div>
         </div>
 
-        <div className="flex items-center gap-3 sm:gap-4">
+        <div className="flex items-center gap-2 sm:gap-3">
           <a
             href={`tel:${COMPANY_INFO.contacts.primaryPhone.replace(/\s+/g, '')}`}
-            className="hidden sm:flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md text-xs font-medium tracking-wide text-white border border-white/20 transition-all"
+            className={`hidden sm:flex items-center gap-2 px-4 py-2 text-xs font-medium tracking-wide text-white ${GLASS_PILL}`}
           >
-            <Phone className="w-3.5 h-3.5 text-[#D4AF37]" />
+            <Phone className="w-3.5 h-3.5 text-[#153A66]" />
             <span>{COMPANY_INFO.contacts.primaryPhone}</span>
           </a>
 
           {onOpenConsultation && (
             <button
               onClick={onOpenConsultation}
-              className="px-4 py-1.5 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md text-xs font-medium tracking-wide text-white border border-white/20 transition-all"
+              className="rounded-full border border-[#D4AF37]/60 bg-[#D4AF37]/20 px-4 sm:px-5 py-2 text-xs font-semibold tracking-wide text-white backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.35)] transition-all duration-300 hover:bg-[#D4AF37] hover:text-[#0B1528] hover:shadow-[0_0_30px_rgba(212,175,55,0.45)]"
             >
               Free Consultation
             </button>
@@ -59,7 +75,7 @@ export const ServiceLandingPage: React.FC<ServiceLandingPageProps> = ({
           onMouseEnter={() => setHoveredSide('construction')}
           onMouseLeave={() => setHoveredSide(null)}
           onClick={() => onSelectService('construction')}
-          className={`group relative flex-1 min-h-[50vh] lg:min-h-full flex flex-col justify-end p-6 sm:p-12 lg:p-16 cursor-pointer overflow-hidden transition-all duration-700 ease-out border-b lg:border-b-0 lg:border-r border-white/10 ${
+          className={`group relative flex-1 min-h-[50vh] lg:min-h-full flex flex-col justify-end p-4 pt-28 sm:p-10 sm:pt-28 lg:p-14 cursor-pointer overflow-hidden transition-all duration-700 ease-out border-b lg:border-b-0 lg:border-r border-white/10 ${
             hoveredSide === 'construction'
               ? 'lg:flex-[1.12]'
               : hoveredSide === 'interiors'
@@ -73,70 +89,73 @@ export const ServiceLandingPage: React.FC<ServiceLandingPageProps> = ({
             <img
               src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=85"
               alt="Avani Nivas Turnkey Residential Construction Architecture"
-              className="w-full h-full object-cover object-center transform transition-transform duration-1000 ease-out scale-100 group-hover:scale-108 group-hover:brightness-105"
+              className="w-full h-full object-cover object-center transform transition-transform duration-1000 ease-out scale-100 group-hover:scale-105 group-hover:brightness-105"
             />
-            {/* Multi-layer Gradient Overlay for crisp text contrast */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#071322] via-[#0B2545]/75 to-black/40 group-hover:via-[#0B2545]/60 transition-colors duration-500" />
-            <div className="absolute inset-0 bg-[#00142B]/30 mix-blend-multiply" />
+            {/* Overlays: depth + cool tint so the glass reads clearly */}
+            {/* <div className="absolute inset-0 bg-gradient-to-t from-[#071322]/90 via-[#0B2545]/40 to-black/30 transition-colors duration-500" /> */}
+            {/* <div className="absolute inset-0 bg-[#00142B]/30 mix-blend-multiply" /> */}
           </div>
 
-          {/* Construction Content */}
-          <div className="relative z-20 max-w-xl transition-transform duration-500 group-hover:-translate-y-2">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-[#93C5FD] text-[11px] sm:text-xs font-bold uppercase tracking-widest mb-3 sm:mb-4 shadow-sm">
+          {/* Colored light orbs (give the glass something to refract) */}
+          {/* <div className="pointer-events-none absolute -top-24 -left-24 h-80 w-80 rounded-full bg-blue-500/25 blur-3xl transition-all duration-700 group-hover:bg-blue-400/35" /> */}
+          {/* <div className="pointer-events-none absolute bottom-10 right-0 h-64 w-64 rounded-full bg-[#D4AF37]/10 blur-3xl" /> */}
+
+          {/* Construction Glass Card */}
+          <div className={`${GLASS_CARD} bg-gradient-to-br from-white/[0.16] to-sky-200/[0.05] group-hover:from-white/[0.2]`}>
+            <div className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3.5 py-1.5 text-[11px] sm:text-xs font-semibold tracking-wide text-[#BFDBFE] backdrop-blur-md mb-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.25)]">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#93C5FD] shadow-[0_0_8px_#93C5FD]" />
               <span>Civil & Architectural Build</span>
             </div>
 
-            <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-white mb-2 sm:mb-3 drop-shadow-md">
+            <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-white mb-3 drop-shadow-lg">
               Construction
             </h2>
 
-            <p className="font-sans text-base sm:text-lg text-slate-200 font-normal leading-relaxed mb-4 sm:mb-6 max-w-md drop-shadow">
+            <p className="font-sans text-base sm:text-lg text-slate-100/90 font-normal leading-relaxed mb-6 max-w-md">
               Building Your Vision, Creating Your Future.
             </p>
 
             {/* Value bullets */}
-            <div className="grid grid-cols-2 gap-2 text-xs text-slate-300 mb-6 max-w-md hidden sm:grid">
-              <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#D4AF37] shrink-0" />
+            <div className="grid-cols-2 gap-2 text-xs text-slate-100 mb-7 hidden sm:grid">
+              <div className={GLASS_CHIP}>
+                <CheckCircle2 className="w-4 h-4 text-[#153A66] shrink-0" />
                 <span>15+ Years Track Record</span>
               </div>
-              <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#D4AF37] shrink-0" />
+              <div className={GLASS_CHIP}>
+                <CheckCircle2 className="w-4 h-4 text-[#153A66] shrink-0" />
                 <span>200+ Homes Built</span>
               </div>
-              <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#D4AF37] shrink-0" />
+              <div className={GLASS_CHIP}>
+                <CheckCircle2 className="w-4 h-4 text-[#153A66] shrink-0" />
                 <span>₹1,999/sq.ft Turnkey Packages</span>
               </div>
-              <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#D4AF37] shrink-0" />
+              <div className={GLASS_CHIP}>
+                <CheckCircle2 className="w-4 h-4 text-[#153A66] shrink-0" />
                 <span>Foundation to Handover</span>
               </div>
             </div>
 
             {/* Action CTA Button */}
-            <div className="pt-2">
-              <button
-                id="btn-explore-construction"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onSelectService('construction');
-                }}
-                className="inline-flex items-center gap-3 px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl bg-[#0B2545] hover:bg-[#153A66] text-white border border-[#3B82F6]/40 text-xs sm:text-sm font-bold uppercase tracking-wider transition-all duration-300 shadow-xl group-hover:shadow-blue-900/50 group-hover:border-[#93C5FD] group-hover:gap-4 active:scale-98"
-              >
-                <span>Explore Construction</span>
-                <ArrowRight className="w-4 h-4 text-[#D4AF37] transition-transform duration-300 group-hover:translate-x-1" />
-              </button>
-            </div>
+            <button
+              id="btn-explore-construction"
+              onClick={(e) => {
+                e.stopPropagation();
+                onSelectService('construction');
+              }}
+              className="group/btn inline-flex w-full sm:w-auto items-center justify-between sm:justify-start gap-4 rounded-2xl border border-white/30 bg-white/15 pl-6 pr-2 py-2 text-sm font-semibold tracking-wide text-white backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.4)] transition-all duration-300 hover:bg-white/25 hover:border-sky-200/60 hover:shadow-[0_0_35px_rgba(147,197,253,0.35)] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]"
+            >
+              <span>Explore Construction</span>
+              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-[#0B1528] transition-transform duration-300 group-hover/btn:translate-x-1">
+                <ArrowRight className="w-4 h-4" />
+              </span>
+            </button>
           </div>
-
-          {/* Subtle Ambient Hover Glow */}
-          <div className="absolute -bottom-10 -left-10 w-72 h-72 bg-blue-600/20 rounded-full blur-3xl pointer-events-none group-hover:bg-blue-500/30 transition-all duration-700" />
         </section>
 
-        {/* Center Ornate Divider Badge (Desktop only) */}
+        {/* Center Glass Divider Badge (Desktop only) */}
         <div className="hidden lg:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 pointer-events-none flex-col items-center">
-          <div className="w-12 h-12 rounded-full bg-[#0B1528] border-2 border-[#D4AF37]/60 shadow-2xl flex items-center justify-center text-xs font-bold text-[#D4AF37] tracking-widest backdrop-blur-md">
+          <div className="relative flex h-14 w-14 items-center justify-center rounded-full border border-white/30 bg-white/10 text-xs font-bold tracking-widest text-[#D4AF37] backdrop-blur-2xl shadow-[0_10px_40px_rgba(0,0,0,0.5),inset_0_1px_0_rgba(255,255,255,0.45)]">
+            <span className="absolute inset-1 rounded-full border border-[#153A66]/30" />
             OR
           </div>
         </div>
@@ -149,7 +168,7 @@ export const ServiceLandingPage: React.FC<ServiceLandingPageProps> = ({
           onMouseEnter={() => setHoveredSide('interiors')}
           onMouseLeave={() => setHoveredSide(null)}
           onClick={() => onSelectService('interiors')}
-          className={`group relative flex-1 min-h-[50vh] lg:min-h-full flex flex-col justify-end p-6 sm:p-12 lg:p-16 cursor-pointer overflow-hidden transition-all duration-700 ease-out ${
+          className={`group relative flex-1 min-h-[50vh] lg:min-h-full flex flex-col justify-end p-4 sm:p-10 lg:p-14 cursor-pointer overflow-hidden transition-all duration-700 ease-out ${
             hoveredSide === 'interiors'
               ? 'lg:flex-[1.12]'
               : hoveredSide === 'construction'
@@ -163,82 +182,69 @@ export const ServiceLandingPage: React.FC<ServiceLandingPageProps> = ({
             <img
               src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1920&q=85"
               alt="Avani Nivas Luxury Residential Interior Architecture & Living Room"
-              className="w-full h-full object-cover object-center transform transition-transform duration-1000 ease-out scale-100 group-hover:scale-108 group-hover:brightness-105"
+              className="w-full h-full object-cover object-center transform transition-transform duration-1000 ease-out scale-100 group-hover:scale-105 group-hover:brightness-105"
             />
-            {/* Multi-layer Gradient Overlay for rich warm luxury contrast */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#15100B] via-[#2A1E17]/75 to-black/40 group-hover:via-[#2A1E17]/60 transition-colors duration-500" />
+            {/* Overlays: warm depth so the glass reads clearly */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#15100B]/90 via-[#2A1E17]/40 to-black/30 transition-colors duration-500" />
             <div className="absolute inset-0 bg-[#35251B]/25 mix-blend-multiply" />
           </div>
 
-          {/* Interior Design Content */}
-          <div className="relative z-20 max-w-xl transition-transform duration-500 group-hover:-translate-y-2">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-[#FDE68A] text-[11px] sm:text-xs font-bold uppercase tracking-widest mb-3 sm:mb-4 shadow-sm">
+          {/* Colored light orbs */}
+          <div className="pointer-events-none absolute -top-24 -right-24 h-80 w-80 rounded-full bg-amber-500/25 blur-3xl transition-all duration-700 group-hover:bg-amber-400/35" />
+          <div className="pointer-events-none absolute bottom-10 left-0 h-64 w-64 rounded-full bg-rose-400/10 blur-3xl" />
+
+          {/* Interior Glass Card */}
+          <div className={`${GLASS_CARD} bg-gradient-to-br from-white/[0.16] to-amber-200/[0.06] group-hover:from-white/[0.2]`}>
+            <div className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3.5 py-1.5 text-[11px] sm:text-xs font-semibold tracking-wide text-[#153A66] backdrop-blur-md mb-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.25)]">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#153A66] shadow-[0_0_8px_#FDE68A]" />
               <span>Interior Architecture</span>
             </div>
 
-            <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-white mb-2 sm:mb-3 drop-shadow-md">
+            <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-white mb-3 drop-shadow-lg">
               Interior Design
             </h2>
 
-            <p className="font-sans text-base sm:text-lg text-amber-100 font-normal leading-relaxed mb-4 sm:mb-6 max-w-md drop-shadow">
+            <p className="font-sans text-base sm:text-lg text-amber-50/90 font-normal leading-relaxed mb-6 max-w-md">
               Thoughtfully Designed Spaces, Beautifully Lived.
             </p>
 
             {/* Value bullets */}
-            <div className="grid grid-cols-2 gap-2 text-xs text-amber-200/90 mb-6 max-w-md hidden sm:grid">
-              <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#D4AF37] shrink-0" />
+            <div className="grid-cols-2 gap-2 text-xs text-amber-50 mb-7 hidden sm:grid">
+              <div className={GLASS_CHIP}>
+                <CheckCircle2 className="w-4 h-4 text-[#153A66] shrink-0" />
                 <span>45-Day Handover Guarantee</span>
               </div>
-              <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#D4AF37] shrink-0" />
+              <div className={GLASS_CHIP}>
+                <CheckCircle2 className="w-4 h-4 text-[#153A66] shrink-0" />
                 <span>10-Year Material Warranty</span>
               </div>
-              <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#D4AF37] shrink-0" />
+              <div className={GLASS_CHIP}>
+                <CheckCircle2 className="w-4 h-4 text-[#153A66] shrink-0" />
                 <span>100% Factory Finished</span>
               </div>
-              <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#D4AF37] shrink-0" />
+              <div className={GLASS_CHIP}>
+                <CheckCircle2 className="w-4 h-4 text-[#153A66] shrink-0" />
                 <span>BWP Termite-Proof Ply</span>
               </div>
             </div>
 
             {/* Action CTA Button */}
-            <div className="pt-2">
-              <button
-                id="btn-explore-interiors"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onSelectService('interiors');
-                }}
-                className="inline-flex items-center gap-3 px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl bg-[#0B2545] hover:bg-[#153A66] text-white border border-[#D4AF37]/40 text-xs sm:text-sm font-bold uppercase tracking-wider transition-all duration-300 shadow-xl group-hover:shadow-amber-900/50 group-hover:border-[#FDE68A] group-hover:gap-4 active:scale-98"
-              >
-                <span>Explore Interiors</span>
-                <ArrowRight className="w-4 h-4 text-[#D4AF37] transition-transform duration-300 group-hover:translate-x-1" />
-              </button>
-            </div>
+            <button
+              id="btn-explore-interiors"
+              onClick={(e) => {
+                e.stopPropagation();
+                onSelectService('interiors');
+              }}
+              className="group/btn inline-flex w-full sm:w-auto items-center justify-between sm:justify-start gap-4 rounded-2xl border border-white/30 bg-white/15 pl-6 pr-2 py-2 text-sm font-semibold tracking-wide text-white backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.4)] transition-all duration-300 hover:bg-white/25 hover:border-amber-200/60 hover:shadow-[0_0_35px_rgba(253,230,138,0.35)] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]"
+            >
+              <span>Explore Interiors</span>
+              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-[#0B1528] transition-transform duration-300 group-hover/btn:translate-x-1">
+                <ArrowRight className="w-4 h-4" />
+              </span>
+            </button>
           </div>
-
-          {/* Subtle Ambient Hover Glow */}
-          <div className="absolute -bottom-10 -right-10 w-72 h-72 bg-amber-600/20 rounded-full blur-3xl pointer-events-none group-hover:bg-amber-500/30 transition-all duration-700" />
         </section>
       </main>
-
-      {/* Bottom Subtle Trust Strip */}
-      <footer className="relative z-30 px-4 sm:px-8 py-3 bg-[#07101D]/90 backdrop-blur-md border-t border-white/10 text-[11px] sm:text-xs text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-2">
-        <div className="flex items-center gap-2 text-center sm:text-left">
-          <ShieldCheck className="w-4 h-4 text-[#D4AF37] shrink-0" />
-          <span>
-            <strong className="text-white">Avani Nivas by Gowdru Realcom Pvt. Ltd.</strong> • Bengaluru, Karnataka •
-          </span>
-        </div>
-        <div className="flex items-center gap-4 text-slate-300 text-[11px]">
-          <span>Corporate Studio: Mallathahalli, Bengaluru</span>
-          <span className="hidden md:inline">•</span>
-          <span className="hidden md:inline">Mon – Sat: 9:30 AM – 7:00 PM</span>
-        </div>
-      </footer>
     </div>
   );
 };
