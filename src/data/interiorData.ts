@@ -200,7 +200,7 @@ export const INTERIOR_SERVICES: ServiceItem[] = [
     shortDesc: 'Ergonomic, moisture-proof culinary spaces with German hardware and quartz countertops.',
     fullDesc: 'Transform cooking into a celebration with our custom modular kitchens. Engineered using 100% BWP boiling waterproof marine plywood, high-gloss acrylic or PU finishes, and Hafele/Hettich soft-close hardware.',
     iconName: 'UtensilsCrossed',
-    image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.livspace-cdn.com/w:3840/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/di-2026-1769081758-Ayx2Q/jas-1784534272-HKwmV/ki-1785991945-zVBcB/ki-7-1785991974-kaVuA.png',
     highlights: [
       '100% BWP Marine Ply with zero-edge banding',
       'Tandem box soft-close drawers & pantry pull-outs',
