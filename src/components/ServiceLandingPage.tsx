@@ -25,7 +25,7 @@ export const ServiceLandingPage: React.FC<ServiceLandingPageProps> = ({
             <img
               src={logo}
               alt={`${COMPANY_INFO.brandName} logo`}
-              className="h-12 w-auto object-contain sm:h-11"
+              className="h-18 w-auto object-contain sm:h-11"
             />
           </div>
         </div>
@@ -77,7 +77,7 @@ export const ServiceLandingPage: React.FC<ServiceLandingPageProps> = ({
               className="w-full h-full object-cover object-center transform transition-transform duration-1000 ease-out scale-100 group-hover:scale-108 group-hover:brightness-105"
             />
             {/* Multi-layer Gradient Overlay for crisp text contrast */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#071322] via-[#0B2545]/75 to-black/40 group-hover:via-[#0B2545]/60 transition-colors duration-500" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#071322] via-[#0B2545]/20 to-black/40 group-hover:via-[#0B2545]/60 transition-colors duration-500" />
             <div className="absolute inset-0 bg-[#00142B]/30 mix-blend-multiply" />
           </div>
 
@@ -88,7 +88,8 @@ export const ServiceLandingPage: React.FC<ServiceLandingPageProps> = ({
             </div>
 
             <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-white mb-2 sm:mb-3 drop-shadow-md">
-              Construction
+              {/* Construction */}
+              CONSTRUCTION
             </h2>
 
             <p className="font-sans text-base sm:text-lg text-slate-200 font-normal leading-relaxed mb-4 sm:mb-6 max-w-md drop-shadow">
@@ -96,7 +97,7 @@ export const ServiceLandingPage: React.FC<ServiceLandingPageProps> = ({
             </p>
 
             {/* Value bullets */}
-            <div className="grid grid-cols-2 gap-2 text-xs text-slate-300 mb-6 max-w-md hidden sm:grid">
+            <div className="grid grid-cols-1 gap-2 text-xs text-slate-300 mb-6 max-w-md hidden sm:grid">
               <div className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-[#D4AF37] shrink-0" />
                 <span>15+ Years Track Record</span>
@@ -163,7 +164,7 @@ export const ServiceLandingPage: React.FC<ServiceLandingPageProps> = ({
               className="w-full h-full object-cover object-center transform transition-transform duration-1000 ease-out scale-100 group-hover:scale-108 group-hover:brightness-105"
             />
             {/* Multi-layer Gradient Overlay for rich warm luxury contrast */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#15100B] via-[#2A1E17]/75 to-black/40 group-hover:via-[#2A1E17]/60 transition-colors duration-500" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#15100B] via-[#2A1E17]/20 to-black/40 group-hover:via-[#2A1E17]/60 transition-colors duration-500" />
             <div className="absolute inset-0 bg-[#35251B]/25 mix-blend-multiply" />
           </div>
 
@@ -174,7 +175,8 @@ export const ServiceLandingPage: React.FC<ServiceLandingPageProps> = ({
             </div>
 
             <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-white mb-2 sm:mb-3 drop-shadow-md">
-              Interior Design
+              {/* Interior Design */}
+              INTERIOR DESIGN
             </h2>
 
             <p className="font-sans text-base sm:text-lg text-amber-100 font-normal leading-relaxed mb-4 sm:mb-6 max-w-md drop-shadow">
@@ -182,7 +184,7 @@ export const ServiceLandingPage: React.FC<ServiceLandingPageProps> = ({
             </p>
 
             {/* Value bullets */}
-            <div className="grid grid-cols-2 gap-2 text-xs text-amber-200/90 mb-6 max-w-md hidden sm:grid">
+            <div className="grid grid-cols-1 gap-2 text-xs text-amber-200/90 mb-6 max-w-md hidden sm:grid">
               <div className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-[#D4AF37] shrink-0" />
                 <span>45-Day Handover Guarantee</span>
