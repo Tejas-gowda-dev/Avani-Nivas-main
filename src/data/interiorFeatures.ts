@@ -58,7 +58,7 @@ export const INTERIOR_CATEGORIES: InteriorCategory[] = [
     title: 'Kitchen',
     subtitle: 'Modular Gourmet Kitchen & Pantry',
     shortDesc: 'Ergonomic kitchen layouts featuring seamless cabinetry, soft-close hardware, quartz worktops, and dedicated pantry zones.',
-    image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://img.magnific.com/free-photo/3d-rendering-modern-kitchen-counter-with-white-biege-design_105762-2228.jpg?semt=ais_hybrid&w=740&q=80',
     badge: 'Heart of the Home',
     finishes: [
       {

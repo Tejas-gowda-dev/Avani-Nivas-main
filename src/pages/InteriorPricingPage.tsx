@@ -47,10 +47,10 @@ export const InteriorPricingPage: React.FC<InteriorPricingPageProps> = ({
           <ScrollReveal className="max-w-3xl mx-auto">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0B2545]/10 text-[#0B2545] text-xs font-bold uppercase tracking-wider mb-4">
               <ShieldCheck className="w-3.5 h-3.5 text-[#0B2545]" />
-              <span>100% Factory Finished • German Hardware • 10-Year Warranty</span>
+              <span>VERIFIED MODULAR PACKAGES...</span>
             </div>
             <h1 className="block font-serif text-3xl sm:text-4xl lg:text-5xl text-[#252525] tracking-tight">
-              Interior Design Packages & Pricing
+             Interior Design Pricing Plans & Packages..1
             </h1>
             <p className="mt-4 text-base sm:text-lg text-[#5C564E] leading-relaxed">
               Transparent per-sq.ft and room-wise modular packages. Select your BHK configuration, customize finishes, and calculate your exact turnkey budget with zero surprise costs.

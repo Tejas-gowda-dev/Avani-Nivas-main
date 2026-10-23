@@ -211,7 +211,7 @@ export const INTERIOR_SERVICES: ServiceItem[] = [
       'Personalized sacred altar design & 3D visualization',
       'Fire-safe granite/quartz counter for oil lamps',
       'Concealed agarbatti ventilation path',
-      'Dedicated drawers for samagri, holy books & puja bells'
+      
     ],
     idealFor: 'Families seeking an auspicious, peaceful sanctuary that blends heritage with modern aesthetics.'
   },
