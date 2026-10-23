@@ -10,7 +10,7 @@ A modern, high-performance, and conversion-focused business website designed and
 - **Brand / Development**: Avani Nivas
 - **Founders & Directors**: Sharath Kumar A N and Palaksha
 - **Industry Provenance**: Over 15 years of industry experience
-- **Client Footprint**: 200+ satisfied clients across Karnataka, Orissa, and Chhattisgarh
+- **Client Footprint**: 300+ satisfied clients across Karnataka, Orissa, and Chhattisgarh
 - **Primary Regional Hubs**: Bengaluru (Mallathahalli & Rajarajeshwari Nagar), Tumkur, Mysuru, Hassan
 - **Corporate Office**: Avani Nivas, 10th Main Road, 1st Cross, Adarsha Layout, Mallathahalli, Bengaluru 560056
 - **Contact Numbers**: +91 9916339333 / +91 9916337333

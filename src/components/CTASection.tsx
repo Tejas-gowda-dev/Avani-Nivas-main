@@ -44,7 +44,7 @@ export const CTASection: React.FC<CTASectionProps> = ({
           <button
             id="cta-get-consultation-btn"
             onClick={onConsultationClick}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-white text-[#0B2545] hover:bg-[#F2ECE4] text-xs font-bold uppercase tracking-wider rounded-xl shadow-lg transition-all duration-200"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-white text-[#0B2545] hover:bg-[#F2ECE4] text-xs font-bold uppercase tracking-wider rounded-xl shadow-lg transition-all duration-300"
           >
             <span>Get a Consultation</span>
             <ArrowRight className="w-4 h-4" />
@@ -53,7 +53,7 @@ export const CTASection: React.FC<CTASectionProps> = ({
           <button
             id="cta-contact-us-btn"
             onClick={onContactClick}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-white/10 hover:bg-[#153A66] hover:border-white/40 text-white text-xs font-bold uppercase tracking-wider rounded-xl border border-white/25 backdrop-blur-xs transition-all duration-200"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-white/10 hover:bg-[#153A66] hover:border-white/40 text-white text-xs font-bold uppercase tracking-wider rounded-xl border border-white/25 backdrop-blur-xs transition-all duration-300"
           >
             <MessageSquare className="w-4 h-4 text-[#93C5FD]" />
             <span>Contact Us</span>

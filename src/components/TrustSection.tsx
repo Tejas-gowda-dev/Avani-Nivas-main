@@ -16,7 +16,7 @@ export const TrustSection: React.FC = () => {
             },
             {
               label: "Satisfied Clients",
-              value: "200+",
+              value: "300+",
               icon: (
                 <Users className="w-12 h-12 text-[#0B2545] stroke-[1.6]" />
               ),

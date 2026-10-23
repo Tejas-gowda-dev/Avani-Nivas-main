@@ -83,7 +83,7 @@ export const Footer: React.FC<FooterProps> = ({
                 <span>15+ Years Provenance</span>
               </div>
               <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#081B30] text-[11px] text-[#E2E8F0] border border-[#173A66]">
-                <span>200+ Satisfied Families</span>
+                <span>300+ Satisfied Families</span>
               </div>
             </div>
           </div>
@@ -245,7 +245,7 @@ export const Footer: React.FC<FooterProps> = ({
 
             <button
               onClick={onOpenConsultation}
-              className="w-full mt-2 py-3 px-4 bg-[#153A66] hover:bg-[#0B2545] text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-all duration-200 border border-white/20 inline-flex items-center justify-center gap-1.5 shadow-sm"
+              className="w-full mt-2 py-3 px-4 bg-[#153A66] hover:bg-[#0B2545] text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-all duration-300 border border-white/20 inline-flex items-center justify-center gap-1.5 shadow-sm"
             >
               <span>{serviceMode === 'interiors' ? 'Book Interior Visit' : 'Book Site Visit'}</span>
               <ArrowUpRight className="w-3.5 h-3.5" />

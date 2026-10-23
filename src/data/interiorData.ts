@@ -194,9 +194,31 @@ export const INTERIOR_PRICING_TIERS: PricingTier[] = [
 
 export const INTERIOR_SERVICES: ServiceItem[] = [
   {
+    id: 'pooja-mandir',
+    slug: 'pooja-mandir',
+    title: 'Pooja Mandir',
+    shortDesc: 'Sacred prayer sanctuaries crafted with auspicious teakwood veneers, CNC jalis, and warm lighting.',
+    fullDesc: 'Honor tradition with handcrafted pooja rooms. We incorporate auspicious Vastu alignments, intricate laser-cut CNC jalis, brass bells, ambient backlit panels, and dedicated storage for sacred rituals.',
+    iconName: 'Sparkles',
+    image: 'https://img.staticmb.com/mbimages/interiorDesignerCMS/decorPartner/4061/projectImage/20251125042229poojaidcdip69.jpg.webp',
+    highlights: [
+      'Vastu-compliant East/North-East orientation',
+      'Teakwood timber frames & traditional brass bell mountings',
+      'Intricate backlit Om/Gayatri/floral CNC jali panels',
+      'Deep pull-out diya drawers with heat-resistant stone tops'
+    ],
+    deliverables: [
+      'Personalized sacred altar design & 3D visualization',
+      'Fire-safe granite/quartz counter for oil lamps',
+      'Concealed agarbatti ventilation path',
+      'Dedicated drawers for samagri, holy books & puja bells'
+    ],
+    idealFor: 'Families seeking an auspicious, peaceful sanctuary that blends heritage with modern aesthetics.'
+  },
+  {
     id: 'modular-kitchens',
     slug: 'modular-kitchens',
-    title: 'Modular Kitchens & Islands',
+    title: 'Modular Kitchens ',
     shortDesc: 'Ergonomic, moisture-proof culinary spaces with German hardware and quartz countertops.',
     fullDesc: 'Transform cooking into a celebration with our custom modular kitchens. Engineered using 100% BWP boiling waterproof marine plywood, high-gloss acrylic or PU finishes, and Hafele/Hettich soft-close hardware.',
     iconName: 'UtensilsCrossed',
@@ -222,7 +244,7 @@ export const INTERIOR_SERVICES: ServiceItem[] = [
     shortDesc: 'Floor-to-ceiling sliding & hinged wardrobes with smart internal organizers and tinted glass.',
     fullDesc: 'Maximize vertical space with bespoke floor-to-ceiling wardrobes. Choose from sliding lacquered glass shutters, textured laminates, or natural veneers with integrated vanity mirrors and sensor lighting.',
     iconName: 'LayoutGrid',
-    image: 'https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.livspace-cdn.com/w:3840/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/ond-2024-1727950725-vfT46/wardrobe-1728925029-SF5tE/wr-o1-1729590320-wmfXM.jpg',
     highlights: [
       'Sliding profile glass & soft-close hinged doors',
       'Dedicated pull-out trouser racks, watch organizers & jewelry trays',
@@ -259,28 +281,7 @@ export const INTERIOR_SERVICES: ServiceItem[] = [
     ],
     idealFor: 'Entertaining guests with a high-end luxury lounge experience right at home.'
   },
-  {
-    id: 'pooja-mandir',
-    slug: 'pooja-mandir',
-    title: 'Bespoke Pooja Mandirs',
-    shortDesc: 'Sacred prayer sanctuaries crafted with auspicious teakwood veneers, CNC jalis, and warm lighting.',
-    fullDesc: 'Honor tradition with handcrafted pooja rooms. We incorporate auspicious Vastu alignments, intricate laser-cut CNC jalis, brass bells, ambient backlit panels, and dedicated storage for sacred rituals.',
-    iconName: 'Sparkles',
-    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80',
-    highlights: [
-      'Vastu-compliant East/North-East orientation',
-      'Teakwood timber frames & traditional brass bell mountings',
-      'Intricate backlit Om/Gayatri/floral CNC jali panels',
-      'Deep pull-out diya drawers with heat-resistant stone tops'
-    ],
-    deliverables: [
-      'Personalized sacred altar design & 3D visualization',
-      'Fire-safe granite/quartz counter for oil lamps',
-      'Concealed agarbatti ventilation path',
-      'Dedicated drawers for samagri, holy books & puja bells'
-    ],
-    idealFor: 'Families seeking an auspicious, peaceful sanctuary that blends heritage with modern aesthetics.'
-  },
+  
   {
     id: 'false-ceiling-lighting',
     slug: 'false-ceiling-lighting',

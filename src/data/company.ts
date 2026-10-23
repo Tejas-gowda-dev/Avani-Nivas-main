@@ -2,10 +2,10 @@ import { ProcessStep, TestimonialItem } from '../types';
 
 export const COMPANY_INFO = {
   legalName: 'Avani Nivas By Gowdru Realcom Private Limited',
-  brandName: 'Gowdru Realcom',
+  brandName: 'Gowdru Realcom®',
   flagshipBrand: 'Avani Nivas',
   foundationHeadline: 'Our foundation: built on trust and excellence',
-  foundationStory: 'Founded by visionary leaders Sharath Kumar A N and Palaksha, Avani Nivas by Gowdru Realcom private limited is a premier construction company with a proven track record of delivering exceptional projects. With over 15 years of industry experience and a portfolio of 200+ satisfied clients in Karnataka, Orissa and Chhattisgarh, we are committed to redefining the construction landscape.',
+  foundationStory: 'Founded by visionary leaders Sharath Kumar A N and Palaksha, Avani Nivas by Gowdru Realcom private limited is a premier construction company with a proven track record of delivering exceptional projects. With over 15 years of industry experience and a portfolio of 300+ satisfied clients in Karnataka, we are committed to redefining the construction landscape.',
   coreValuesStory: 'Our core values revolve around elegance, care, and customization. We believe in crafting spaces that not only meet your functional needs but also reflect your unique style and personality. From initial design concepts to final construction, we are dedicated to providing a seamless and personalized experience.',
   tagline: "From Blueprint to Reality: We're Your Construction Cavalry.",
   subTagline: 'Architectural Excellence, Custom Home Craftsmanship & Refined Interior Transformations',
@@ -28,7 +28,7 @@ export const COMPANY_INFO = {
       caption: 'Over 15 years of industry excellence in construction & interiors'
     },
     {
-      value: '200+',
+      value: '300+',
       label: 'Satisfied Clients',
       caption: 'Across Karnataka, Orissa, and Chhattisgarh'
     },

@@ -137,7 +137,7 @@ export const InteriorHomePage: React.FC<InteriorHomePageProps> = ({
 
               <div className="grid grid-cols-2 gap-4 pt-2">
                 <div className="p-4 rounded-xl bg-white border border-[#E0D8CC]">
-                  <div className="text-2xl font-bold font-serif text-[#0B2545]">200+</div>
+                  <div className="text-2xl font-bold font-serif text-[#0B2545]">300+</div>
                   <div className="text-xs text-[#7C7469] mt-0.5">Turnkey Homes Transformed</div>
                 </div>
                 <div className="p-4 rounded-xl bg-white border border-[#E0D8CC]">

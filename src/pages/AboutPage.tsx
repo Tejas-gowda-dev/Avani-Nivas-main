@@ -32,7 +32,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenConsulta
               Built on Trust and Excellence
             </h1>
             <p className="mt-4 inline font-sans text-base sm:text-lg leading-snug text-center text-[#252525] cursor-crosshair">
-              Avani Nivas by Gowdru Realcom private limited — 15+ years of industry experience and 200+ satisfied clients across Karnataka, Orissa, and Chhattisgarh.
+              Avani Nivas by Gowdru Realcom private limited — 15+ years of industry experience and 300+ satisfied clients across Karnataka, Orissa, and Chhattisgarh.
             </p>
           </ScrollReveal>
         </div>
@@ -53,7 +53,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenConsulta
             </p>
             <div className="p-6 rounded-2xl bg-[#F0ECE3] border border-[#E0D8CC]">
               <div className="flex items-center gap-2 text-sm font-bold text-[#252525] mb-2">
-                <Sparkles className="w-4 h-4 text-[#0B2545]" />
+                {/* <Sparkles className="w-4 h-4 text-[#0B2545]" /> */}
                 <span>Our Core Values: Elegance, Care & Customization</span>
               </div>
               <p className="text-sm text-[#4A453E] leading-relaxed">
@@ -67,7 +67,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenConsulta
                 <div className="text-xs text-[#7C7469] mt-0.5">Years of Industry Experience</div>
               </div>
               <div className="p-4 rounded-xl bg-[#F5F2EC] border border-[#E0D8CC]">
-                <div className="text-2xl font-bold text-[#252525] font-serif">200+</div>
+                <div className="text-2xl font-bold text-[#252525] font-serif">300+</div>
                 <div className="text-xs text-[#7C7469] mt-0.5">Satisfied Clients Across 3 States</div>
               </div>
             </div>

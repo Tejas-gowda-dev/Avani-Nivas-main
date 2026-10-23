@@ -104,20 +104,7 @@ export const HeroSection: React.FC<HeroSectionProps> = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Hero Headline, Value Proposition & Actions */}
           <div className="lg:col-span-8 space-y-6 sm:space-y-7 text-left">
-            {/* Trust Pill Badge */}
-            {/* <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/15 border border-white/20 shadow-lg text-white">
-              <span className="flex h-2 w-2 relative">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10B981] opacity-5" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#10B981]" />
-              </span>
-              <span className="text-[11px] sm:text-xs font-mono font-bold tracking-widest uppercase text-[#F3E5AB]">
-                15+ Years Excellence • 200+ Completed Projects
-              </span>
-              <span className="hidden sm:inline-block w-1 h-1 rounded-full bg-white/40" />
-              <span className="hidden sm:inline-block text-[11px] font-mono text-white/80">
-                Karnataka 
-              </span>
-            </div> */}
+            
 
             {/* Editorial Title */}
             <div className="space-y-2">

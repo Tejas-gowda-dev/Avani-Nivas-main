@@ -8,7 +8,7 @@ export const SERVICES: ServiceItem[] = [
     shortDesc: 'Modernize your culinary space with stylish and functional upgrades.',
     fullDesc: 'Upgrade your kitchen with our tailored renovation services, including cabinetry, countertops, and lighting. Enjoy a functional, stylish space that enhances home value and energy efficiency, with projects typically completed in 4–8 weeks.',
     iconName: 'UtensilsCrossed',
-    image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://cms.interiorcompany.com/wp-content/uploads/2022/04/small-kitchen-reno-ideas-opt-straight-or-l-shaped-formats.webp',
     highlights: [
       'Tailored cabinetry, countertops & architectural lighting',
       'Boosts home valuation & daily culinary ergonomics',

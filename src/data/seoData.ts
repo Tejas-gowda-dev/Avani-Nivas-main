@@ -17,7 +17,7 @@ export interface PageSEO {
 export const SEO_CONFIG: Record<PageId, PageSEO> = {
   home: {
     title: "Avani Nivas by Gowdru Realcom – We're Your Construction Cavalry",
-    description: 'Premier construction and bespoke architectural living with 15+ years of experience and 200+ clients across Karnataka, Orissa, and Chhattisgarh.',
+    description: 'Premier construction and bespoke architectural living with 15+ years of experience and 300+ clients across Karnataka, Orissa, and Chhattisgarh.',
     keywords: 'Avani Nivas, Gowdru Realcom, construction cavalry, luxury duplex homes, single floor house Orissa, custom villa builders Bangalore, turnkey factory construction, home renovation Mallathahalli',
     canonicalPath: '/',
     ogType: 'website',
@@ -31,7 +31,7 @@ export const SEO_CONFIG: Record<PageId, PageSEO> = {
       'url': 'https://www.gowdrurealcom.com',
       'logo': 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80',
       'image': 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80',
-      'description': "From blueprint to reality: we're your construction cavalry. Over 15 years of industry experience and 200+ satisfied clients across Karnataka, Orissa, and Chhattisgarh.",
+      'description': "From blueprint to reality: we're your construction cavalry. Over 15 years of industry experience and 300+ satisfied clients across Karnataka, Orissa, and Chhattisgarh.",
       'telephone': COMPANY_INFO.contacts.primaryPhone.replace(/\s+/g, ''),
       'email': COMPANY_INFO.contacts.primaryEmail,
       'address': {
@@ -177,7 +177,7 @@ export const SEO_CONFIG: Record<PageId, PageSEO> = {
 
   about: {
     title: 'About Us: Built on Trust & Excellence | Avani Nivas by Gowdru Realcom',
-    description: 'Founded by visionary leaders Sharath Kumar A N & Palaksha with 15+ years experience and 200+ clients across Karnataka, Orissa, and Chhattisgarh.',
+    description: 'Founded by visionary leaders Sharath Kumar A N & Palaksha with 15+ years experience and 300+ clients across Karnataka, Orissa, and Chhattisgarh.',
     keywords: 'Sharath Kumar A N, Palaksha, Avani Nivas founders, Gowdru Realcom company history, Tumkur Bengaluru Mysuru Hassan builders, construction cavalry',
     canonicalPath: '/about',
     ogType: 'website',

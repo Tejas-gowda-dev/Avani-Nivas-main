@@ -65,7 +65,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
       role="dialog"
       aria-modal="true"
       aria-labelledby="consultation-modal-title"
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/60 backdrop-blur-xs animate-in fade-in duration-300"
       onClick={onClose}
     >
       <div

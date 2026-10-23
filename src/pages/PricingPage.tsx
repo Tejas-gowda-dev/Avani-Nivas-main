@@ -27,7 +27,7 @@ export const PricingPage: React.FC<PricingPageProps> = ({ onNavigate, onOpenCons
     },
     {
       q: 'Do you construct homes in Balangir Orissa or other regional hubs?',
-      a: 'Yes! Gowdru Realcom / Avani Nivas has delivered multiple successful residential and commercial turnkey projects in Balangir Orissa and Chhattisgarh, in addition to our core hubs in Bengaluru, Tumkur, Mysuru, and Hassan.'
+      a: 'Yes! Gowdru Realcom / Avani Nivas has delivered multiple successful residential and commercial turnkey projects in Balangir in addition to our core hubs in Bengaluru, Tumkur, Mysuru, and Hassan.'
     },
     {
       q: 'What warranties and guarantees are provided?',
