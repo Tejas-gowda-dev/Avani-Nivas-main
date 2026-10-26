@@ -25,6 +25,8 @@ interface HomePageProps {
   onSelectProject: (project: ProjectItem) => void;
   onSelectPricingPlan?: (tierId: string) => void;
   onSwitchToInteriors?: () => void;
+  onReturnToLanding: () => void; // Add this property
+
 }
 
 export const HomePage: React.FC<HomePageProps> = ({

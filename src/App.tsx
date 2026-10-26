@@ -226,26 +226,7 @@ export default function App() {
                 onReturnToLanding={handleReturnToLanding}
               />
             )}
-/////////////////
 
-<InteriorHomePage
-  onNavigate={handleNavigate}
-  onOpenConsultation={() => {
-    setPrefilledService('Turnkey Interior Design (Full Home)');
-    setConsultationOpen(true);
-  }}
-  onSelectService={(service) => setSelectedService(service)}
-  onSelectProject={(project) => setSelectedProject(project)}
-  onSelectPricingPlan={(tierId) => {
-    setInteriorInitialTierId(tierId);
-    handleNavigate('pricing');
-  }}
-  onSwitchToConstruction={() => handleSwitchServiceMode('construction')}
-  onReturnToLanding={handleReturnToLanding}
-/>
-
-
-/////////////////
             {currentPage === 'services' && (
               <InteriorServicesPage
                 onNavigate={handleNavigate}
