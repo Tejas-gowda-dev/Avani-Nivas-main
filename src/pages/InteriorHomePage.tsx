@@ -36,6 +36,7 @@ interface InteriorHomePageProps {
   onSelectProject: (project: ProjectItem) => void;
   onSelectPricingPlan?: (tierId: string) => void;
   onSwitchToConstruction: () => void;
+   onReturnToLanding: () => void; // Add this property
 }
 
 export const InteriorHomePage: React.FC<InteriorHomePageProps> = ({

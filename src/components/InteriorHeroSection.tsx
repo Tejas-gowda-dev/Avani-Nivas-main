@@ -63,7 +63,7 @@ export const InteriorHeroSection: React.FC<InteriorHeroSectionProps> = ({
               <div className="p-3.5 rounded-xl bg-white/10 backdrop-blur-sm border border-white/15">
                 <div className="flex items-center gap-2 text-[#FDE68A] text-xs font-bold uppercase tracking-wider mb-1">
                   <Clock className="w-3.5 h-3.5" />
-                  <span>45 Days</span>
+                  <span>45-60 Days</span>
                 </div>
                 <div className="text-xs text-slate-200">Guaranteed Handover</div>
               </div>

@@ -10,6 +10,7 @@ import { ProjectModal } from './components/ProjectModal';
 import { MigrationModal } from './components/MigrationModal';
 import { SEOHead } from './components/SEOHead';
 import { ServiceLandingPage } from './components/ServiceLandingPage';
+import { AutoPopupForm } from './components/AutoPopupForm';
 
 // Construction Experience Pages
 import { HomePage } from './pages/HomePage';
@@ -222,9 +223,29 @@ export default function App() {
                   handleNavigate('pricing');
                 }}
                 onSwitchToConstruction={() => handleSwitchServiceMode('construction')}
+                onReturnToLanding={handleReturnToLanding}
               />
             )}
+/////////////////
 
+<InteriorHomePage
+  onNavigate={handleNavigate}
+  onOpenConsultation={() => {
+    setPrefilledService('Turnkey Interior Design (Full Home)');
+    setConsultationOpen(true);
+  }}
+  onSelectService={(service) => setSelectedService(service)}
+  onSelectProject={(project) => setSelectedProject(project)}
+  onSelectPricingPlan={(tierId) => {
+    setInteriorInitialTierId(tierId);
+    handleNavigate('pricing');
+  }}
+  onSwitchToConstruction={() => handleSwitchServiceMode('construction')}
+  onReturnToLanding={handleReturnToLanding}
+/>
+
+
+/////////////////
             {currentPage === 'services' && (
               <InteriorServicesPage
                 onNavigate={handleNavigate}
@@ -301,6 +322,7 @@ export default function App() {
                   handleNavigate('pricing');
                 }}
                 onSwitchToInteriors={() => handleSwitchServiceMode('interiors')}
+                onReturnToLanding={handleReturnToLanding}
               />
             )}
 
@@ -403,6 +425,11 @@ export default function App() {
         isOpen={migrationModalOpen}
         onClose={() => setMigrationModalOpen(false)}
       />
+
+      {/* Auto Promotional Popup Form (Appears when on chosen service: /construction or /interiors) */}
+      {(serviceMode === 'construction' || serviceMode === 'interiors') && (
+        <AutoPopupForm serviceMode={serviceMode} delayMs={3500} />
+      )}
     </div>
   );
 }
