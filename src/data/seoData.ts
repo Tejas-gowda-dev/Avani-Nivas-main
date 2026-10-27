@@ -56,7 +56,7 @@ export const SEO_CONFIG: Record<PageId, PageSEO> = {
         {
           '@type': 'Person',
           'name': 'Palaksha',
-          'jobTitle': 'Co-Founder & Technical Director'
+          'jobTitle': 'Co-Founder'
         }
       ],
       'areaServed': [
@@ -203,7 +203,7 @@ export const SEO_CONFIG: Record<PageId, PageSEO> = {
           {
             '@type': 'Person',
             'name': 'Palaksha',
-            'jobTitle': 'Co-Founder & Technical Director'
+            'jobTitle': 'Co-Founder'
           }
         ]
       }

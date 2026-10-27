@@ -2,23 +2,42 @@ import { ProcessStep, TestimonialItem } from '../types';
 
 export const COMPANY_INFO = {
   legalName: 'Avani Nivas By Gowdru Realcom Private Limited',
-  brandName: 'Gowdru Realcom®',
+  brandName: 'Gowdru Realcom',
   flagshipBrand: 'Avani Nivas',
   foundationHeadline: 'Our foundation: built on trust and excellence',
-  foundationStory: 'Founded by visionary leaders Sharath Kumar A N and Palaksha, Avani Nivas by Gowdru Realcom private limited is a premier construction company with a proven track record of delivering exceptional projects. With over 15 years of industry experience and a portfolio of 300+ satisfied clients in Karnataka, we are committed to redefining the construction landscape.',
+  foundationStory: 'Founded by Founder Sharath Kumar A N and Co-Founder Palaksha, Avani Nivas by Gowdru Realcom private limited® is a premier construction company with a proven track record of delivering exceptional projects. With over 15 years of industry experience and a portfolio of 300+ satisfied clients in Karnataka, we are committed to redefining the construction landscape.',
   coreValuesStory: 'Our core values revolve around elegance, care, and customization. We believe in crafting spaces that not only meet your functional needs but also reflect your unique style and personality. From initial design concepts to final construction, we are dedicated to providing a seamless and personalized experience.',
   tagline: "From Blueprint to Reality: We're Your Construction Cavalry.",
   subTagline: 'Architectural Excellence, Custom Home Craftsmanship & Refined Interior Transformations',
   founders: [
     {
       name: 'Sharath Kumar A N',
-      role: 'Visionary Leader & Managing Director',
-      bio: 'Pioneering architectural planning, civil engineering standards, and residential construction quality across Karnataka for over 15+ years.'
+      role: 'Founder & Managing Director',
+      bio: 'Pioneering architectural planning, civil engineering standards, and residential construction quality across Karnataka for over 15 years.'
     },
     {
       name: 'Palaksha',
-      role: 'Visionary Leader & Technical Director',
+      role: 'Co-Founder ',
       bio: 'Spearheading on-site structural precision, safety protocols, artisan craftsmanship, and end-to-end turnkey project execution.'
+    }
+  ],
+  awards: [
+    {
+      id: 'big-impact-award-2026',
+      year: '2026',
+      title: 'Excellence in Construction & Interiors',
+      category: 'Excellence in Construction, Interior Design & Rapid Execution (Speed Work)',
+      organization: 'Big Impact Awards 2026',
+      location: 'Bengaluru, Karnataka',
+      description: 'Conferred in recognition of outstanding architectural benchmarks, superior civil engineering, bespoke interior craftsmanship, and record fast-track project completion across Bengaluru.',
+      badge: 'Big Impact Award 2026 Winner',
+      image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80',
+      highlights: [
+        'Excellence in Civil & Residential Construction',
+        'Bespoke Interior Design & Factory-Finished Joinery',
+        'Honored for Speed Work & Fast-Track On-Time Handover',
+        'Conferred in Bengaluru at the prestigious Big Impact Awards 2026'
+      ]
     }
   ],
   stats: [
@@ -63,13 +82,15 @@ export const COMPANY_INFO = {
     primaryPhone: '+91 9916339333',
     secondaryPhone: '+91 9916337333',
     primaryEmail: 'info@gowdrurealcom.com',
-    secondaryEmail: 'info@avaninivas.com',
+    // secondaryEmail: 'info@avaninivas.com',
     whatsappNumber: '919916339333',
     whatsappDisplay: '+91 99163 39333',
     workingHours: 'Mon – Sat: 9:30 AM – 7:00 PM (IST)'
   },
   socialLinks: {
+    instagram: 'https://www.instagram.com/avaninivas',
     facebook: 'https://www.facebook.com/GowdruRealcom',
+    twitter: 'https://twitter.com/avaninivas',
     website: 'https://www.gowdrurealcom.com'
   }
 };

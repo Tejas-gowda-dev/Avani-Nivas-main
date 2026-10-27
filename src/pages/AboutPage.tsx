@@ -10,7 +10,11 @@ import {
   ArrowRight,
   CheckCircle,
   MapPin,
-  HeartHandshake
+  HeartHandshake,
+  Trophy,
+  Award,
+  Medal,
+  Clock
 } from 'lucide-react';
 
 interface AboutPageProps {
@@ -32,7 +36,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenConsulta
               Built on Trust and Excellence
             </h1>
             <p className="mt-4 inline font-sans text-base sm:text-lg leading-snug text-center text-[#252525] cursor-crosshair">
-              Avani Nivas by Gowdru Realcom private limited ® — 15+ years of industry experience and 300+ satisfied clients across Karnataka, Orissa, and Chhattisgarh.
+              Avani Nivas by Gowdru Realcom private limited® — 15+ years of industry experience and 300+ satisfied clients across Karnataka, Orissa, and Chhattisgarh.
             </p>
           </ScrollReveal>
         </div>
@@ -94,6 +98,111 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenConsulta
               </div>
             </div>
           </ScrollReveal>
+        </div>
+      </section>
+
+      {/* ========================================================
+          AWARDS & RECOGNITION: BIG IMPACT AWARD 2026 (BENGALURU)
+      ======================================================== */}
+      <section id="awards-recognition" className="py-20 sm:py-14 bg-gradient-to-b from-[#FAF8F5] via-[#F4EFE6] to-[#FAF8F5] border-y border-[#EAE4DC] relative overflow-hidden">
+        {/* Decorative golden ambient glow */}
+        <div className="absolute top-0 right-1/4 w-96 h-96 bg-amber-200/20 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[#0B2545]/5 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <ScrollReveal className="text-center max-w-3xl mx-auto mb-14">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-amber-500/10 via-amber-500/20 to-amber-500/10 border border-amber-500/30 text-[#92400E] text-xs font-bold uppercase tracking-widest mb-3 shadow-xs">
+              <Trophy className="w-4 h-4 text-[#D97706]" />
+              <span>Industry Recognition • Big Impact Awards 2026</span>
+            </div>
+            
+            <h2 className="block font-serif text-3xl sm:text-4xl lg:text-5xl text-[#252525] leading-tight">
+              Award for Excellence in Construction &amp; Interiors
+            </h2>
+            
+            <p className="mt-4 font-sans text-base sm:text-lg text-[#5C564E] leading-relaxed">
+              Proudly conferred at the <strong>Big Impact Awards 2026 in Bengaluru</strong>, honoring Avani Nivas by Gowdru Realcom for industry-leading construction craftsmanship, bespoke interior transformations, and record fast-track execution speed.
+            </p>
+          </ScrollReveal>
+
+          {/* Main Award Feature Card */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center bg-white rounded-3xl p-6 sm:p-10 lg:p-12 border-2 border-[#E5DECE] shadow-xl relative overflow-hidden">
+            {/* Top decorative badge */}
+            <div className="absolute top-0 right-0 bg-gradient-to-l from-[#D4AF37] to-[#B38F24] text-[#0B1528] px-6 py-1.5 rounded-bl-2xl text-[11px] font-mono font-bold uppercase tracking-wider shadow-sm hidden sm:block">
+              Bengaluru Winner 2026
+            </div>
+
+            {/* Left Column: Ceremony Photo & Laurels Showcase */}
+            <ScrollReveal className="lg:col-span-6 space-y-4">
+              <div className="relative rounded-2xl overflow-hidden border border-[#E0D8CC] shadow-lg group bg-[#1A1816]">
+                <img
+                  src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80"
+                  alt="Avani Nivas Big Impact Award 2026 Ceremony - Excellence in Construction and Interiors"
+                  className="w-full h-80 sm:h-96 object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
+
+                {/* Floating Award Trophy Badge */}
+                {/* <div className="absolute top-4 left-4 p-3 rounded-2xl bg-black/60 backdrop-blur-md border border-amber-300/40 text-white flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-yellow-300 text-[#0B1528] flex items-center justify-center font-bold shadow-md">
+                    <Award className="w-6 h-6 text-[#0B1528]" />
+                  </div>
+                  <div>
+                    <div className="text-[10px] font-mono uppercase tracking-wider text-amber-200">Official Honor</div>
+                    <div className="text-sm font-serif font-bold text-white">Big Impact Award 2026</div>
+                  </div>
+                </div> */}
+
+                {/* Bottom Caption on Image */}
+                <div className="absolute bottom-4 left-4 right-4 text-white">
+                  <span className="inline-block px-2.5 py-1 rounded-full bg-white/20 backdrop-blur-sm border border-amber-300/50 text-[#0B1528] text-[10px] font-bold uppercase tracking-wider mb-2">
+                    Speed Work &amp; Execution Milestone
+                  </span>
+                  <h4 className="text-lg font-serif font-bold text-white leading-tight">
+                    Celebrating Rapid Project Handover &amp; Masterful Engineering
+                  </h4>
+                  <p className="text-xs text-slate-300 mt-1 line-clamp-2">
+                    Honoring Founder Sharath Kumar A N for elevating residential living in Karnataka.
+                  </p>
+                </div>
+              </div>
+
+              {/* Ceremony Venue & City Tag */}
+              <div className="flex items-center justify-between text-xs text-[#0B2545] px-1">
+                <span className="flex items-center gap-1.5">
+                  <MapPin className="w-3.5 h-3.5 text-[#0B2545]" />
+                  <span>Grand Ceremony: Bengaluru, Karnataka</span>
+                </span>
+                <span className="font-mono font-semibold text-[#0B2545]">Year: 2026</span>
+              </div>
+            </ScrollReveal>
+
+            {/* Right Column: Award Details & Fast-Track Speed Work Highlights */}
+            <ScrollReveal delay={0.2} className="lg:col-span-6 space-y-6">
+              <div>
+                <span className="text-xs font-bold uppercase tracking-widest text-[#D97706] block mb-1">
+                  Award Citation &amp; Categories
+                </span>
+                <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#252525] leading-tight">
+                  Excellence in Construction, Interior Design &amp; Rapid Execution
+                </h3>
+                <p className="text-sm sm:text-base text-[#5C564E] leading-relaxed mt-3">
+                  The <strong>Big Impact Award 2026</strong> recognizes companies that demonstrate exemplary design standards and solve industry-wide project delays. Avani Nivas was uniquely honored for combining heavy civil structural integrity with rapid, guaranteed turnaround times.
+                </p>
+              </div>
+
+            
+
+              {/* Founder quote banner */}
+              <div className="p-4 rounded-2xl bg-[#F4EFE6] border-l-4 border-[#0B2545] text-xs text-[#4A453E] leading-relaxed">
+                <span className="font-bold text-[#0B2545] block mb-0.5">
+                  Leadership • Founder Sharath Kumar A N
+                </span>
+                "This 2026 Big Impact Award is a testament to our dedicated workforce and our promise to deliver exceptional homes with speed, precision, and zero compromises."
+              </div>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 
@@ -193,11 +302,11 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenConsulta
             </p>
 
             <div className="space-y-3 text-xs text-[#3E3A34] pb-6 border-b border-[#D8D1C5]">
-              <div><strong>Company Name:</strong> {COMPANY_INFO.legalName}</div>
+              <div><strong>Company Name:</strong> {COMPANY_INFO.legalName}®</div>
               <div><strong>Brand:</strong> {COMPANY_INFO.flagshipBrand}</div>
               <div><strong>Address:</strong> {COMPANY_INFO.address.street}, {COMPANY_INFO.address.city}, {COMPANY_INFO.address.state} - {COMPANY_INFO.address.pincode}</div>
               <div><strong>Direct Contact:</strong> {COMPANY_INFO.contacts.primaryPhone} / {COMPANY_INFO.contacts.secondaryPhone}</div>
-              <div><strong>Email:</strong> {COMPANY_INFO.contacts.primaryEmail} / {COMPANY_INFO.contacts.secondaryEmail}</div>
+              <div><strong>Email:</strong> {COMPANY_INFO.contacts.primaryEmail}</div>
             </div>
 
             <div className="pt-4 flex items-center gap-2 text-xs text-[#0B2545] font-semibold">

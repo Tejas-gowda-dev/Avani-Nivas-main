@@ -19,7 +19,7 @@ export const InteriorPricingPage: React.FC<InteriorPricingPageProps> = ({
   const faqs = [
     {
       q: 'How does the 45-day handover guarantee work?',
-      a: 'Once the final 3D designs and material specifications are approved and signed off, your modular units are fabricated off-site in our automated German factory. We deliver and install all modules on-site within 45 days, or we compensate you for every day of delay.'
+      a: 'Once the final 3D designs and material specifications are approved and signed off, your modular units are fabricated off-site in our automated German factory. We deliver and install all modules on-site within 60 days, or we compensate you for every day of delay.'
     },
     {
       q: 'What type of plywood is used in Avani Nivas Interiors?',
@@ -27,7 +27,7 @@ export const InteriorPricingPage: React.FC<InteriorPricingPageProps> = ({
     },
     {
       q: 'Are hardware fittings and soft-close channels covered by warranty?',
-      a: 'Yes. We partner with Häfele and Hettich Germany. All soft-close hinges, tandem box drawer runners, and lift-up hydraulic systems carry up to a 10-year manufacturer warranty.'
+      a: 'Yes. We partner with Häfele Hettich and Ebco . All soft-close hinges, tandem box drawer runners, and lift-up hydraulic systems carry up to a 10-year manufacturer warranty.'
     },
     {
       q: 'Can I choose custom finishes like natural veneer or PU lacquer?',

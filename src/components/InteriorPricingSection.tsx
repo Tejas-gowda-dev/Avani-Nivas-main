@@ -289,10 +289,7 @@ export const InteriorPricingSection: React.FC<InteriorPricingSectionProps> = ({
                     ))}
                   </div>
 
-                  <div className="pt-3 border-t border-[#EAE4DC] flex items-center gap-2 text-xs text-[#78350F] font-semibold bg-[#FFFBF5] -mx-5 -mb-5 p-4 rounded-b-2xl">
-                    <AlertCircle className="w-4 h-4 text-[#D97706] shrink-0" />
-                    <span>Project summary: Accessories are not included</span>
-                  </div>
+                 
                 </div>
 
                 {/* Assurance Badges */}

@@ -67,7 +67,7 @@ export const InteriorHomePage: React.FC<InteriorHomePageProps> = ({
       {/* ========================================================
           2. INTRODUCTORY & VALUE PROPOSITION BANNER
       ======================================================== */}
-      <section className="py-12 bg-white border-b border-[#EAE4DC]">
+      {/* <section className="py-12 bg-white border-b border-[#EAE4DC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="flex items-center gap-4 p-4 rounded-xl bg-[#FAF8F5] border border-[#ECE5DA]">
@@ -111,7 +111,7 @@ export const InteriorHomePage: React.FC<InteriorHomePageProps> = ({
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ========================================================
           3. ABOUT & PHILOSOPHY: AVANI NIVAS INTERIORS

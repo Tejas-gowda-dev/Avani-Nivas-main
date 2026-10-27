@@ -390,7 +390,7 @@ export const INTERIOR_PROJECTS: ProjectItem[] = [
     completionYear: '2025',
     pricing: '₹14.5 Lakhs (Turnkey Interiors)',
     timeline: '60 Days Handover',
-    image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/582142840.jpg?k=475ada691cd07208172fb44ef9c6f74a789fc022a64aa009f3a1f3e0f13be135&o=',
     gallery: [
       'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80',
@@ -444,7 +444,7 @@ export const INTERIOR_PROJECTS: ProjectItem[] = [
     completionYear: '2024',
     pricing: '₹6.2 Lakhs (Turnkey Interiors)',
     timeline: '48 Days Handover',
-    image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://www.architectandinteriorsindia.com/cloud/2026/09/09/PO-11-1024x683.jpg',
     gallery: [
       'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80'
