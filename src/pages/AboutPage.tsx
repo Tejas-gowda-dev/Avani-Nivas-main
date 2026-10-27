@@ -32,7 +32,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenConsulta
               Built on Trust and Excellence
             </h1>
             <p className="mt-4 inline font-sans text-base sm:text-lg leading-snug text-center text-[#252525] cursor-crosshair">
-              Avani Nivas by Gowdru Realcom private limited — 15+ years of industry experience and 300+ satisfied clients across Karnataka, Orissa, and Chhattisgarh.
+              Avani Nivas by Gowdru Realcom private limited ® — 15+ years of industry experience and 300+ satisfied clients across Karnataka, Orissa, and Chhattisgarh.
             </p>
           </ScrollReveal>
         </div>
@@ -68,7 +68,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenConsulta
               </div>
               <div className="p-4 rounded-xl bg-[#F5F2EC] border border-[#E0D8CC]">
                 <div className="text-2xl font-bold text-[#252525] font-serif">300+</div>
-                <div className="text-xs text-[#7C7469] mt-0.5">Satisfied Clients Across 3 States</div>
+                <div className="text-xs text-[#7C7469] mt-0.5">Satisfied Clients Across Karnataka</div>
               </div>
             </div>
           </ScrollReveal>
@@ -132,8 +132,8 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenConsulta
                   </p>
                 </div>
 
-                <div className="pt-6 mt-6 border-t border-[#F2ECE4] flex items-center justify-between text-xs text-[#7C7469]">
-                  <span>Gowdru Realcom Private Limited</span>
+                <div className="pt-6 mt-6 border-t border-[#F2ECE4] flex items-center justify-between text-xs text-[#252525]">
+                  <span>Gowdru Realcom Private Limited®</span>
                   <span>15+ Yrs Industry Leadership</span>
                 </div>
               </ScrollReveal>

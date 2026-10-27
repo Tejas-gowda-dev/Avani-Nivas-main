@@ -66,7 +66,7 @@ export const InteriorPricingSection: React.FC<InteriorPricingSectionProps> = ({
   };
 
   return (
-    <section id="interior-pricing-section" className="py-20 sm:py-24 bg-[#FAF8F5] border-t border-[#EAE4DC] scroll-mt-24">
+    <section id="interior-pricing-section" className="py-14 sm:py-14 bg-[#FAF8F5] border-t border-[#EAE4DC] scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <ScrollReveal className="text-center max-w-3xl mx-auto mb-14">
@@ -92,11 +92,11 @@ export const InteriorPricingSection: React.FC<InteriorPricingSectionProps> = ({
                 }`}
               >
                 {/* Popular Ribbon for BWP */}
-                {tier.popular && (
+                {/* {tier.popular && (
                   <div className="bg-[#0B2545] text-white text-[11px] font-bold uppercase tracking-wider py-1.5 text-center shadow-xs">
                     ★ Most Recommended Choice
                   </div>
-                )}
+                )} */}
 
                 <div>
                   {/* Card Visual Header */}
@@ -155,7 +155,7 @@ export const InteriorPricingSection: React.FC<InteriorPricingSectionProps> = ({
                     </div>
 
                     {/* Project summary */}
-                    <div className="mt-5 p-3 rounded-xl bg-[#FFFBF5] border border-[#F3E5D8]">
+                    {/* <div className="mt-5 p-3 rounded-xl bg-[#FFFBF5] border border-[#F3E5D8]">
                       <div className="text-[10px] font-bold uppercase tracking-wider text-[#A16207] mb-1">
                         Project summary:
                       </div>
@@ -163,7 +163,7 @@ export const InteriorPricingSection: React.FC<InteriorPricingSectionProps> = ({
                         <AlertCircle className="w-3.5 h-3.5 text-[#D97706] shrink-0" />
                         <span>Accessories are not included</span>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 

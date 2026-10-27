@@ -30,7 +30,7 @@ export const INTERIOR_CATEGORIES: InteriorCategory[] = [
     title: 'Foyer',
     subtitle: 'Grand Entrance & Welcoming Foyer',
     shortDesc: 'Create an unforgettable first impression with architectural console units, mirror wall panelling, and integrated shoe storage.',
-    image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://homzinterio.in/wp-content/uploads/2026/07/Stylish-apartment-entryway-entrance-foyer-design-with-wooden-finishes-and-LED-lightin-webp.jpg',
     badge: 'Entrance Design',
     finishes: [
       {
@@ -85,20 +85,20 @@ export const INTERIOR_CATEGORIES: InteriorCategory[] = [
     id: 'pooja-mane',
     title: 'Pooja Mane (Pooja Room)',
     subtitle: 'Sanctuary of Devotion & Sacred Serenity',
-    shortDesc: 'Bespoke sacred mandirs with intricate CNC jaali carving, brass accents, bell mountings, and dedicated ambient backlit panels.',
-    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80',
+    shortDesc: 'Bespoke sacred mandirs with intricate CNC Acrylic carving, brass accents, bell mountings, and dedicated ambient backlit panels.',
+    image: 'https://i.pinimg.com/236x/71/2a/d9/712ad9e076a96c0234af1d39a9dc93a2.jpg',
     badge: 'Traditional & Sacred',
     finishes: [
       {
         id: 'teak-veneer',
         name: 'Teakwood Veneer Finish',
-        description: 'Auspicious Burma teakwood grain with hand-rubbed melamine polish and warm wood warmth.',
+        description: 'Auspicious Burma grain with hand-rubbed melamine polish and warm wood warmth.',
         tag: 'Auspicious Timber'
       },
       {
         id: 'cnc-jali',
-        name: 'CNC Intricate Jali Finish',
-        description: 'Laser-cut architectural jaali screens with warm concealed LED backlighting and decorative motifs.',
+        name: 'CNC Intricate Acrylic Finish',
+        description: 'Laser-cut architectural Acrylic screens with warm concealed LED backlighting and decorative motifs.',
         tag: 'Backlit Artistry'
       },
       {
@@ -114,7 +114,7 @@ export const INTERIOR_CATEGORIES: InteriorCategory[] = [
     title: 'Living Room',
     subtitle: 'Sophisticated Entertaining & Lounge Living',
     shortDesc: 'Curated social living spaces with custom accent walls, fluted rafters, integrated cove lighting, and tailored furniture balance.',
-    image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://media.istockphoto.com/id/2093684615/photo/digitally-created-spacious-modern-living-room.jpg?s=612x612&w=0&k=20&c=nMASk6C34x5Y-hr6d0vIUuUBvBkwA98XiUJm1cOheK4=',
     badge: 'Signature Lounge',
     finishes: [
       {
@@ -125,13 +125,13 @@ export const INTERIOR_CATEGORIES: InteriorCategory[] = [
       },
       {
         id: 'textured-pu',
-        name: 'Textured PU Duco Finish',
+        name: 'Textured PU/Duco Finish',
         description: 'Sophisticated matte polyurethane coatings with subtle stucco or velvet tactile textures.',
         tag: 'Designer Texture'
       },
       {
         id: 'marble-metal',
-        name: 'Italian Marble & Metal Trims',
+        name: ' Marble & Metal Trims',
         description: 'Full-slab Italian Statuario or Portoro marble feature walls with PVD titanium gold profiles.',
         tag: 'Opulent Masterpiece'
       }
@@ -142,7 +142,7 @@ export const INTERIOR_CATEGORIES: InteriorCategory[] = [
     title: 'TV Unit',
     subtitle: 'Media Wall & Floating Entertainment Console',
     shortDesc: 'Contemporary entertainment hubs with concealed wire conduits, floating storage consoles, and backlit stone or acoustic backdrops.',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://i.pinimg.com/736x/20/b2/3c/20b23cffa929121391e51b9c3653fba0.jpg',
     badge: 'Entertainment Focal',
     finishes: [
       {
@@ -170,12 +170,12 @@ export const INTERIOR_CATEGORIES: InteriorCategory[] = [
     title: 'Wall Partition',
     subtitle: 'Zoning Dividers & Architectural Room Screens',
     shortDesc: 'Gracefully demarcate living, dining, and foyer zones without blocking natural sunlight or spatial flow.',
-    image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ6v_woypnpOQq0LfeF15Bn8QDdhmcORtb5wjJ7lB-sxfOCCYgiLpBFgE&s=10',
     badge: 'Spatial Divider',
     finishes: [
       {
         id: 'metal-cnc',
-        name: 'Metal CNC & Brass Profile',
+        name: 'Metal CNC & Profile',
         description: 'Laser-cut electroplated mild steel or aluminum partitions with champagne gold satin finish.',
         tag: 'Contemporary Metal'
       },
@@ -195,7 +195,7 @@ export const INTERIOR_CATEGORIES: InteriorCategory[] = [
   },
   {
     id: 'bedroom',
-    title: 'Bedroom',
+    title: 'Bedrooms',
     subtitle: 'Sanctuary of Rest, Wardrobes & Custom Headboards',
     shortDesc: 'Personal private sanctuaries featuring master wardrobes, bedroom entertainment units, and bespoke upholstered headboards.',
     image: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1200&q=80',

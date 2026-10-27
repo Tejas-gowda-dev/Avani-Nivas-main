@@ -3,7 +3,7 @@ import { PageId } from '../types';
 import { COMPANY_INFO } from '../data/company';
 import { Menu, X, Phone, ArrowRight, Shield, Sparkles, Hammer, LayoutGrid } from 'lucide-react';
 // @ts-ignore
-import logo from '../assets/Companylogo.png';
+import logo from '../assets/AVANI_NIVAS.webp';
 
 interface NavbarProps {
   currentPage: PageId;

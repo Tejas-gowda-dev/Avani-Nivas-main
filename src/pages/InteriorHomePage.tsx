@@ -75,7 +75,7 @@ export const InteriorHomePage: React.FC<InteriorHomePageProps> = ({
                 <Clock className="w-6 h-6 text-[#D4AF37]" />
               </div>
               <div>
-                <h4 className="text-sm font-bold text-[#252525]">45-Day Delivery</h4>
+                <h4 className="text-sm font-bold text-[#252525]">45-60 Day Delivery</h4>
                 <p className="text-xs text-[#5C564E]">Guaranteed move-in handover or we pay penalty</p>
               </div>
             </div>
@@ -133,7 +133,7 @@ export const InteriorHomePage: React.FC<InteriorHomePageProps> = ({
               </p>
 
               <p className="font-sans text-base text-[#5C564E] leading-relaxed">
-                Every cabinet carcass is fabricated using 100% boiling waterproof (BWP/BWR) calibrated marine-grade plywood, cut on precision German CNC edge-banders, and fitted with certified Häfele and Hettich hardware. You get pristine, jointless finishes without the dust, noise, and delays of traditional carpenters.
+                Every cabinet carcass is fabricated using 100% boiling waterproof (BWP/BWR) calibrated marine-grade plywood, cut on precision German CNC edge-banders, and fitted with certified Häfele Hettich And Ebco hardware. You get pristine, jointless finishes without the dust, noise, and delays of traditional carpenters.
               </p>
 
               <div className="grid grid-cols-2 gap-4 pt-2">
@@ -175,15 +175,15 @@ export const InteriorHomePage: React.FC<InteriorHomePageProps> = ({
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6 text-white">
-                  <span className="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-[#FDE68A] text-[11px] font-bold uppercase tracking-wider">
+                  {/* <span className="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-[#FDE68A] text-[11px] font-bold uppercase tracking-wider">
                     German Automated Production
-                  </span>
+                  </span> */}
                   <h4 className="text-xl font-serif font-bold mt-2">
-                    Zero On-Site Carpentry Dust & Pure Ergonomic Perfection
-                  </h4>
-                  <p className="text-xs text-slate-300 mt-1">
                     Modules arrive pre-finished and assembled in days by certified technicians.
-                  </p>
+                  </h4>
+                  {/* <p className="text-xs text-slate-300 mt-1">
+                    Modules arrive pre-finished and assembled in days by certified technicians.
+                  </p> */}
                 </div>
               </div>
             </ScrollReveal>

@@ -42,18 +42,19 @@ export const INTERIOR_PRICING_TIERS: PricingTier[] = [
     rateDisplay: '1599 / sq. ft.',
     pricingType: 'per_sqft',
     minArea: 500,
-    image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80',
+    image: 'https://www.centuryply.com/uploads/Plywood_Mobile_b412c7326c.jpg',
     highlightText: '1599 / sq. ft.',
     deliverables: [
       'Puja Mane',
       'Foyer',
       'Kitchen',
       'TV Unit',
-      'Bedroom',
+      'Bedrooms',
       'W,R',
       'Partition',
       'Living Room',
-      'utility'
+      'utility',
+      'Others'
     ],
     projectSummary: [
       'Accessories are not included'
@@ -68,18 +69,19 @@ export const INTERIOR_PRICING_TIERS: PricingTier[] = [
     rateDisplay: '1799 / sq. ft.',
     pricingType: 'per_sqft',
     minArea: 500,
-    image: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80',
+    image: 'https://cms-plywood.royaletouche.com/uploads/plywood_banner_img_987c9a2079.jpg',
     highlightText: '1799 / sq. ft.',
     deliverables: [
       'Puja Mane',
       'Foyer',
       'Kitchen',
       'TV Unit',
-      'Bedroom',
+      'Bedrooms',
       'W,R',
       'Partition',
       'Living Room',
-      'utility'
+      'utility',
+      'Others'
     ],
     projectSummary: [
       'Accessories are not included'
@@ -94,18 +96,19 @@ export const INTERIOR_PRICING_TIERS: PricingTier[] = [
     rateDisplay: '1999 / sq. ft.',
     pricingType: 'per_sqft',
     minArea: 500,
-    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80',
+    image: 'https://img.magnific.com/premium-photo/wooden-table-with-water-drops-it-wooden-surface_1028899-1919.jpg?semt=ais_hybrid&w=740&q=80',
     highlightText: '1999 / sq. ft.',
     deliverables: [
       'Puja Mane',
       'Foyer',
       'Kitchen',
       'TV Unit',
-      'Bedroom',
+      'Bedrooms',
       'W,R',
       'Partition',
       'Living Room',
-      'utility'
+      'utility',
+      'Others'
     ],
     projectSummary: [
       'Accessories are not included'
@@ -121,18 +124,19 @@ export const INTERIOR_PRICING_TIERS: PricingTier[] = [
     pricingType: 'per_sqft',
     minArea: 500,
     popular: true,
-    image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80',
+    image: 'https://www.plyneer.com/cdn/shop/articles/48.png?v=1740461225&width=2048',
     highlightText: '2199 / sq. ft.',
     deliverables: [
       'Puja Mane',
       'Foyer',
       'Kitchen',
       'TV Unit',
-      'Bedroom',
+      'Bedrooms',
       'W,R',
       'Partition',
       'Living Room',
-      'utility'
+      'utility',
+      'Others'
     ],
     projectSummary: [
       'Accessories are not included'
@@ -147,18 +151,19 @@ export const INTERIOR_PRICING_TIERS: PricingTier[] = [
     rateDisplay: '2999 / sq. ft.',
     pricingType: 'per_sqft',
     minArea: 500,
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
+    image: 'https://khidkihomes.com/cdn/shop/articles/types-of-engineered-woods-for-home-interior.jpg?v=1761043164&width=1100',
     highlightText: '2999 / sq. ft.',
     deliverables: [
       'Puja Mane',
       'Foyer',
       'Kitchen',
       'TV Unit',
-      'Bedroom',
+      'Bedrooms',
       'W,R',
       'Partition',
       'Living Room',
-      'utility'
+      'utility',
+      'Others'
     ],
     projectSummary: [
       'Accessories are not included'
@@ -180,11 +185,12 @@ export const INTERIOR_PRICING_TIERS: PricingTier[] = [
       'Foyer',
       'Kitchen',
       'TV Unit',
-      'Bedroom',
+      'Bedrooms',
       'W,R',
       'Partition',
       'Living Room',
-      'utility'
+      'utility',
+      'Others'
     ],
     projectSummary: [
       'Accessories are not included'
@@ -197,20 +203,20 @@ export const INTERIOR_SERVICES: ServiceItem[] = [
     id: 'pooja-mandir',
     slug: 'pooja-mandir',
     title: 'Pooja Mandir',
-    shortDesc: 'Sacred prayer sanctuaries crafted with auspicious teakwood veneers, CNC jalis, and warm lighting.',
-    fullDesc: 'Honor tradition with handcrafted pooja rooms. We incorporate auspicious Vastu alignments, intricate laser-cut CNC jalis, brass bells, ambient backlit panels, and dedicated storage for sacred rituals.',
+    shortDesc: 'Sacred prayer sanctuaries crafted with auspicious teakwood veneers, CNC Acrylic and warm lighting.',
+    fullDesc: 'Honor tradition with handcrafted pooja rooms. We incorporate auspicious Vastu alignments, intricate laser-cut CNC Acrylic, brass bells, ambient backlit panels, and dedicated storage for sacred rituals.',
     iconName: 'Sparkles',
     image: 'https://img.staticmb.com/mbimages/interiorDesignerCMS/decorPartner/4061/projectImage/20251125042229poojaidcdip69.jpg.webp',
     highlights: [
       'Vastu-compliant East/North-East orientation',
       'Teakwood timber frames & traditional brass bell mountings',
-      'Intricate backlit Om/Gayatri/floral CNC jali panels',
+      'Intricate backlit Om/Gayatri/floral CNC Acrylic panels',
       'Deep pull-out diya drawers with heat-resistant stone tops'
     ],
     deliverables: [
       'Personalized sacred altar design & 3D visualization',
       'Fire-safe granite/quartz counter for oil lamps',
-      'Concealed agarbatti ventilation path',
+      
       
     ],
     idealFor: 'Families seeking an auspicious, peaceful sanctuary that blends heritage with modern aesthetics.'
@@ -227,11 +233,11 @@ export const INTERIOR_SERVICES: ServiceItem[] = [
       '100% BWP Marine Ply with zero-edge banding',
       'Tandem box soft-close drawers & pantry pull-outs',
       'Quartz, granite & nano-white stain-proof countertops',
-      'Handed over within 45 days of 3D sign-off'
+      
     ],
     deliverables: [
       '3D photo-realistic renders & ergonomic work triangle design',
-      'Factory precision CNC cutting & edge-banded cabinetry',
+      'Factory precision CNC cutting & On site edge-banded cabinetry',
       'Under-cabinet sensor LED illumination',
       'Appliance, hob & chimney integration testing'
     ],
@@ -249,7 +255,7 @@ export const INTERIOR_SERVICES: ServiceItem[] = [
       'Sliding profile glass & soft-close hinged doors',
       'Dedicated pull-out trouser racks, watch organizers & jewelry trays',
       'Warm automatic sensor LED lighting strips',
-      'Termite-resistant caliber with 10-year warranty'
+      
     ],
     deliverables: [
       'Custom internal compartment layout suited to your wardrobe needs',
@@ -266,7 +272,7 @@ export const INTERIOR_SERVICES: ServiceItem[] = [
     shortDesc: 'Architectural TV consoles, acoustic fluted wall louvers, and display shelving.',
     fullDesc: 'The focal point of family gatherings. We design striking TV feature walls incorporating fluted charcoal louvers, Italian stone veneers, hidden wire conduits, and floating audio-visual credenzas.',
     iconName: 'Maximize',
-    image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://viyomlifestyles.com/cdn/shop/files/Pignatvunit.png?v=1785568196&width=3840',
     highlights: [
       'Concealed wire raceways for 100% cable-free aesthetics',
       'Backlit stone veneer or charcoal rafter accent paneling',
@@ -289,7 +295,7 @@ export const INTERIOR_SERVICES: ServiceItem[] = [
     shortDesc: 'Multi-tiered gypsum false ceilings with magnetic track lights, cove lighting, and warm ambience.',
     fullDesc: 'Lighting defines emotion. We craft sleek Saint-Gobain Gyproc false ceilings paired with warm indirect cove lighting, magnetic track spotlights, and mood-setting automation to elevate ceiling height and elegance.',
     iconName: 'Zap',
-    image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReB8FJQ7jUCCz0yxagaG5g7fz7FgQIb4G-41tHdqSv8x69xLQRQSt06Wbl&s=10',
     highlights: [
       'Saint-Gobain Gyproc moisture-resistant boards',
       'Concealed warm 3000K LED strip cove lighting',
@@ -299,7 +305,7 @@ export const INTERIOR_SERVICES: ServiceItem[] = [
     deliverables: [
       'Reflected Ceiling Plan (RCP) with electrical switch mapping',
       'Anti-crack joint tape and level-4 smooth skim coating',
-      'Premium Asian Paints Royale matte ceiling finish',
+      'Premium Paints Royale matte ceiling finish',
       'Driver testing and uniform lumen distribution'
     ],
     idealFor: 'Rooms that deserve dramatic volume, warm hospitality, and contemporary ceiling architecture.'
@@ -307,11 +313,11 @@ export const INTERIOR_SERVICES: ServiceItem[] = [
   {
     id: 'foyer-entryway',
     slug: 'foyer-entryway',
-    title: 'Grand Foyer & Entryway Design',
+    title: 'Foyer & Entryway Design',
     shortDesc: 'Statement entrances featuring console tables, full-height mirrors, and ventilated shoe storage.',
     fullDesc: 'Create an unforgettable first impression the moment the door opens. Our foyer solutions combine ventilated shoe cabinets, key drop ledges, full-length dressing mirrors, and architectural partition screens.',
     iconName: 'Wrench',
-    image: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://homebliss.in/wp-content/uploads/2024/03/Decoding-Your-Home-Understanding-The-Difference-Between-A-Foyer-And-An-Entryway.jpg',
     highlights: [
       'Ventilated shoe racks with odor-neutralizing louvers',
       'Full-height Saint-Gobain vanity mirrors with backlight',
@@ -319,9 +325,9 @@ export const INTERIOR_SERVICES: ServiceItem[] = [
       'Integrated seating bench for wearing footwear comfortably'
     ],
     deliverables: [
-      'Custom spatial partition blueprint',
+      
       'Upholstered bench seating integration',
-      'Key drop and umbrella organizer niches',
+     
       'Durable scratch-proof surface finishes'
     ],
     idealFor: 'Creating a warm, organized, and majestic entrance to your home.'
@@ -333,7 +339,7 @@ export const INTERIOR_SERVICES: ServiceItem[] = [
     shortDesc: 'Custom crockery displays, suspended stemware racks, and bespoke dining accents.',
     fullDesc: 'Elevate intimate dinners and lively celebrations with custom-built crockery units featuring glass-tinted display cabinets, wine storage racks, and matching architectural wall paneling.',
     iconName: 'Droplets',
-    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.livspace-cdn.com/w:3840/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/di-2026-1769081758-Ayx2Q/jas-1784534272-HKwmV/dining-room-1785936552-DObLO/dr-16-1789294734-lIwLw.png',
     highlights: [
       'Fluted glass shutters with profile aluminum frames',
       'Dedicated wine bottle racks & hanging stemware glass holders',
@@ -351,21 +357,21 @@ export const INTERIOR_SERVICES: ServiceItem[] = [
   {
     id: 'bathroom-vanities',
     slug: 'bathroom-vanities',
-    title: 'Luxury Bathroom Vanities & Partitions',
+    title: 'Bathroom Vanities & Partitions',
     shortDesc: 'Waterproof under-counter vanities, LED defogger mirrors, and toughened glass shower cubicles.',
     fullDesc: 'Turn ordinary bathrooms into serene spa retreats. We build 100% boiling waterproof under-counter vanities, Saint-Gobain LED backlit mirrors, and frameless toughened glass shower enclosures.',
     iconName: 'ShieldAlert',
     image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80',
     highlights: [
       '100% Waterproof WPC / BWP marine-grade vanity carcasses',
-      'Frameless 10mm Saint-Gobain toughened glass shower partitions',
+      '10mm Saint-Gobain toughened glass shower partitions',
       'Smart LED mirrors with touch sensors and defogging pads',
       'Concealed laundry basket and toiletry storage'
     ],
     deliverables: [
       'Precision laser templating for glass cubicles',
       'Anti-corrosion SS 304 hardware & magnetic door seals',
-      'Under-sink plumbing access panels',
+      'Under-sink plumbing panels',
       'High-grade sanitaryware sealant and silicone protection'
     ],
     idealFor: 'Homeowners wanting clean dry-and-wet zones and effortless luxury every morning.'
@@ -383,7 +389,7 @@ export const INTERIOR_PROJECTS: ProjectItem[] = [
     area: '1,850 sq.ft',
     completionYear: '2025',
     pricing: '₹14.5 Lakhs (Turnkey Interiors)',
-    timeline: '42 Days Handover',
+    timeline: '60 Days Handover',
     image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80',
     gallery: [
       'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80',
@@ -397,7 +403,7 @@ export const INTERIOR_PROJECTS: ProjectItem[] = [
       'High-gloss PU kitchen with nano-white quartz countertop',
       'Sliding lacquered glass wardrobes with sensor LED strips',
       'CNC laser-cut pooja unit with back-lit onyx stone',
-      'Delivered in 42 days with zero mess on-site'
+      'Delivered in 60 days with zero mess on-site'
     ],
     isFeatured: true
   },
@@ -411,7 +417,7 @@ export const INTERIOR_PROJECTS: ProjectItem[] = [
     area: '2,400 sq.ft',
     completionYear: '2025',
     pricing: '₹18.8 Lakhs (Full Home Interiors)',
-    timeline: '48 Days Handover',
+    timeline: '55 Days Handover',
     image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80',
     gallery: [
       'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80',
@@ -437,7 +443,7 @@ export const INTERIOR_PROJECTS: ProjectItem[] = [
     area: '1,150 sq.ft',
     completionYear: '2024',
     pricing: '₹6.2 Lakhs (Turnkey Interiors)',
-    timeline: '38 Days Handover',
+    timeline: '48 Days Handover',
     image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80',
     gallery: [
       'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80',
@@ -460,7 +466,7 @@ export const INTERIOR_TESTIMONIALS: TestimonialItem[] = [
     clientName: 'Sanjay & Deepa Rao',
     location: 'Nagarbhavi, Bengaluru',
     projectType: '3BHK Penthouse Interiors',
-    quote: 'Avani Nivas delivered our modular kitchen and wardrobes in exactly 41 days! The factory finish is so smooth with zero carpentry dust in our apartment. Truly premium quality.',
+    quote: 'Avani Nivas delivered our modular kitchen and wardrobes  The factory finish is so smooth with carpentry our apartment. Truly premium quality.',
     rating: 5
   },
   {
@@ -497,24 +503,24 @@ export const INTERIOR_PROCESS_STEPS: ProcessStep[] = [
   {
     number: '02',
     title: 'Precision Factory Fabrication',
-    subtitle: 'German Machinery & Dust-Free Manufacturing',
+    subtitle: 'Machinery & Dust-Free Manufacturing',
     description: 'Your cabinetry, wardrobes, and modular units are precision-cut and edge-banded in our advanced factory using automated German machinery—ensuring zero carpenter mess, pristine edges, and millimeter accuracy.',
     deliverables: [
       '100% BWP boiling waterproof plywood inspection',
       'Automated CNC cutting & PUR zero-joint edge banding',
-      'Factory pre-assembly & multi-point quality audit',
+     
       'Safe bubble-wrapped packing and insured transit to site'
     ]
   },
   {
     number: '03',
-    title: 'Seamless 45-Day On-Site Installation',
+    title: 'Seamless 45-60 Day On-Site Installation',
     subtitle: 'Clean Assembly, Testing & Handover',
-    description: 'Our factory-trained technicians assemble the modules quietly and quickly on-site, integrate lighting, wire raceways, and sanitaryware, followed by deep cleaning and formal handover with a 10-year warranty certificate.',
+    description: 'Our factory-trained technicians assemble the modules quietly and quickly on-site, integrate lighting, wire raceways, and sanitaryware, followed by formal handover with a 10-year warranty certificate.',
     deliverables: [
-      'Quick, modular assembly within 10–14 days on-site',
+      'Quick, modular assembly within 15-20 days on-site',
       'Electrical, LED & appliance fit-out checks',
-      'Comprehensive post-installation deep cleaning',
+      
       '10-Year Warranty Card & Lifetime Support Guide'
     ]
   }

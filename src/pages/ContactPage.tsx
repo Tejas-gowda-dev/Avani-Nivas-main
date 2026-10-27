@@ -309,7 +309,7 @@ export const ContactPage: React.FC = () => {
                   Avani Nivas Corporate Studio
                 </h2>
                 <p className="text-xs text-[#CBD5E1] mt-1">
-                  Gowdru Realcom Private Limited
+                  Gowdru Realcom Private Limited ®
                 </p>
               </div>
 
@@ -391,7 +391,7 @@ export const ContactPage: React.FC = () => {
                   <p className="text-xs text-[#7C7469]">Mallathahalli, West Bengaluru 560056</p>
                 </div>
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=Mallathahalli+Bengaluru+560056"
+                  href="https://maps.app.goo.gl/W31vin8i4bcoRnCE6"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0B2545] hover:text-[#153A66] transition-colors"
@@ -402,16 +402,20 @@ export const ContactPage: React.FC = () => {
                 </a>
               </div>
 
-              {/* Map visual preview iframe via OpenStreetMap */}
+
+              {/* Avani Nivas - Google Maps Location */}
               <div className="w-full h-52 rounded-xl overflow-hidden border border-[#E0D8CC] relative bg-[#EFEAE2]">
                 <iframe
                   title="Avani Nivas Gowdru Realcom Location Map"
-                  src="https://www.openstreetmap.org/export/embed.html?bbox=77.4920%2C12.9560%2C77.5130%2C12.9730&layer=mapnik&marker=12.9647%2C77.5026"
+                  src="https://maps.google.com/maps?q=12.9549997,77.5013737&z=17&output=embed"
                   className="w-full h-full border-0"
                   loading="lazy"
-                  referrerPolicy="no-referrer"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
                 />
               </div>
+
+
 
               {/* Quick Actions & Transit Cues */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
@@ -433,7 +437,7 @@ export const ContactPage: React.FC = () => {
                   )}
                 </button>
                 <a
-                  href="https://www.google.com/maps/dir/?api=1&destination=Mallathahalli+Bengaluru+Karnataka+560056"
+                  href="https://maps.app.goo.gl/W31vin8i4bcoRnCE6"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-1.5 px-3 py-2 bg-[#153A66] hover:bg-[#0B2545] text-white text-xs font-bold rounded-xl transition-colors text-center"

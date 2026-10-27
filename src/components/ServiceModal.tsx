@@ -42,7 +42,7 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({ service, onClose, on
 
           <div className="absolute bottom-6 left-6 right-6 text-white">
             <span className="text-[11px] uppercase tracking-widest text-[#93C5FD] font-bold">
-              Gowdru Realcom / Avani Nivas Service
+              Avani Nivas Service
             </span>
             <h2 id="service-modal-title" className="text-2xl sm:text-3xl font-normal font-serif-heading">
               {service.title}
@@ -91,10 +91,10 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({ service, onClose, on
             </div>
           </div>
 
-          <div className="p-4 bg-[#F4F1EB] rounded-lg border border-[#E6E1D8] text-xs text-[#5C564E]">
+          {/* <div className="p-4 bg-[#F4F1EB] rounded-lg border border-[#E6E1D8] text-xs text-[#5C564E]">
             <span className="font-semibold text-[#252525]">Recommended For: </span>
             {service.idealFor}
-          </div>
+          </div> */}
         </div>
 
         {/* Modal Footer */}

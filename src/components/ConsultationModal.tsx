@@ -191,10 +191,11 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
                   >
                     <optgroup label="Interior Design & Modular Woodwork">
                       <option value="Turnkey Interior Design (Full Home)">Turnkey Interior Design (Full Home)</option>
-                      <option value="Modular Kitchens & Islands">Modular Kitchens & Islands</option>
+                      <option value="Modular Kitchens & Islands">Modular Kitchens</option>
                       <option value="Wardrobes & Walk-In Closets">Wardrobes & Walk-In Closets</option>
                       <option value="Bespoke Pooja Mandir">Bespoke Pooja Mandir</option>
-                      <option value="Living Room & False Ceiling">Living Room & False Ceiling</option>
+                      <option value="Living Room & False Ceiling">Living Room</option>
+                      <option value="Living Room & False Ceiling">False Ceiling</option>
                       <option value="Foyer & Shoe Console">Foyer & Shoe Console</option>
                     </optgroup>
                     <optgroup label="Civil & Turnkey Construction">
@@ -202,8 +203,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
                       <option value="Duplex / Villa Construction">Duplex / Villa Construction</option>
                       <option value="Floor Additions & Extensions">Floor Additions & Extensions</option>
                       <option value="Commercial & Factory Build">Commercial & Factory Build</option>
-                      <option value="Kitchen Renovations">Kitchen Renovations</option>
-                      <option value="Bathroom Remodels">Bathroom Remodels</option>
+                    
                     </optgroup>
                   </select>
                 </div>
@@ -218,15 +218,12 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
                     onChange={(e) => setLocation(e.target.value)}
                     className="w-full px-3 py-2.5 bg-white border border-[#D8D1C5] rounded-lg text-base sm:text-sm text-[#252525] focus:outline-none focus:ring-2 focus:ring-[#0B2545]"
                   >
-                    <option value="Bengaluru (Mallathahalli / West)">Bengaluru (Mallathahalli / West)</option>
-                    <option value="Bengaluru (Rajarajeshwari Nagar)">Bengaluru (Rajarajeshwari Nagar)</option>
-                    <option value="Bengaluru (Other Areas)">Bengaluru (Other Areas)</option>
+              
+                    <option value="Bengaluru (Other Areas)">Bengaluru</option>
                     <option value="Tumkur">Tumkur</option>
                     <option value="Mysuru">Mysuru</option>
                     <option value="Hassan">Hassan</option>
                     <option value="Other Karnataka Location">Other Karnataka Location</option>
-                    <option value="Balangir / Orissa">Balangir / Orissa</option>
-                    <option value="Chhattisgarh">Chhattisgarh</option>
                   </select>
                 </div>
               </div>
@@ -241,10 +238,11 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
                   onChange={(e) => setBudget(e.target.value)}
                   className="w-full px-3 py-2.5 bg-white border border-[#D8D1C5] rounded-lg text-base sm:text-sm text-[#252525] focus:outline-none focus:ring-2 focus:ring-[#0B2545]"
                 >
-                  <option value="₹15 Lakhs - ₹25 Lakhs (Interiors/Renovation)">₹15 Lakhs - ₹25 Lakhs (Interiors/Renovation)</option>
+                    <option value="₹5 Lakhs - ₹15 Lakhs (Interiors/Renovation)">₹5 Lakhs - ₹15 Lakhs</option>
+                  <option value="₹15 Lakhs - ₹25 Lakhs (Interiors/Renovation)">₹15 Lakhs - ₹25 Lakhs</option>
                   <option value="₹25 Lakhs - ₹50 Lakhs">₹25 Lakhs - ₹50 Lakhs</option>
-                  <option value="₹50 Lakhs - ₹1 Crore (Custom Villa / Turnkey)">₹50 Lakhs - ₹1 Crore (Custom Villa / Turnkey)</option>
-                  <option value="₹1 Crore+ (Luxury Villa / Estate)">₹1 Crore+ (Luxury Villa / Estate)</option>
+                  <option value="₹50 Lakhs - ₹1 Crore (Custom Villa / Turnkey)">₹50 Lakhs - ₹1 Crore</option>
+                  <option value="₹1 Crore+ (Luxury Villa / Estate)">₹1 Crore+ </option>
                   <option value="Under Assessment / Need Guidance">Under Assessment / Need Guidance</option>
                 </select>
               </div>

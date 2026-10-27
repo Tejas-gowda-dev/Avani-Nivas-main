@@ -276,7 +276,7 @@ export const InteriorSelectionModal: React.FC<InteriorSelectionModalProps> = ({
 
         {/* Modal Footer Note */}
         <div className="px-6 py-3 bg-[#FAF8F5] border-t border-[#EAE4DC] flex items-center justify-between text-xs text-[#7C7469]">
-          <span>Gowdru Realcom • Avani Nivasa Architectural Interiors</span>
+          <span>Avani Nivas Architectural Interiors</span>
           <button
             onClick={onClose}
             className="text-xs font-medium text-[#0B2545] hover:underline"

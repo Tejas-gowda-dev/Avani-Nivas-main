@@ -9,7 +9,7 @@ import {
 } from 'lucide-react';
 
 // @ts-ignore
-import logo from '../assets/Companylogo.png';
+import logo from '../assets/AVANI_NIVAS.webp';
 import { ServiceExploreModal, ServiceMode } from '../components/ServiceExploreModal';
 import { COMPANY_INFO } from '../data/company';
 

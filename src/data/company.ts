@@ -13,7 +13,7 @@ export const COMPANY_INFO = {
     {
       name: 'Sharath Kumar A N',
       role: 'Visionary Leader & Managing Director',
-      bio: 'Pioneering architectural planning, civil engineering standards, and residential construction quality across Karnataka, Orissa, and Chhattisgarh for over 15 years.'
+      bio: 'Pioneering architectural planning, civil engineering standards, and residential construction quality across Karnataka for over 15+ years.'
     },
     {
       name: 'Palaksha',
@@ -30,7 +30,7 @@ export const COMPANY_INFO = {
     {
       value: '300+',
       label: 'Satisfied Clients',
-      caption: 'Across Karnataka, Orissa, and Chhattisgarh'
+      caption: 'Across Karnataka for over 15+ years'
     },
     {
       value: '100%',
@@ -49,8 +49,8 @@ export const COMPANY_INFO = {
     { name: 'Mysuru', state: 'Karnataka', type: 'Regional Hub' },
     { name: 'Hassan', state: 'Karnataka', type: 'Regional Hub' }
   ],
-  expandedRegions: ['Karnataka', 'Orissa', 'Chhattisgarh'],
-  verifiedHubs: ['Bengaluru (Mallathahalli & RR Nagar)', 'Tumkur', 'Mysuru', 'Hassan'],
+  expandedRegions: ['Karnataka'],
+  verifiedHubs: ['Bengaluru ', 'Tumkur', 'Mysuru', 'Hassan'],
   address: {
     street: 'Avani Nivas, 10th Main Road, 1st Cross, Adarsha Layout, Mallathahalli',
     city: 'Bengaluru',
