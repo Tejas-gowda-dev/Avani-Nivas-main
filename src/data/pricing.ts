@@ -1,5 +1,6 @@
 export interface PricingTier {
   id: string;
+  packageName?: string;
   name: string;
   badge?: string;
   subtitle: string;
@@ -84,7 +85,7 @@ export const PRICING_TIERS: PricingTier[] = [
     pricingType: 'per_sqft',
     minArea: 1000,
     popular: true,
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
+    image: 'https://www.nakshastore.com/uploads/article/Luxury%203D%20House%20Elevation%20Designs%20for%20Premium%20Homes_1766739186.jpg',
     highlightText: '',
    deliverables: [
       'Soil Testing',
@@ -113,7 +114,7 @@ export const PRICING_TIERS: PricingTier[] = [
     rateDisplay: '₹2,749 / sq.ft',
     pricingType: 'per_sqft',
     minArea: 1500,
-    image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80',
+    image: 'https://i.pinimg.com/736x/99/3b/34/993b348eee5eef555b820efb5144266d.jpg',
     highlightText: '',
    deliverables: [
       'Soil Testing',

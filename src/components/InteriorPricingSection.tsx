@@ -48,7 +48,7 @@ export const InteriorPricingSection: React.FC<InteriorPricingSectionProps> = ({
 
   const handleWhatsAppEnquiry = (e: React.FormEvent) => {
     e.preventDefault();
-    const packageName = activeTier.name;
+    const packageName = activeTier.packageName ? `${activeTier.packageName} (${activeTier.name})` : activeTier.name;
     const estDisplay = activeTier.isCustom ? 'Custom Quote Requested' : formatIndianCurrency(totalEstimate);
 
     const message = `*Avani Nivas Interior Design Enquiry*%0A` +
@@ -109,13 +109,19 @@ export const InteriorPricingSection: React.FC<InteriorPricingSectionProps> = ({
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent" />
                     
+                    {tier.packageName && (
+                      <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-[#0B2545]/95 text-white border border-[#D4AF37]/40 text-[10px] font-bold uppercase tracking-wider shadow-sm">
+                        {idx + 1}) {tier.packageName}
+                      </span>
+                    )}
+
                     <span className="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-white/95 text-[#0B2545] text-[10px] font-bold uppercase tracking-wider shadow-sm">
                       {tier.badge}
                     </span>
 
                     <div className="absolute bottom-3 left-4 right-4 text-white">
-                      <div className="text-[11px] text-[#D4AF37] font-semibold uppercase tracking-wider">
-                        Package {idx + 1} of 6
+                      <div className="text-xs text-white font-bold uppercase tracking-widest">
+                        {tier.packageName ? `${tier.packageName} Package` : `Package ${idx + 1} of 6`}
                       </div>
                       <h3 className="text-xl font-serif font-bold leading-tight mt-0.5">
                         {tier.name}
@@ -215,7 +221,9 @@ export const InteriorPricingSection: React.FC<InteriorPricingSectionProps> = ({
               </div>
               <div className="text-left sm:text-right">
                 <span className="text-xs text-[#7C7469]">Selected Package:</span>
-                <div className="text-sm font-bold text-[#0B2545]">{activeTier.name}</div>
+                <div className="text-sm font-bold text-[#0B2545]">
+                  {activeTier.packageName ? `${activeTier.packageName} — ${activeTier.name}` : activeTier.name}
+                </div>
                 <div className="text-xs text-[#7C7469]">{activeTier.rateDisplay}</div>
               </div>
             </div>
@@ -323,7 +331,9 @@ export const InteriorPricingSection: React.FC<InteriorPricingSectionProps> = ({
                   <div className="space-y-2 pt-2 border-t border-[#ECE5DA] text-xs">
                     <div className="flex justify-between text-[#5C564E]">
                       <span>Selected Package:</span>
-                      <span className="font-semibold">{activeTier.name}</span>
+                      <span className="font-semibold">
+                        {activeTier.packageName ? `${activeTier.packageName} (${activeTier.name})` : activeTier.name}
+                      </span>
                     </div>
                     <div className="flex justify-between text-[#5C564E]">
                       <span>Rate per sq.ft:</span>

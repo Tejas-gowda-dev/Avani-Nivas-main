@@ -35,6 +35,7 @@ export const INTERIOR_PROJECT_SUMMARY = [
 export const INTERIOR_PRICING_TIERS: PricingTier[] = [
   {
     id: 'cm-package',
+    packageName: 'Essential',
     name: 'CM (Commercial Plywood)',
     badge: 'Commercial Plywood',
     subtitle: 'Standard interior woodwork with commercial plywood core & durable finish',
@@ -62,6 +63,7 @@ export const INTERIOR_PRICING_TIERS: PricingTier[] = [
   },
   {
     id: 'mr-package',
+    packageName: 'Classic',
     name: 'MR (Moisture Resistant)',
     badge: 'Moisture Resistant',
     subtitle: 'Moisture-resistant interior woodwork ideal for humid zones and regular domestic use',
@@ -89,6 +91,7 @@ export const INTERIOR_PRICING_TIERS: PricingTier[] = [
   },
   {
     id: 'bwr-package',
+    packageName: 'Signature',
     name: 'BWR (Boiling Water Resistant)',
     badge: 'Boiling Water Resistant',
     subtitle: 'Boiling water-resistant plywood built for kitchen and heavy utility areas',
@@ -116,6 +119,7 @@ export const INTERIOR_PRICING_TIERS: PricingTier[] = [
   },
   {
     id: 'bwp-package',
+    packageName: 'Elite',
     name: 'BWP (Boiling Water Proof)',
     badge: 'Boiling Water Proof',
     subtitle: '100% boiling water-proof marine grade plywood engineered for maximum longevity',
@@ -144,6 +148,7 @@ export const INTERIOR_PRICING_TIERS: PricingTier[] = [
   },
   {
     id: 'gurjan-package',
+    packageName: 'Royle',
     name: 'Gurjan',
     badge: '100% Gurjan Core',
     subtitle: 'Premium imported Gurjan wood core plywood offering ultimate density and strength',
@@ -171,6 +176,7 @@ export const INTERIOR_PRICING_TIERS: PricingTier[] = [
   },
   {
     id: 'custom-package',
+    packageName: 'Bespoke',
     name: 'CUSTOMIZED CLIENT PACKAGE',
     badge: '100% Client Tailored',
     subtitle: 'Fully customized interior package crafted to your exact blueprint & budget',

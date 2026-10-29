@@ -17,6 +17,9 @@ import {
   Clock
 } from 'lucide-react';
 
+// @ts-ignore
+import Awardceo from "../assets/Award.webp";
+
 interface AboutPageProps {
   onNavigate: (page: PageId) => void;
   onOpenConsultation: () => void;
@@ -136,26 +139,17 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenConsulta
             <ScrollReveal className="lg:col-span-6 space-y-4">
               <div className="relative rounded-2xl overflow-hidden border border-[#E0D8CC] shadow-lg group bg-[#1A1816]">
                 <img
-                  src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80"
+                  src={Awardceo}
                   alt="Avani Nivas Big Impact Award 2026 Ceremony - Excellence in Construction and Interiors"
-                  className="w-full h-80 sm:h-96 object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-120 sm:h-150 object-cover object-center group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/15 via-black/30 to-transparent" />
 
-                {/* Floating Award Trophy Badge */}
-                {/* <div className="absolute top-4 left-4 p-3 rounded-2xl bg-black/60 backdrop-blur-md border border-amber-300/40 text-white flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-yellow-300 text-[#0B1528] flex items-center justify-center font-bold shadow-md">
-                    <Award className="w-6 h-6 text-[#0B1528]" />
-                  </div>
-                  <div>
-                    <div className="text-[10px] font-mono uppercase tracking-wider text-amber-200">Official Honor</div>
-                    <div className="text-sm font-serif font-bold text-white">Big Impact Award 2026</div>
-                  </div>
-                </div> */}
+               
 
                 {/* Bottom Caption on Image */}
-                <div className="absolute bottom-4 left-4 right-4 text-white">
+                {/* <div className="absolute bottom-4 left-4 right-4 text-white">
                   <span className="inline-block px-2.5 py-1 rounded-full bg-white/20 backdrop-blur-sm border border-amber-300/50 text-[#0B1528] text-[10px] font-bold uppercase tracking-wider mb-2">
                     Speed Work &amp; Execution Milestone
                   </span>
@@ -165,7 +159,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenConsulta
                   <p className="text-xs text-slate-300 mt-1 line-clamp-2">
                     Honoring Founder Sharath Kumar A N for elevating residential living in Karnataka.
                   </p>
-                </div>
+                </div> */}
               </div>
 
               {/* Ceremony Venue & City Tag */}
