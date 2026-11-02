@@ -108,7 +108,7 @@ export const Footer: React.FC<FooterProps> = ({
               <span className="h-28 w-28 sm:h-32 sm:w-32">
                 <img
                   src={Gowdru}
-                  alt="Avani Nivas logo"
+                  alt="Gowdru logo"
                   width={250}
                   height={250}
                   loading="lazy"
