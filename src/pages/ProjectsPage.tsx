@@ -25,7 +25,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({
     : PROJECTS.filter((p) => p.category === activeCategory);
 
   return (
-    <div id="projects-page-root" className="pt-28 pb-0 bg-[#FAF8F5]">
+    <div id="projects-page-root" className="pt-24 pb-0 bg-[#FAF8F5]">
       {/* Header */}
       <section className="py-16 sm:py-24 bg-[#F5F2EC] border-b border-[#EAE4DC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

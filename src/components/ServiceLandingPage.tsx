@@ -138,7 +138,7 @@ export const ServiceLandingPage: React.FC<ServiceLandingPageProps> = ({
               className={`group relative min-h-[540px] cursor-pointer overflow-hidden rounded-[1.75rem] bg-[#26352C] shadow-[0_20px_60px_rgba(38,53,44,0.12)] transition-all duration-700 hover:-translate-y-1 hover:shadow-[0_28px_70px_rgba(38,53,44,0.2)] sm:min-h-[600px] ${visible ? 'animate-card-left' : 'translate-y-8 opacity-0'}`}
             >
               <img
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=85"
+                src="https://rightcon.in/assets/hero_home_bangalore_3d-CuFptM9A.png"
                 alt="Modern residential architecture with clean lines and natural materials"
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
@@ -168,18 +168,18 @@ export const ServiceLandingPage: React.FC<ServiceLandingPageProps> = ({
 
             <article
               onClick={() => handleInitiateExplore('interiors')}
-              className={`group relative min-h-[540px] cursor-pointer overflow-hidden rounded-[1.75rem] bg-[#46382C] shadow-[0_20px_60px_rgba(38,53,44,0.12)] transition-all duration-700 hover:-translate-y-1 hover:shadow-[0_28px_70px_rgba(38,53,44,0.2)] sm:min-h-[600px] ${visible ? 'animate-card-right' : 'translate-y-8 opacity-0'}`}
+              className={`group relative min-h-[540px] cursor-pointer overflow-hidden rounded-[1.75rem] bg-[#26352C] shadow-[0_20px_60px_rgba(38,53,44,0.12)] transition-all duration-700 hover:-translate-y-1 hover:shadow-[0_28px_70px_rgba(38,53,44,0.2)] sm:min-h-[600px] ${visible ? 'animate-card-left' : 'translate-y-8 opacity-0'}`}
             >
               <img
-                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=85"
+                src="https://interiorsenclave.com/images/Modern-Design.webp"
                 alt="Warm, refined contemporary living room interior"
                 loading="lazy"
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
+                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#071322] via-[#0B2545]/5 to-black/5 group-hover:via-[#0B2545]/20 transition-colors duration-500" />
+              {/* <div className="absolute inset-0 bg-gradient-to-t from-[#071322] via-[#0B2545]/ to-black/5 group-hover:via-[#0B2545]/10 transition-colors duration-500" /> */}
               <div className="absolute inset-0 bg-[#00142B]/30 mix-blend-multiply" />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-[#17120E]/95 via-[#17120E]/35 to-transparent transition-opacity duration-500 group-hover:via-[#17120E]/25" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#101811]/5 via-[#101811]/35 to-transparent transition-opacity duration-500 group-hover:via-[#101811]/25" />
               <div className="absolute inset-x-0 bottom-0 p-7 sm:p-10">
                 <h2 className="font-serif text-4xl text-white transition-transform duration-500 group-hover:translate-x-1 sm:text-5xl">INTERIORS</h2>
                 <p className="mt-4 max-w-md text-sm leading-7 text-white/75">Layered textures, purposeful layouts, and considered finishes come together to make every room feel personal.</p>
@@ -217,7 +217,7 @@ export const ServiceLandingPage: React.FC<ServiceLandingPageProps> = ({
         <div className="mx-auto flex max-w-7xl flex-col gap-5 px-6 py-8 sm:px-10 md:flex-row md:items-center md:justify-between lg:px-16">
           <div className="flex items-center gap-3">
             <img src={logo} alt={`${COMPANY_INFO?.brandName || 'Avani Nivas'} Logo`} className="h-9 w-auto object-contain" />
-            <span className="text-xs text-[#73756C]">Thoughtful spaces. Lasting impressions.</span>
+            <span className="text-xs italic text-[#73756C]">Build.Better.Inspire</span>
           </div>
           <div className="flex items-center gap-4 text-[#73756C]">
             <a href="https://www.instagram.com/avaninivas/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="transition duration-300 hover:-translate-y-0.5 hover:text-[#9A793C]"><Instagram className="h-4 w-4" /></a>

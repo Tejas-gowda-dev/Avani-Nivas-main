@@ -18,7 +18,7 @@ export const InteriorServicesPage: React.FC<InteriorServicesPageProps> = ({
   onSelectService
 }) => {
   return (
-    <div id="interior-services-page-root" className="pt-28 pb-0 bg-[#FAF9F6]">
+    <div id="interior-services-page-root" className="pt-24 pb-0 bg-[#FAF9F6]">
       {/* Header */}
       <section className="py-16 sm:py-20 bg-[#F5F2EC] border-b border-[#EAE4DC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

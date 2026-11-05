@@ -118,7 +118,7 @@ export const SERVICES: ServiceItem[] = [
     shortDesc: 'Expand your living space seamlessly',
     fullDesc: 'Create more room for your family with our expert home addition services. Whether it’s a new bedroom, home office, or entertainment space, we design and build additions that blend seamlessly with your home. Expand your home, your way!',
     iconName: 'Maximize',
-    image: 'https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNjUZNGgUzmo8sW8j9NLDALdmE-3W9L2bEqz4Pem-EZi94LT_LswLQTBn8&s=10',
     highlights: [
       'New bedrooms, home offices or dedicated entertainment spaces',
       'Seamless structural and aesthetic integration with existing building',
@@ -140,7 +140,7 @@ export const SERVICES: ServiceItem[] = [
     shortDesc: 'Improve your home’s energy efficiency with modern solutions',
     fullDesc: 'Reduce utility costs and boost sustainability with our energy-efficient upgrade services. Enjoy a comfortable, eco-friendly home. Let’s make your home greener and more efficient!',
     iconName: 'Zap',
-    image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://alcoi.in/wp-content/uploads/2025/06/Aluminium-Doors-and-Windows-Boost-Energy-Efficiency-in-Modern-Homes-.webp',
     highlights: [
       'Reduces electricity tariffs and boosts long-term sustainability',
       'Rooftop solar, smart climate control & thermal glazing solutions',
@@ -162,7 +162,7 @@ export const SERVICES: ServiceItem[] = [
     shortDesc: 'Transform your basement into a comfortable living area',
     fullDesc: 'Turn your basement into a functional, inviting space with our finishing services, from flooring and lighting to custom layouts. Perfect for additional living areas or entertainment rooms, with projects typically completed in 3–6 weeks.',
     iconName: 'ShieldAlert',
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://cdn.shopify.com/s/files/1/0598/6729/9949/files/Gemini_Generated_Image_3gdlcn3gdlcn3gdl.png?v=1779543590',
     highlights: [
       'Flooring, ambient lighting & custom functional layouts',
       'Ideal for home theaters, guest suites or private entertainment lounges',

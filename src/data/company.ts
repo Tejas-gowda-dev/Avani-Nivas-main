@@ -81,7 +81,7 @@ export const COMPANY_INFO = {
   contacts: {
     primaryPhone: '+91 9916339333',
     secondaryPhone: '+91 9916337333',
-    primaryEmail: 'info@gowdrurealcom.com',
+    primaryEmail: 'avaninivas.gowdrurealcom@gmail.com',
     // secondaryEmail: 'info@avaninivas.com',
     whatsappNumber: '919916339333',
     whatsappDisplay: '+91 99163 39333',
@@ -113,7 +113,7 @@ export const STRUCTURED_PROCESS_PHASES: ProcessPhase[] = [
     phaseId: 'pre-construction',
     phaseTitle: 'Pre-Construction',
     badge: 'Phase 01',
-    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://img.magnific.com/premium-photo/blue-white-floor-with-building-tower-with-crane-it_1274599-2058.jpg?semt=ais_hybrid&w=740&q=80',
     imageAlt: 'Labor working on architectural blueprint and conceptual planning',
     imageCaption: 'Labor working • Architectural drafting & precision site preparation',
     steps: [
@@ -135,7 +135,7 @@ export const STRUCTURED_PROCESS_PHASES: ProcessPhase[] = [
     phaseId: 'construction',
     phaseTitle: 'Construction',
     badge: 'Phase 02',
-    image: 'https://images.unsplash.com/photo-1541888946425-d0fbb1861571?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://t4.ftcdn.net/jpg/16/19/96/91/360_F_1619969180_d7RZG2r58KU6UFLyfZVpx7ZI048jrUWd.jpg',
     imageAlt: 'Labor working on structural construction and interior design',
     imageCaption: 'Labor working on interior design & structural concrete engineering',
     steps: [
@@ -157,7 +157,7 @@ export const STRUCTURED_PROCESS_PHASES: ProcessPhase[] = [
     phaseId: 'post-construction',
     phaseTitle: 'Post-Construction',
     badge: 'Phase 03',
-    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://img.magnific.com/free-photo/illustration-construction-site_23-2151850246.jpg?semt=ais_hybrid&w=740&q=80',
     imageAlt: 'Labor working on final approvals, pristine cleaning, and interior customization',
     imageCaption: 'Labor working • Pristine handover & bespoke interior customization',
     steps: [

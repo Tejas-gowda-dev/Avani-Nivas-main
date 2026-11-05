@@ -18,7 +18,7 @@ export const InteriorPricingPage: React.FC<InteriorPricingPageProps> = ({
 }) => {
   const faqs = [
     {
-      q: 'How does the 45-day handover guarantee work?',
+      q: 'How does the 60-day handover guarantee work?',
       a: 'Once the final 3D designs and material specifications are approved and signed off, your modular units are fabricated off-site in our automated German factory. We deliver and install all modules on-site within 60 days, or we compensate you for every day of delay.'
     },
     {
@@ -40,7 +40,7 @@ export const InteriorPricingPage: React.FC<InteriorPricingPageProps> = ({
   ];
 
   return (
-    <div id="interior-pricing-page-root" className="pt-28 pb-0 bg-[#FAF9F6]">
+    <div id="interior-pricing-page-root" className="pt-24 pb-0 bg-[#FAF9F6]">
       {/* Hero Header */}
       <section className="py-16 sm:py-20 bg-[#F5F2EC] border-b border-[#EAE4DC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -50,7 +50,7 @@ export const InteriorPricingPage: React.FC<InteriorPricingPageProps> = ({
               <span>VERIFIED MODULAR PACKAGES.</span>
             </div> */}
             <h1 className="block font-serif text-3xl sm:text-4xl lg:text-5xl text-[#252525] tracking-tight">
-             Interior Design Pricing Plans & Packages..1
+             Interior Design Pricing Plans & Packages
             </h1>
             <p className="mt-4 text-base sm:text-lg text-[#5C564E] leading-relaxed">
               Transparent per-sq.ft and room-wise modular packages. Select your BHK configuration, customize finishes, and calculate your exact turnkey budget with zero surprise costs.

@@ -27,7 +27,7 @@ interface AboutPageProps {
 
 export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenConsultation }) => {
   return (
-    <div id="about-page-root" className="pt-28 pb-0 bg-[#FAF8F5]">
+    <div id="about-page-root" className="pt-24 pb-0 bg-[#FAF8F5]">
       {/* Header */}
       <section className="py-16 sm:py-24 bg-[#F5F2EC] border-b border-[#EAE4DC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -39,7 +39,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenConsulta
               Built on Trust and Excellence
             </h1>
             <p className="mt-4 inline font-sans text-base sm:text-lg leading-snug text-center text-[#252525] cursor-crosshair">
-              Avani Nivas by Gowdru Realcom private limited® — 15+ years of industry experience and 300+ satisfied clients across Karnataka, Orissa, and Chhattisgarh.
+              Avani Nivas by Gowdru Realcom private limited® — 15+ years of industry experience and 300+ satisfied clients across Karnataka,
             </p>
           </ScrollReveal>
         </div>

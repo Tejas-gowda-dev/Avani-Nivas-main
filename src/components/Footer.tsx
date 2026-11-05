@@ -67,10 +67,9 @@ export const Footer: React.FC<FooterProps> = ({
             </button>
 
             <p className="text-sm text-[#CBD5E1] leading-relaxed max-w-md pt-1">
-              Over 15 years of industry excellence, crafting bespoke private
+              Over +15 years of industry excellence, crafting bespoke private
               residences, turnkey architectural duplexes, and premium modular
-              interior transformations across Karnataka, Orissa, and
-              Chhattisgarh.
+              interior transformations across Karnataka.
             </p>
 
             {/* Quick Experience Switcher */}
@@ -81,10 +80,9 @@ export const Footer: React.FC<FooterProps> = ({
                     type="button"
                     id="footer-switch-to-interiors"
                     onClick={() => onSwitchServiceMode("interiors")}
-                    className="w-full sm:w-auto justify-center px-4 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider flex items-center gap-2 transition-all bg-[#153A66] hover:bg-[#0B2545] text-white border border-[#D4AF37]/50 shadow-md group"
+                    className="w-full sm:w-auto justify-center px-4 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider flex items-center gap-2 transition-all bg-white/10 hover:bg-white/20 text-white border border-white/20 shadow-md group"
                     title="Switch to Interior Design"
                   >
-                    <Sparkles className="w-3.5 h-3.5 text-[#D4AF37] group-hover:scale-110 transition-transform" />
                     <span>Explore Interior Design</span>
                     <ArrowUpRight className="w-3.5 h-3.5 text-[#D4AF37] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </button>
@@ -93,10 +91,10 @@ export const Footer: React.FC<FooterProps> = ({
                     type="button"
                     id="footer-switch-to-construction"
                     onClick={() => onSwitchServiceMode("construction")}
-                    className="w-full sm:w-auto justify-center px-4 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider flex items-center gap-2 transition-all bg-[#153A66] hover:bg-[#0B2545] text-white border border-[#3B82F6]/50 shadow-md group"
+                    className="w-full sm:w-auto justify-center px-4 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider flex items-center gap-2 transition-all bg-white/10 hover:bg-white/20 text-white border border-[#3B82F6]/50 shadow-md group"
                     title="Switch to Construction"
                   >
-                    {/* <Hammer className="w-3.5 h-3.5 text-[#D4AF37] group-hover:scale-110 transition-transform" /> */}
+                    
                     <span>Explore Construction</span>
                     <ArrowUpRight className="w-3.5 h-3.5 text-[#D4AF37] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </button>
@@ -314,7 +312,7 @@ export const Footer: React.FC<FooterProps> = ({
             {COMPANY_INFO.flagshipBrand}. All rights reserved.
           </p>
           <span className="text-[#CBD5E1] leading-relaxed">
-            Active Hubs: Bengaluru • Tumkur • Mysuru • Hassan • All Over
+            Active : Bengaluru • Tumkur • Mysuru • Hassan • All Over
             Karnataka
           </span>
         </div>

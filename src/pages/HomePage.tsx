@@ -118,7 +118,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   </div>
                 </div>
 
-                <div className="p-5 pt-0 flex items-center justify-between border-t border-[#F9F7F4] mt-2">
+                <div className="p-5 pt-2 flex items-center justify-between border-t border-[#F9F7F4] mt-2">
                   <button
                     onClick={() => onSelectService(service)}
                     className="text-xs font-bold uppercase tracking-wider text-[#0B2545] hover:text-[#153A66] transition-colors flex items-center gap-1"

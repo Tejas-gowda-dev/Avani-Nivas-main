@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { PageId } from '../types';
 import { COMPANY_INFO } from '../data/company';
-import { Menu, X, Phone, ArrowRight, Shield, Sparkles, Hammer, LayoutGrid } from 'lucide-react';
+import { Menu, X, Phone, ArrowRight, Shield, Sparkles, LayoutGrid } from 'lucide-react';
 // @ts-ignore
 import logo from '../assets/AVANI_NIVAS.webp';
 
@@ -180,7 +180,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     className="px-2.5 py-1.5 bg-[#153A66] hover:bg-[#0B2545] text-white rounded-lg text-[11px] font-bold uppercase tracking-wider flex items-center gap-1 shadow-2xs border border-[#3B82F6]/30"
                     title="Switch to Construction"
                   >
-                    <Hammer className="w-3 h-3 text-[#D4AF37]" />
+                    
                     <span>Construction</span>
                   </button>
                 )}
@@ -238,7 +238,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     }}
                     className="w-full py-2.5 px-4 rounded-xl bg-[#153A66] hover:bg-[#0B2545] text-white text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-xs border border-[#3B82F6]/30"
                   >
-                    <Hammer className="w-3.5 h-3.5 text-[#D4AF37]" />
+                 
                     <span>Switch to Construction</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#D4AF37]" />
                   </button>

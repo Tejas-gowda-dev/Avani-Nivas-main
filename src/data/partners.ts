@@ -62,7 +62,7 @@ export const PARTNERS: PartnerItem[] = [
 export const COLLABORATION_TYPES = [
   {
     title: 'Architectural Collaborations',
-    description: 'We work closely with independent architectural studios, landscape designers, and structural consultants across Karnataka, Orissa, and Chhattisgarh.',
+    description: 'We work closely with independent architectural studios, landscape designers, and structural consultants across Karnataka.',
     benefits: [
       'Accurate structural execution of complex designs',
       'Millimeter-precision engineering compliance',

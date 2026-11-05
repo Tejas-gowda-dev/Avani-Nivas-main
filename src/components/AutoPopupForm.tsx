@@ -139,16 +139,12 @@ export const AutoPopupForm: React.FC<AutoPopupFormProps> = ({
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 left-6 z-40 group flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-[#153A66] text-white shadow-2xl border-2 border-amber-300/60 hover:scale-105 active:scale-95 transition-all duration-300 animate-bounce"
+          className="fixed bottom-6 left-6 z-40 group flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-white/100 text-[#153A66] shadow-2xl border-2 border-white/60 hover:scale-105 active:scale-95 transition-all duration-300 animate-bounce"
           aria-label="Open Festive Mega Offer always offer new offer full details and claim offer"
         >
-          <Gift className="w-4 h-4 text-amber-200 group-hover:rotate-12 transition-transform" />
+          <Gift className="w-4 h-4 text-[#153A66] group-hover:rotate-12 transition-transform" />
           <span className="text-xs font-bold tracking-wide uppercase drop-shadow-sm">
             Limited-Time Only Get • 5% Off
-          </span>
-          <span className="flex h-2 w-2 relative">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-300 opacity-75" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-200" />
           </span>
         </button>
       )}

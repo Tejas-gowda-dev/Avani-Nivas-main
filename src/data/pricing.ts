@@ -55,7 +55,7 @@ export const PRICING_TIERS: PricingTier[] = [
     rateDisplay: '₹2,199 / sq.ft',
     pricingType: 'per_sqft',
     minArea: 1000,
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80',
+    image: 'https://img.magnific.com/free-photo/modern-luxury-home-with-contemporary-architecture_84443-74095.jpg?semt=ais_hybrid&w=740&q=80',
     highlightText: '',
    deliverables: [
       'Soil Testing',

@@ -122,7 +122,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
                 </div>
               </div>
 
-              <div className="p-6 pt-0 flex items-center justify-between border-t border-[#F2ECE4] mt-3">
+              <div className="p-6 pt-2 flex items-center justify-between border-t border-[#F2ECE4] mt-3">
                 <button
                   onClick={() => onSelectService(service)}
                   className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#0B2545] hover:text-[#153A66] transition-colors"

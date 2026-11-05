@@ -71,7 +71,7 @@ export const ContactPage: React.FC = () => {
   };
 
   return (
-    <div id="contact-page-root" className="pt-28 pb-20 bg-[#FAF8F5]">
+    <div id="contact-page-root" className="pt-24 pb-20 bg-[#FAF8F5]">
       {/* Header */}
       <section className="py-16 sm:py-24 bg-[#F5F2EC] border-b border-[#EAE4DC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -358,9 +358,9 @@ export const ContactPage: React.FC = () => {
                         </a>
                       </div>
                       <div>
-                        <a href={`mailto:${COMPANY_INFO.contacts.secondaryEmail}`} className="hover:text-white transition-colors">
+                        {/* <a href={`mailto:${COMPANY_INFO.contacts.secondaryEmail}`} className="hover:text-white transition-colors">
                           {COMPANY_INFO.contacts.secondaryEmail}
-                        </a>
+                        </a> */}
                       </div>
                     </div>
                   </div>
@@ -452,7 +452,7 @@ export const ContactPage: React.FC = () => {
                   <strong className="text-[#252525]">Key Landmarks:</strong> Adarsha Layout, Mallathahalli Lake, Bangalore University Jnana Bharathi Campus.
                 </p>
                 <p className="text-[10px] text-[#A89E92]">
-                  Serving Karnataka (Tumkur, Bengaluru, Mysuru, Hassan), Orissa, and Chhattisgarh.
+                  Serving Karnataka (Tumkur, Bengaluru, Mysuru, Hassan),
                 </p>
               </div>
             </div>
