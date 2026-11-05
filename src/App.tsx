@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { lazy, Suspense, useState, useEffect } from 'react';
 import { PageId, ServiceMode, ServiceItem, ProjectItem } from './types';
 import { resolveLegacyRoute } from './data/migration';
 import { Navbar } from './components/Navbar';
@@ -12,19 +12,17 @@ import { SEOHead } from './components/SEOHead';
 import { ServiceLandingPage } from './components/ServiceLandingPage';
 import { AutoPopupForm } from './components/AutoPopupForm';
 
-// Construction Experience Pages
-import { HomePage } from './pages/HomePage';
-import { ServicesPage } from './pages/ServicesPage';
-import { PricingPage } from './pages/PricingPage';
-import { ProjectsPage } from './pages/ProjectsPage';
-import { AboutPage } from './pages/AboutPage';
-import { PartnersPage } from './pages/PartnersPage';
-import { ContactPage } from './pages/ContactPage';
-
-// Interior Design Experience Pages
-import { InteriorHomePage } from './pages/InteriorHomePage';
-import { InteriorPricingPage } from './pages/InteriorPricingPage';
-import { InteriorServicesPage } from './pages/InteriorServicesPage';
+// Load route content on demand so the initial bundle stays small.
+const HomePage = lazy(() => import('./pages/HomePage').then(({ HomePage }) => ({ default: HomePage })));
+const ServicesPage = lazy(() => import('./pages/ServicesPage').then(({ ServicesPage }) => ({ default: ServicesPage })));
+const PricingPage = lazy(() => import('./pages/PricingPage').then(({ PricingPage }) => ({ default: PricingPage })));
+const ProjectsPage = lazy(() => import('./pages/ProjectsPage').then(({ ProjectsPage }) => ({ default: ProjectsPage })));
+const AboutPage = lazy(() => import('./pages/AboutPage').then(({ AboutPage }) => ({ default: AboutPage })));
+const PartnersPage = lazy(() => import('./pages/PartnersPage').then(({ PartnersPage }) => ({ default: PartnersPage })));
+const ContactPage = lazy(() => import('./pages/ContactPage').then(({ ContactPage }) => ({ default: ContactPage })));
+const InteriorHomePage = lazy(() => import('./pages/InteriorHomePage').then(({ InteriorHomePage }) => ({ default: InteriorHomePage })));
+const InteriorPricingPage = lazy(() => import('./pages/InteriorPricingPage').then(({ InteriorPricingPage }) => ({ default: InteriorPricingPage })));
+const InteriorServicesPage = lazy(() => import('./pages/InteriorServicesPage').then(({ InteriorServicesPage }) => ({ default: InteriorServicesPage })));
 
 export default function App() {
   const [serviceMode, setServiceMode] = useState<ServiceMode>('landing');
@@ -204,6 +202,7 @@ export default function App() {
 
       {/* Main Content Area */}
       <main className="flex-1">
+        <Suspense fallback={<div className="min-h-[60vh]" aria-busy="true" />}>
         {/* ========================================================
             INTERIOR DESIGN EXPERIENCE
         ======================================================== */}
@@ -363,6 +362,7 @@ export default function App() {
             {currentPage === 'contact' && <ContactPage />}
           </>
         )}
+        </Suspense>
       </main>
 
       {/* Footer with Service Mode Toggle */}

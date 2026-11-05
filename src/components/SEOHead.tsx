@@ -11,22 +11,22 @@ export const SEOHead: React.FC<SEOHeadProps> = ({ currentPage, serviceMode = 'co
   const seo = SEO_CONFIG[currentPage] || SEO_CONFIG.home;
 
   useEffect(() => {
-    // 1. Update Title based on mode and page
+    // 1. Keep the browser title and social titles aligned for the active mode.
+    let pageTitle = seo.title;
     if (serviceMode === 'landing') {
-      document.title = 'Avani Nivas by Gowdru Realcom | Construction & Interior Design';
+      pageTitle = 'Avani Nivas by Gowdru Realcom | Construction & Interior Design';
     } else if (serviceMode === 'interiors') {
       if (currentPage === 'home') {
-        document.title = 'Avani Nivas Interiors | Bespoke Luxury Residential Interior Design Bengaluru';
+        pageTitle = 'Avani Nivas Interiors | Bespoke Luxury Residential Interior Design Bengaluru';
       } else if (currentPage === 'pricing') {
-        document.title = 'Interior Design Packages & Cost Estimator | Avani Nivas Bengaluru';
+        pageTitle = 'Interior Design Packages & Cost Estimator | Avani Nivas Bengaluru';
       } else if (currentPage === 'services') {
-        document.title = 'Modular Kitchens, Wardrobes & Interior Services | Avani Nivas';
+        pageTitle = 'Modular Kitchens, Wardrobes & Interior Services | Avani Nivas';
       } else {
-        document.title = `${seo.title.split('|')[0]} | Avani Nivas Interiors`;
+        pageTitle = `${seo.title.split('|')[0]} | Avani Nivas Interiors`;
       }
-    } else {
-      document.title = seo.title;
     }
+    document.title = pageTitle;
 
     // Helper to safely set or create meta tag
     const setMetaTag = (name: string, content: string, isProperty = false) => {
@@ -56,19 +56,25 @@ export const SEOHead: React.FC<SEOHeadProps> = ({ currentPage, serviceMode = 'co
     setMetaTag('keywords', seo.keywords);
 
     // 3. OpenGraph Social Tags
-    setMetaTag('og:title', seo.title, true);
+    setMetaTag('og:title', pageTitle, true);
     setMetaTag('og:description', seo.description, true);
     setMetaTag('og:type', seo.ogType, true);
     setMetaTag('og:image', seo.ogImage, true);
     setMetaTag('og:site_name', 'Gowdru Realcom | Avani Nivas', true);
 
-    const origin = typeof window !== 'undefined' ? window.location.origin : 'https://www.gowdrurealcom.com';
-    const canonicalUrl = `${origin}${seo.canonicalPath === '/' ? '' : seo.canonicalPath}`;
+    const canonicalPath = serviceMode === 'landing'
+      ? '/'
+      : serviceMode === 'interiors'
+        ? `/interiors${currentPage === 'home' ? '' : `/${currentPage}`}`
+        : currentPage === 'home'
+          ? '/construction'
+          : seo.canonicalPath;
+    const canonicalUrl = `https://www.gowdrurealcom.com${canonicalPath}`;
     setMetaTag('og:url', canonicalUrl, true);
 
     // 4. Twitter Card Tags
     setMetaTag('twitter:card', seo.twitterCard);
-    setMetaTag('twitter:title', seo.title);
+    setMetaTag('twitter:title', pageTitle);
     setMetaTag('twitter:description', seo.description);
     setMetaTag('twitter:image', seo.ogImage);
 
@@ -84,7 +90,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({ currentPage, serviceMode = 'co
       document.head.appendChild(scriptTag);
     }
     scriptTag.textContent = JSON.stringify(seo.schema, null, 2);
-  }, [currentPage, seo]);
+  }, [currentPage, seo, serviceMode]);
 
   return null;
 };

@@ -66,6 +66,7 @@ export const InteriorHeroSection: React.FC<InteriorHeroSectionProps> = ({
                   : "opacity-0 scale-105"
               }`}
             loading={index === 0 ? "eager" : "lazy"}
+            fetchPriority={index === 0 ? "high" : "auto"}
           />
         ))}
 
