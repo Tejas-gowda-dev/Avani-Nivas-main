@@ -71,7 +71,7 @@ export const InteriorHeroSection: React.FC<InteriorHeroSectionProps> = ({
         ))}
 
         {/* Luxury Dark Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-black/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-black/20 to-transparent" />
 
         {/* Bottom Cinematic Gradient */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0F0C0A] via-transparent to-black/40" />
@@ -96,7 +96,7 @@ export const InteriorHeroSection: React.FC<InteriorHeroSectionProps> = ({
             <p className="font-sans text-base sm:text-xl text-[#E8DFD5] leading-relaxed max-w-2xl font-normal drop-shadow">
               Bespoke residential interior architecture, modular woodwork, and
               turnkey styling crafted with German precision machinery, 100% BWP
-              marine plywood, and 45-day guaranteed handover.
+              marine plywood, and 60-days guaranteed handover.
             </p>
           </ScrollReveal>
 
@@ -106,7 +106,7 @@ export const InteriorHeroSection: React.FC<InteriorHeroSectionProps> = ({
               <div className="p-3.5 rounded-xl bg-white/10 backdrop-blur-sm border border-white/15">
                 <div className="flex items-center gap-2 text-[#FDE68A] text-xs font-bold uppercase tracking-wider mb-1">
                   <Clock className="w-3.5 h-3.5" />
-                  <span>45-60 Days</span>
+                  <span>60-90 Days</span>
                 </div>
                 <div className="text-xs text-slate-200">
                   Guaranteed Handover

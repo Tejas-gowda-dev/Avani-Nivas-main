@@ -217,14 +217,14 @@ export const InteriorHomePage: React.FC<InteriorHomePageProps> = ({
                 className="bg-[#FAF8F5] rounded-2xl border border-[#E0D8CC] overflow-hidden flex flex-col justify-between group hover:shadow-xl hover:border-[#0B2545]/60 transition-all duration-300"
               >
                 <div>
-                  <div className="relative h-44 w-full overflow-hidden bg-[#241F1C]">
+                  <div className="relative h-70 w-full overflow-hidden bg-[#241F1C]">
                     <img
                       src={service.image}
                       alt={service.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-95"
                       loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
                     <span className="absolute top-3 right-3 px-2 py-0.5 bg-white/90 text-[#0B2545] text-[10px] font-bold rounded uppercase">
                       Modular Craft
                     </span>
@@ -329,7 +329,7 @@ export const InteriorHomePage: React.FC<InteriorHomePageProps> = ({
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/20 to-transparent" />
                     
                     <span className="absolute top-3 left-3 px-3 py-1 bg-white/95 text-[#0B2545] text-[10px] font-bold rounded-full uppercase tracking-wider shadow-sm">
                       {project.timeline}
@@ -390,7 +390,7 @@ export const InteriorHomePage: React.FC<InteriorHomePageProps> = ({
               Our 3-Phase Interior Journey
             </h2>
             <p className="mt-4 font-sans text-base sm:text-lg leading-relaxed text-[#5C564E]">
-              From photorealistic 3D visualization to German automated factory fabrication and clean 45-day on-site delivery.
+              From photorealistic 3D visualization to German automated factory fabrication and clean 60-days on-site delivery.
             </p>
           </ScrollReveal>
 

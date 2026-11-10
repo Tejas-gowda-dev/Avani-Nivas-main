@@ -86,7 +86,7 @@ export const INTERIOR_CATEGORIES: InteriorCategory[] = [
     title: 'Pooja Mane (Pooja Room)',
     subtitle: 'Sanctuary of Devotion & Sacred Serenity',
     shortDesc: 'Bespoke sacred mandirs with intricate CNC Acrylic carving, brass accents, bell mountings, and dedicated ambient backlit panels.',
-    image: 'https://i.pinimg.com/236x/71/2a/d9/712ad9e076a96c0234af1d39a9dc93a2.jpg',
+    image: 'https://blueinteriors.in/wp-content/uploads/2026/08/indian-style-pooja-room-design-wooden-mandir.webp',
     badge: 'Traditional & Sacred',
     finishes: [
       {

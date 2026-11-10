@@ -43,7 +43,7 @@ export const INTERIOR_PRICING_TIERS: PricingTier[] = [
     rateDisplay: '1599 / sq. ft.',
     pricingType: 'per_sqft',
     minArea: 500,
-    image: 'https://www.centuryply.com/uploads/Plywood_Mobile_b412c7326c.jpg',
+    image: 'https://img.interiorcompany.com/interior/webproduct/698638582843728385196.png?aio=w-1200;',
     highlightText: '1599 / sq. ft.',
     deliverables: [
       'Puja Mane',
@@ -71,7 +71,7 @@ export const INTERIOR_PRICING_TIERS: PricingTier[] = [
     rateDisplay: '1799 / sq. ft.',
     pricingType: 'per_sqft',
     minArea: 500,
-    image: 'https://cms-plywood.royaletouche.com/uploads/plywood_banner_img_987c9a2079.jpg',
+    image: 'https://homzinterio.in/wp-content/uploads/2026/04/Kitchen-Crockery-Unit-Design.webp',
     highlightText: '1799 / sq. ft.',
     deliverables: [
       'Puja Mane',
@@ -99,7 +99,7 @@ export const INTERIOR_PRICING_TIERS: PricingTier[] = [
     rateDisplay: '1999 / sq. ft.',
     pricingType: 'per_sqft',
     minArea: 500,
-    image: 'https://img.magnific.com/premium-photo/wooden-table-with-water-drops-it-wooden-surface_1028899-1919.jpg?semt=ais_hybrid&w=740&q=80',
+    image: 'https://img.staticmb.com/mbcontent/images/crop/uploads/ver2/XIwvQlc61t8ZIpanz4mAnTU2nJ5n26mFArYGT8vnFhK-0w/house-entrance-design-ideas_600_900.jpg',
     highlightText: '1999 / sq. ft.',
     deliverables: [
       'Puja Mane',
@@ -156,7 +156,7 @@ export const INTERIOR_PRICING_TIERS: PricingTier[] = [
     rateDisplay: '2999 / sq. ft.',
     pricingType: 'per_sqft',
     minArea: 500,
-    image: 'https://khidkihomes.com/cdn/shop/articles/types-of-engineered-woods-for-home-interior.jpg?v=1761043164&width=1100',
+    image: 'https://homebliss.in/wp-content/uploads/2024/02/DALL%C2%B7E-2024-01-17-12.51.28-A-pooja-room-designed-by-Studio-Lagom-in-a-Surat-home-creatively-placed-within-a-two-foot-deep-niche-behind-the-living-room.-The-room-is-strategicall.png',
     highlightText: '2999 / sq. ft.',
     deliverables: [
       'Puja Mane',
@@ -520,7 +520,7 @@ export const INTERIOR_PROCESS_STEPS: ProcessStep[] = [
   },
   {
     number: '03',
-    title: 'Seamless 45-60 Day On-Site Installation',
+    title: 'Seamless 60-90 Days On-Site Installation',
     subtitle: 'Clean Assembly, Testing & Handover',
     description: 'Our factory-trained technicians assemble the modules quietly and quickly on-site, integrate lighting, wire raceways, and sanitaryware, followed by formal handover with a 10-year warranty certificate.',
     deliverables: [

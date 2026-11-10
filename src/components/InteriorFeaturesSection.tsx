@@ -60,14 +60,14 @@ export const InteriorFeaturesSection: React.FC<InteriorFeaturesSectionProps> = (
               >
                 <div>
                   {/* High Quality Interior Image with Subtle Gradient & Badges */}
-                  <div className="relative h-64 sm:h-72 w-full overflow-hidden bg-[#2A2724]">
+                  <div className="relative h-70 sm:h-70 w-full overflow-hidden bg-[#2A2724]">
                     <img
                       src={category.image}
                       alt={category.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/10" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/20 to-black/10" />
 
                     {/* Category Badges */}
                     <div className="absolute top-4 left-4 flex flex-wrap gap-2">

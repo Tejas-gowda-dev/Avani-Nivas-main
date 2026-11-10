@@ -85,7 +85,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 className="bg-white rounded-xl border border-[#E6E1D8] overflow-hidden flex flex-col justify-between group hover:shadow-xl hover:border-[#0B2545]/60 transition-all duration-300"
               >
                 <div>
-                  <div className="relative h-44 w-full overflow-hidden bg-[#2A2724]">
+                  <div className="relative h-70 w-full overflow-hidden bg-[#2A2724]">
                     <img
                       src={service.image}
                       alt={service.title}
@@ -93,7 +93,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                       loading="lazy"
                       referrerPolicy="no-referrer"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
                     <span className="absolute top-3 right-3 px-2 py-0.5 bg-white/90 backdrop-blur-xs text-[#252525] text-[10px] font-bold rounded uppercase">
                       Verified
                     </span>
@@ -204,7 +204,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                       loading="lazy"
                       referrerPolicy="no-referrer"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-black/20" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/30 to-black/20" />
 
                     <div className="absolute top-4 left-4 flex gap-2">
                       <span className="px-3 py-1 bg-white/95 backdrop-blur-xs text-[#0B2545] text-[11px] font-bold rounded-full uppercase tracking-wider shadow-sm">

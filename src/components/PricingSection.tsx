@@ -453,14 +453,14 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                   }`}
                 >
                   {/* Top Image Banner with Image Upload & View actions */}
-                  <div className="relative h-48 sm:h-52 w-full overflow-hidden bg-[#2D2A26]">
+                  <div className="relative h-70 sm:h-70 w-full overflow-hidden bg-[#2D2A26]">
                     <img
                       src={currentImg}
                       alt={tier.name}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       referrerPolicy="no-referrer"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/30" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/20 to-black/30" />
 
                     {/* Top Badge */}
                     {tier.badge && (
@@ -594,7 +594,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                 }}
               >
                 {/* Top Image Banner */}
-                <div className="relative h-48 sm:h-52 w-full overflow-hidden bg-[#2D2A26]">
+                <div className="relative h-48 sm:h-70 w-full overflow-hidden bg-[#2D2A26]">
                   <img
                     src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80"
                     alt="Interior Features"

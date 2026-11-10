@@ -13,7 +13,7 @@ export const PROJECTS: ProjectItem[] = [
     pricing: 'Avg. Cost: ₹30 Lakhs',
     timeline: '~1 Year Duration',
     isFeatured: true,
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://img.staticmb.com/mbcontent/images/crop/uploads/ver2/XIwvQlc61t8ZIpanz4mAnjUxpK2D8J88krlmQdggYixvPTQ/Single-Storey-House-9_600_900.jpg',
     gallery: [
       'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80',

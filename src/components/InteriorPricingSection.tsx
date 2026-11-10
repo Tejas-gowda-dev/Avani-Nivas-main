@@ -100,14 +100,14 @@ export const InteriorPricingSection: React.FC<InteriorPricingSectionProps> = ({
 
                 <div>
                   {/* Card Visual Header */}
-                  <div className="relative h-44 w-full overflow-hidden bg-[#1E1B18]">
+                  <div className="relative h-70 w-full overflow-hidden bg-[#1E1B18]">
                     <img
                       src={tier.image}
                       alt={tier.name}
                       className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 opacity-90"
                       loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-black/10 to-transparent" />
                     
                     {tier.packageName && (
                       <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-[#0B2545]/95 text-white border border-[#D4AF37]/40 text-[10px] font-bold uppercase tracking-wider shadow-sm">

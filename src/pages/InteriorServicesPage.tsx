@@ -47,14 +47,14 @@ export const InteriorServicesPage: React.FC<InteriorServicesPageProps> = ({
                 delay={idx * 0.08}
                 className="bg-[#FAF8F5] rounded-3xl border border-[#E0D8CC] overflow-hidden flex flex-col md:flex-row group hover:shadow-xl hover:border-[#0B2545]/60 transition-all duration-300"
               >
-                <div className="relative md:w-5/12 h-56 md:h-auto overflow-hidden bg-[#241F1C] shrink-0">
+                <div className="relative md:w-5/12 h-70 md:h-auto overflow-hidden bg-[#241F1C] shrink-0">
                   <img
                     src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-black/60 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-black/20 to-transparent" />
                   <span className="absolute top-3 left-3 px-2.5 py-1 bg-white/95 text-[#0B2545] text-[10px] font-bold rounded-full uppercase tracking-wider shadow-sm">
                     Verified
                   </span>

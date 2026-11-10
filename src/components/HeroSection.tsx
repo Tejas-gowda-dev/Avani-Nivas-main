@@ -141,7 +141,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           className="
             absolute inset-0 z-20
             bg-gradient-to-r
-            from-black/50 via-black/25 to-transparent
+            from-black/20 via-black/20 to-transparent
           "
         />
 

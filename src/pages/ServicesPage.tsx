@@ -38,7 +38,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
     : SERVICES.filter((s) => getTagFromService(s) === selectedTag);
 
   return (
-    <div id="services-page-root" className="pt-28 pb-0 bg-[#FAF8F5]">
+    <div id="services-page-root" className="pt-24 pb-0 bg-[#FAF8F5]">
       {/* Page Header */}
       <section className="py-16 sm:py-24 bg-[#F5F2EC] border-b border-[#EAE4DC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -83,7 +83,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
               className="bg-white rounded-2xl border border-[#E0D8CC] overflow-hidden flex flex-col justify-between group hover:shadow-xl hover:border-[#0B2545]/60 transition-all duration-300"
             >
               <div>
-                <div className="relative h-48 w-full overflow-hidden bg-[#2A2724]">
+                <div className="relative h-70 w-full overflow-hidden bg-[#2A2724]">
                   <img
                     src={service.image}
                     alt={service.title}
@@ -91,7 +91,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
                     loading="lazy"
                     referrerPolicy="no-referrer"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/20" />
                   <span className="absolute top-3.5 right-3.5 px-2.5 py-1 bg-white/90 backdrop-blur-xs text-[#252525] text-[10px] font-bold rounded-full uppercase tracking-wider">
                     {getTagFromService(service)}
                   </span>

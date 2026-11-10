@@ -18,8 +18,8 @@ export const InteriorPricingPage: React.FC<InteriorPricingPageProps> = ({
 }) => {
   const faqs = [
     {
-      q: 'How does the 60-day handover guarantee work?',
-      a: 'Once the final 3D designs and material specifications are approved and signed off, your modular units are fabricated off-site in our automated German factory. We deliver and install all modules on-site within 60 days, or we compensate you for every day of delay.'
+      q: 'How does the 60-days handover guarantee work?',
+      a: 'Once the final 3D designs and material specifications are approved and signed off, your modular units are fabricated off-site in our automated German factory. We deliver and install all modules on-site within 60 days, or we compensate you for every days of delay.'
     },
     {
       q: 'What type of plywood is used in Avani Nivas Interiors?',
