@@ -3,7 +3,9 @@ import { X, CheckCircle2, Gift, MessageSquare, ArrowRight } from 'lucide-react';
 import { COMPANY_INFO } from '../data/company';
 
 // Put your poster in /public/images/ (served from the site root)
-  const POSTER_SRC = '/diwali-offer-poster.webp';
+  // const POSTER_SRC = '/Award.webp';
+// @ts-ignore
+  import Aword from '../assets/Award.webp';
 
 interface AutoPopupFormProps {
   serviceMode: 'construction' | 'interiors';
@@ -180,12 +182,12 @@ export const AutoPopupForm: React.FC<AutoPopupFormProps> = ({
               <div className="lg:col-span-5 relative bg-[#F6EDE4] select-none">
                 {/* Hidden heading keeps the dialog accessible */}
                 <h2 id="autopopup-title" className="sr-only">
-                  Happy Diwali – 5% Off – Avani Nivas
+                  Award 5% off on construction and interiors by Avani Nivas
                 </h2>
 
                 <img
-                  src={POSTER_SRC}
-                  alt="Happy Diwali – 5% off on construction and interiors by Avani Nivas"
+                  src={Aword}
+                  alt="Award 5% off on construction and interiors by Avani Nivas"
                   draggable={false}
                   className="block w-full h-auto lg:absolute lg:inset-0 lg:h-full lg:w-full lg:object-cover lg:object-center"
                 />

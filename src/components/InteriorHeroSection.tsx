@@ -96,7 +96,7 @@ export const InteriorHeroSection: React.FC<InteriorHeroSectionProps> = ({
             <p className="font-sans text-base sm:text-xl text-[#E8DFD5] leading-relaxed max-w-2xl font-normal drop-shadow">
               Bespoke residential interior architecture, modular woodwork, and
               turnkey styling crafted with German precision machinery, 100% BWP
-              marine plywood, and 60-days guaranteed handover.
+              marine plywood, and 60-90 days guaranteed handover.
             </p>
           </ScrollReveal>
 

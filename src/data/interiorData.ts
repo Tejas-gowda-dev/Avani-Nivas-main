@@ -212,7 +212,7 @@ export const INTERIOR_SERVICES: ServiceItem[] = [
     shortDesc: 'Sacred prayer sanctuaries crafted with auspicious teakwood veneers, CNC Acrylic and warm lighting.',
     fullDesc: 'Honor tradition with handcrafted pooja rooms. We incorporate auspicious Vastu alignments, intricate laser-cut CNC Acrylic, brass bells, ambient backlit panels, and dedicated storage for sacred rituals.',
     iconName: 'Sparkles',
-    image: 'https://img.staticmb.com/mbimages/interiorDesignerCMS/decorPartner/4061/projectImage/20251125042229poojaidcdip69.jpg.webp',
+    image: 'https://blueinteriors.in/wp-content/uploads/2026/08/indian-style-pooja-room-design-wooden-mandir.webp',
     highlights: [
       'Vastu-compliant East/North-East orientation',
       'Teakwood timber frames & traditional brass bell mountings',
@@ -256,7 +256,7 @@ export const INTERIOR_SERVICES: ServiceItem[] = [
     shortDesc: 'Floor-to-ceiling sliding & hinged wardrobes with smart internal organizers and tinted glass.',
     fullDesc: 'Maximize vertical space with bespoke floor-to-ceiling wardrobes. Choose from sliding lacquered glass shutters, textured laminates, or natural veneers with integrated vanity mirrors and sensor lighting.',
     iconName: 'LayoutGrid',
-    image: 'https://images.livspace-cdn.com/w:3840/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/ond-2024-1727950725-vfT46/wardrobe-1728925029-SF5tE/wr-o1-1729590320-wmfXM.jpg',
+    image: 'https://cdn.sharps.co.uk/media/assets/pages/bedrooms/walk-in-wardrobes/wiw-sherboure-white-banner-01.jpg',
     highlights: [
       'Sliding profile glass & soft-close hinged doors',
       'Dedicated pull-out trouser racks, watch organizers & jewelry trays',

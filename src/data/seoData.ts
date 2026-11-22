@@ -21,7 +21,7 @@ export const SEO_CONFIG: Record<PageId, PageSEO> = {
     keywords: 'Avani Nivas, Gowdru Realcom, construction cavalry, luxury duplex homes, single floor house Orissa, custom villa builders Bangalore, turnkey factory construction, home renovation Mallathahalli',
     canonicalPath: '/',
     ogType: 'website',
-    ogImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80',
+    ogImage: 'https://www.gowdrurealcom.com/logo.png',
     twitterCard: 'summary_large_image',
     schema: {
       '@context': 'https://schema.org',
@@ -29,8 +29,8 @@ export const SEO_CONFIG: Record<PageId, PageSEO> = {
       'name': 'Avani Nivas by Gowdru Realcom Private Limited',
       'alternateName': ['Avani Nivas', 'Gowdru Realcom', 'Avani Nivas'],
       'url': 'https://www.gowdrurealcom.com',
-      'logo': 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80',
-      'image': 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80',
+      'logo': 'https://www.gowdrurealcom.com/logo.png',
+      'image': 'https://www.gowdrurealcom.com/logo.png',
       'description': "From blueprint to reality: we're your construction cavalry. Over 15 years of industry experience and 300+ satisfied clients across Karnataka.",
       'telephone': COMPANY_INFO.contacts.primaryPhone.replace(/\s+/g, ''),
       'email': COMPANY_INFO.contacts.primaryEmail,
@@ -97,7 +97,7 @@ export const SEO_CONFIG: Record<PageId, PageSEO> = {
     keywords: 'kitchen renovations Bangalore, interior redesigns, exterior upgrades Karnataka, custom carpentry Mallathahalli, bathroom remodels, home additions, energy-efficient upgrades, basement finishing',
     canonicalPath: '/services',
     ogType: 'website',
-    ogImage: 'https://images.unsplash.com/photo-1541888946425-d0fbb186156a?auto=format&fit=crop&w=1600&q=80',
+    ogImage: 'https://www.gowdrurealcom.com/logo.png',
     twitterCard: 'summary_large_image',
     schema: {
       '@context': 'https://schema.org',
@@ -129,7 +129,7 @@ export const SEO_CONFIG: Record<PageId, PageSEO> = {
     keywords: 'construction pricing Bangalore, turnkey duplex cost per sqft, home construction rates Karnataka, 30x40 duplex house cost, Gowdru Realcom pricing, Avani Nivas rate cards',
     canonicalPath: '/pricing',
     ogType: 'website',
-    ogImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80',
+    ogImage: 'https://www.gowdrurealcom.com/logo.png',
     twitterCard: 'summary_large_image',
     schema: {
       '@context': 'https://schema.org',
@@ -149,7 +149,7 @@ export const SEO_CONFIG: Record<PageId, PageSEO> = {
     keywords: 'single floor house Balangir, duplex homes ₹2400 sq ft, luxury villas Karnataka, factory construction Orissa, Gowdru Realcom projects, Avani Nivas portfolio',
     canonicalPath: '/projects',
     ogType: 'website',
-    ogImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80',
+    ogImage: 'https://www.gowdrurealcom.com/logo.png',
     twitterCard: 'summary_large_image',
     schema: {
       '@context': 'https://schema.org',
@@ -181,7 +181,7 @@ export const SEO_CONFIG: Record<PageId, PageSEO> = {
     keywords: 'Sharath Kumar A N, Palaksha, Avani Nivas founders, Gowdru Realcom company history, Tumkur Bengaluru Mysuru Hassan builders, construction cavalry',
     canonicalPath: '/about',
     ogType: 'website',
-    ogImage: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80',
+    ogImage: 'https://www.gowdrurealcom.com/logo.png',
     twitterCard: 'summary_large_image',
     schema: {
       '@context': 'https://schema.org',
@@ -216,7 +216,7 @@ export const SEO_CONFIG: Record<PageId, PageSEO> = {
     keywords: 'construction partners, Tata Tiscon steel, UltraTech cement, Jaquar bath fittings, Saint-Gobain glass, verified vendors Avani Nivas',
     canonicalPath: '/partners',
     ogType: 'website',
-    ogImage: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80',
+    ogImage: 'https://www.gowdrurealcom.com/logo.png',
     twitterCard: 'summary_large_image',
     schema: {
       '@context': 'https://schema.org',
@@ -237,7 +237,7 @@ export const SEO_CONFIG: Record<PageId, PageSEO> = {
     keywords: 'contact Avani Nivas, Gowdru Realcom phone number, Mallathahalli office address, site consultation booking, construction cavalry contact',
     canonicalPath: '/contact',
     ogType: 'website',
-    ogImage: 'https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1600&q=80',
+    ogImage: 'https://www.gowdrurealcom.com/logo.png',
     twitterCard: 'summary_large_image',
     schema: {
       '@context': 'https://schema.org',
@@ -247,7 +247,7 @@ export const SEO_CONFIG: Record<PageId, PageSEO> = {
       'mainEntity': {
         '@type': 'LocalBusiness',
         'name': 'Avani Nivas by Gowdru Realcom Private Limited',
-        'image': 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80',
+        'image': 'https://www.gowdrurealcom.com/logo.png',
         'telephone': COMPANY_INFO.contacts.primaryPhone.replace(/\s+/g, ''),
         'email': COMPANY_INFO.contacts.primaryEmail,
         'address': {
