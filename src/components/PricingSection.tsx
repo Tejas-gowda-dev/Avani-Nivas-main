@@ -597,7 +597,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
                 <div className="relative h-48 sm:h-70 w-full overflow-hidden bg-[#2D2A26]">
                   <img
                     src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80"
-                    alt="Interior Features"
+                    alt="Home construction company in Bengaluru"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     referrerPolicy="no-referrer"
                   />
